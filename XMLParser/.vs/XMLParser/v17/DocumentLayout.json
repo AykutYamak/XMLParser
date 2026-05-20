@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlElement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|solutionrelative:XMLParser\\XmlElement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlText.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|solutionrelative:XMLParser\\XmlText.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlText.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|solutionrelative:XMLParser\\XmlText.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|solutionrelative:XMLParser\\XmlNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlElement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|solutionrelative:XMLParser\\XmlElement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F8C14B3-F468-475F-8148-BF16AC603DCC}|XMLParser\\XMLParser.vcxproj|D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -49,32 +61,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "XmlElement.h",
+              "DocumentMoniker": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlElement.h",
+              "RelativeDocumentMoniker": "XMLParser\\XmlElement.h",
+              "ToolTip": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlElement.h",
+              "RelativeToolTip": "XMLParser\\XmlElement.h",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-18T11:11:53.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "XmlElement.cpp",
+              "DocumentMoniker": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlElement.cpp",
+              "RelativeDocumentMoniker": "XMLParser\\XmlElement.cpp",
+              "ToolTip": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlElement.cpp",
+              "RelativeToolTip": "XMLParser\\XmlElement.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-18T11:12:21.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XmlText.cpp",
+              "DocumentMoniker": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlText.cpp",
+              "RelativeDocumentMoniker": "XMLParser\\XmlText.cpp",
+              "ToolTip": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlText.cpp",
+              "RelativeToolTip": "XMLParser\\XmlText.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-18T10:54:01.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "XmlText.h",
               "DocumentMoniker": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlText.h",
               "RelativeDocumentMoniker": "XMLParser\\XmlText.h",
               "ToolTip": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlText.h",
               "RelativeToolTip": "XMLParser\\XmlText.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-14T08:10:42.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "XmlNode.h",
               "DocumentMoniker": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlNode.h",
               "RelativeDocumentMoniker": "XMLParser\\XmlNode.h",
               "ToolTip": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\XmlNode.h",
               "RelativeToolTip": "XMLParser\\XmlNode.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-14T07:39:39.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\main.cpp",
               "RelativeDocumentMoniker": "XMLParser\\main.cpp",
@@ -82,8 +132,7 @@
               "RelativeToolTip": "XMLParser\\main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-14T07:38:40.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T07:38:40.698Z"
             },
             {
               "$type": "Bookmark",

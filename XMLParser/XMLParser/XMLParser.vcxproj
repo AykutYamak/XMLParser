@@ -124,9 +124,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="XmlElement.cpp" />
     <ClCompile Include="XmlText.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="XmlElement.h" />
     <ClInclude Include="XmlNode.h" />
     <ClInclude Include="XmlText.h" />
   </ItemGroup>

@@ -21,12 +21,18 @@
     <ClCompile Include="XmlText.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="XmlElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="XmlNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="XmlText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlElement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
