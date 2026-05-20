@@ -48,4 +48,16 @@ public:
 		}
 		return result;
 	}
+	class Iterator {
+	private:
+		std::vector<XmlNode*>::iterator current;
+	public:
+		Iterator(std::vector<XmlNode*>::iterator it) : current(it){}
+		Iterator& operator++() { ++current; return *this; }
+		XmlNode*& operator*() { return *current; }
+		bool operator!=(const Iterator& other) const { return current != other.current; }
+	};
+
+	Iterator begin() { return Iterator(children.begin()); }
+	Iterator end() { return Iterator(children.end()); }
 };
