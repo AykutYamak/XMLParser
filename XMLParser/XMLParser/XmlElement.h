@@ -15,11 +15,11 @@ private:
 public:
 	XmlElement() : XmlNode(), name(""){}
 	XmlElement(const std::string& elementName) : XmlNode(), name(elementName) {}
-	XmlElement(const XmlElement&) = delete;
-	XmlElement& operator=(const XmlElement&) = delete;
+	XmlElement(const XmlElement& other) = delete;
+	XmlElement& operator=(const XmlElement& other) = delete;
 	~XmlElement() override;
 
-	void print(int indent = 0) const override;
+	void print(std::ostream& os, int indent = 0) const override;
 	XmlNode* clone() const override;
 
 	void addChild(XmlNode* child);
@@ -48,6 +48,8 @@ public:
 		}
 		return result;
 	}
+
+
 	class Iterator {
 	private:
 		std::vector<XmlNode*>::iterator current;

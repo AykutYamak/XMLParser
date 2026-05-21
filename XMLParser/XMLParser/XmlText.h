@@ -9,12 +9,12 @@ public:
 	XmlText() : XmlNode(), content(""){}
 	XmlText(const std::string& textContent) : XmlNode(), content(textContent) {}
 
-	XmlText(const XmlText&) = delete;
-	XmlText& operator=(const XmlText&) = delete;
+	XmlText(const XmlText& other) = delete;
+	XmlText& operator=(const XmlText& other) = delete;
 
 	~XmlText() override = default;
 
-	void print(int indent = 0) const override;
+	void print(std::ostream& os,int indent = 0) const override;
 	XmlNode* clone() const override;
 
 	const std::string& getContent() const { return content; }
