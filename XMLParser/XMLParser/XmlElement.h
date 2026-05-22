@@ -26,6 +26,17 @@ public:
 	void addAttribute(const std::string& key, const std::string& value);
 	const std::string& getName() const { return this->name; }
 
+	void removeAttribute(const std::string& key) {
+		size_t attributesSize = attributes.size();
+		for (size_t i = 0; i < attributesSize; ++i) {
+			if (attributes[i].key == key)
+			{
+				attributes.erase(attributes.begin() + i);
+				break;
+			}
+		}
+	}
+
 	std::string& operator[](const std::string& key) {
 		for (XmlAttribute& attribute : attributes)
 		{

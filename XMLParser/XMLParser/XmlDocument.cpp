@@ -6,8 +6,7 @@
 #include <vector>
 
 XmlDocument::~XmlDocument() {
-	delete root;
-	root = nullptr;
+	clear();
 }
 
 std::string XmlDocument::trim(const std::string& str) const {
@@ -86,13 +85,7 @@ void XmlDocument::load(const std::string& filename) {
 	std::ifstream file(filename);
 	if (!file.is_open()) throw FileException("Could not open file for reading: " + filename);
 	
-	if (root)
-	{
-		delete root;
-		root = nullptr;
-	}
-	registry.clear();
-	autoIdCounter = 0;
+	clear();
 	std::vector<XmlElement*> parseStack;
 	std::string line;
 
@@ -137,8 +130,7 @@ void XmlDocument::load(const std::string& filename) {
 	}
 	catch (...)
 	{
-		delete root;
-		root = nullptr;
+		clear();
 		file.close();
 		throw;
 	}
@@ -157,6 +149,16 @@ void XmlDocument::save(const std::string& filename) const{
 
 	root->print(file, 0);
 	file.close();
+}
+
+void XmlDocument::clear() {
+	if (root)
+	{
+		delete root;
+		root = nullptr;
+	}
+	registry.clear();
+	autoIdCounter = 0;
 }
 
 std::vector<std::string> XmlDocument::splitXpath(const std::string& query) const {
@@ -198,7 +200,7 @@ std::string XmlDocument::extractElementText(XmlElement* element) const {
 }
 
 std::vector<XmlElement*> XmlDocument::evaluateXpathStep(const std::vector<XmlElement*>& currentNodes, const std::string& step) const {
-	std::vector<XmlElement*> nextNodes;
+	std::vector<XmlElement*> filteredNodes;
 
 	std::string tagName = step;
 	std::string condition = "";
@@ -216,71 +218,74 @@ std::vector<XmlElement*> XmlDocument::evaluateXpathStep(const std::vector<XmlEle
 	for (size_t i = 0; i < currentNodesSize; i++)
 	{
 		std::vector<XmlElement*> children = currentNodes[i]->getChildrenOfType<XmlElement>();
+		std::vector<XmlElement*> matchingChildren;
 		size_t childrenSize = children.size();
 		for (size_t j = 0; j < childrenSize; j++)
 		{
 			if (tagName == "*" || children[j]->getName() == tagName)
 			{
-				nextNodes.push_back(children[j]);
+				matchingChildren.push_back(children[j]);
 			}
 		}
-	}
-	if (condition.empty())
-	{
-		return nextNodes;
-	}
-
-	std::vector<XmlElement*> filteredNodes;
-	bool isIndex = true;
-	size_t conditionLength = condition.length();
-	for (size_t i = 0; i < conditionLength; i++)
-	{
-		if (condition[i] < '0' || condition[i] > '9')
+		if (condition.empty() || condition[0] == '@')
 		{
-			isIndex = false;
-			break;
-		}
-	}
-
-	if (isIndex && !condition.empty())
-	{
-		int index = std::stoi(condition);
-		if (index >= 0 && index < nextNodes.size()) {
-			filteredNodes.push_back(nextNodes[index]);
-		}
-	}
-	else
-	{
-		size_t eqPos = condition.find('=');
-		if (eqPos != std::string::npos)
-		{
-			std::string childTagName = condition.substr(0, eqPos);
-			std::string expectedValue = condition.substr(eqPos + 1);
-			if (expectedValue.length() >= 2 && expectedValue[0] == '"')
+			size_t matchingChildrenSize = matchingChildren.size();
+			for (size_t j = 0; j < matchingChildrenSize; j++)
 			{
-				expectedValue = expectedValue.substr(1, expectedValue.length() - 2);
+				filteredNodes.push_back(matchingChildren[j]);
 			}
-			size_t nextNodesSize = nextNodes.size();
-			for (size_t i = 0; i < nextNodesSize; i++)
+			continue;
+		}
+		bool isIndex = true;
+		size_t conditionLength = condition.length();
+		for (size_t j = 0; j < conditionLength; j++)
+		{
+			if (condition[j] < '0' || condition[j] > '9')
 			{
-				std::vector<XmlElement*> subChildren = nextNodes[i]->getChildrenOfType<XmlElement>();
-				bool conditionMet = false;
-				size_t subChildrenSize = subChildren.size();
-				for (size_t j = 0; j < subChildrenSize; j++)
+				isIndex = false;
+				break;
+			}
+		}
+		if (isIndex && !condition.empty())
+		{
+			int index = std::stoi(condition);
+			if (index >= 0 && index < matchingChildren.size()) {
+				filteredNodes.push_back(matchingChildren[index]);
+			}
+		}
+		else
+		{
+			size_t eqPos = condition.find('=');
+			if (eqPos != std::string::npos)
+			{
+				std::string childTagName = condition.substr(0, eqPos);
+				std::string expectedValue = condition.substr(eqPos + 1);
+				if (expectedValue.length() >= 2 && expectedValue[0] == '"')
 				{
-					if (subChildren[j]->getName() == childTagName)
+					expectedValue = expectedValue.substr(1, expectedValue.length() - 2);
+				}
+				size_t matchingChildrenSize = matchingChildren.size();
+				for (size_t j = 0; j < matchingChildrenSize; j++)
+				{
+					std::vector<XmlElement*> subChildren = matchingChildren[j]->getChildrenOfType<XmlElement>();
+					bool conditionMet = false;
+					size_t subChildrenSize = subChildren.size();
+					for (size_t n = 0; n < subChildrenSize; n++)
 					{
-						std::string actualValue = extractElementText(subChildren[j]);
-						if (actualValue == expectedValue)
+						if (subChildren[n]->getName() == childTagName)
 						{
-							conditionMet = true;
-							break;
+							std::string actualValue = extractElementText(subChildren[n]);
+							if (actualValue == expectedValue)
+							{
+								conditionMet = true;
+								break;
+							}
 						}
 					}
-				}
-				if (conditionMet)
-				{
-					filteredNodes.push_back(nextNodes[i]);
+					if (conditionMet)
+					{
+						filteredNodes.push_back(matchingChildren[j]);
+					}
 				}
 			}
 		}
@@ -297,11 +302,13 @@ std::vector<std::string> XmlDocument::xpath(const std::string& query) const {
 	bool extractAttribute = false;
 	std::string targetAttribute = "";
 
-	if (steps.back()[0] == '@')
+	std::string lastStep = steps.back();
+	size_t bracketPos = lastStep.find("[@");
+	if (bracketPos != std::string::npos)
 	{
 		extractAttribute = true;
-		targetAttribute = steps.back().substr(1);
-		steps.pop_back();
+		size_t closeBracket = lastStep.find(']', bracketPos);
+		targetAttribute = lastStep.substr(bracketPos +2, closeBracket-bracketPos -2);
 	}
 
 	std::vector<XmlElement*> currentNodes;

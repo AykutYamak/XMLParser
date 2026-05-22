@@ -26,6 +26,7 @@ public:
 
 	void load(const std::string& filename);
 	void save(const std::string& filename) const;
+	void clear();
 	XmlElement* getRoot() const { return root; }
 	XmlElement* getElementById(const std::string& id) const { return registry.get(id); }
 	

@@ -129,6 +129,8 @@
     <ClCompile Include="XmlText.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="Commands.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="IdDictionary.h" />
     <ClInclude Include="XmlDocument.h" />
