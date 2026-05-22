@@ -44,5 +44,8 @@
     <ClInclude Include="XmlDocument.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IdDictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

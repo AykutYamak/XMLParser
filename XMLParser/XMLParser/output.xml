@@ -1,0 +1,11 @@
+<library>
+    <book id="1" genre="sci-fi">
+        Dune
+    </book>
+    <book id="2" genre="fantasy">
+        The Hobbit
+    </book>
+    <book id="99" author="Isaac Asimov">
+        Foundation
+    </book>
+</library>

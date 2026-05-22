@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exception.h" />
+    <ClInclude Include="IdDictionary.h" />
     <ClInclude Include="XmlDocument.h" />
     <ClInclude Include="XmlElement.h" />
     <ClInclude Include="XmlNode.h" />
