@@ -124,19 +124,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="XmlDocument.cpp" />
-    <ClCompile Include="XmlElement.cpp" />
-    <ClCompile Include="XmlText.cpp" />
+    <ClCompile Include="XmlCore\XmlDocument.cpp" />
+    <ClCompile Include="XmlCore\XmlElement.cpp" />
+    <ClCompile Include="XmlCore\XmlText.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Command.h" />
-    <ClInclude Include="Commands.h" />
-    <ClInclude Include="Exception.h" />
-    <ClInclude Include="IdDictionary.h" />
-    <ClInclude Include="XmlDocument.h" />
-    <ClInclude Include="XmlElement.h" />
-    <ClInclude Include="XmlNode.h" />
-    <ClInclude Include="XmlText.h" />
+    <ClInclude Include="CLI\Command.h" />
+    <ClInclude Include="CLI\Commands.h" />
+    <ClInclude Include="Exceptions\Exception.h" />
+    <ClInclude Include="XmlCore\IdDictionary.h" />
+    <ClInclude Include="XmlCore\XmlDocument.h" />
+    <ClInclude Include="XmlCore\XmlElement.h" />
+    <ClInclude Include="XmlCore\XmlNode.h" />
+    <ClInclude Include="XmlCore\XmlText.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

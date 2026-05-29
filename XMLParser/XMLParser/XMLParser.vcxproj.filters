@@ -13,45 +13,54 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="XmlCore">
+      <UniqueIdentifier>{950fd41a-4221-42bd-bbeb-f8b1f4f27039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLI">
+      <UniqueIdentifier>{b63b4878-b724-498e-b43d-6819d576e41a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exceptions">
+      <UniqueIdentifier>{07aab632-c9ac-4073-a942-0599576643c7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="XmlText.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="XmlCore\XmlDocument.cpp">
+      <Filter>XmlCore</Filter>
     </ClCompile>
-    <ClCompile Include="XmlElement.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="XmlCore\XmlElement.cpp">
+      <Filter>XmlCore</Filter>
     </ClCompile>
-    <ClCompile Include="XmlDocument.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="XmlCore\XmlText.cpp">
+      <Filter>XmlCore</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="XmlNode.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="XmlCore\IdDictionary.h">
+      <Filter>XmlCore</Filter>
     </ClInclude>
-    <ClInclude Include="XmlText.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="XmlCore\XmlDocument.h">
+      <Filter>XmlCore</Filter>
     </ClInclude>
-    <ClInclude Include="XmlElement.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="XmlCore\XmlElement.h">
+      <Filter>XmlCore</Filter>
     </ClInclude>
-    <ClInclude Include="Exception.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="XmlCore\XmlNode.h">
+      <Filter>XmlCore</Filter>
     </ClInclude>
-    <ClInclude Include="XmlDocument.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="XmlCore\XmlText.h">
+      <Filter>XmlCore</Filter>
     </ClInclude>
-    <ClInclude Include="IdDictionary.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Exceptions\Exception.h">
+      <Filter>Exceptions</Filter>
     </ClInclude>
-    <ClInclude Include="Command.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="CLI\Command.h">
+      <Filter>CLI</Filter>
     </ClInclude>
-    <ClInclude Include="Commands.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="CLI\Commands.h">
+      <Filter>CLI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

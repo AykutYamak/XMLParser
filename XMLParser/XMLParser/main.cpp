@@ -1,9 +1,9 @@
 ﻿#include <iostream>
 #include <vector>
 #include <string>
-#include "XmlDocument.h"
-#include "Exception.h"
-#include "Commands.h"
+#include "XmlCore/XmlDocument.h"
+#include "Exceptions/Exception.h"
+#include "CLI/Commands.h"
 
 struct EntryCommand {
     std::string name;
