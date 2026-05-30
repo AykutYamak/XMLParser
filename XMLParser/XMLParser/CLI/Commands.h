@@ -1,9 +1,13 @@
-#pragma once
+﻿#pragma once
 #include "Command.h"
 #include <iostream>
 #include "../XmlCore/XmlText.h"
 #include "../Exceptions/Exception.h"
 
+/**
+ * @brief Команда за принтиране на XML дървото (команда: print).
+ * @details Извежда цялото XML дърво в конзолата с подходящо форматиране (отстъпи).
+ */
 class PrintCommand :public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
@@ -22,6 +26,11 @@ public:
 	}
 };
 
+/**
+ * @brief Команда за изпълнение на XPath заявки (команда: xpath).
+ * @details Извиква търсачката на документа и извежда номериран списък с резултатите.
+ * Очаква заявката да бъде подадена като аргумент.
+ */
 class XPathCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
@@ -52,6 +61,10 @@ public:
 	}
 };
 
+/**
+ * @brief Команда за запазване на текущия файл (команда: save).
+ * @details Презаписва оригиналния файл, от който е зареден документът.
+ */
 class SaveCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override
@@ -79,6 +92,10 @@ public:
 	}
 };
 
+/**
+ * @brief Команда за запазване във файл с ново име (команда: saveas).
+ * @details Позволява пътища с интервали, ако са оградени в кавички.
+ */
 class SaveAsCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
@@ -112,6 +129,10 @@ public:
 
 };
 
+/**
+ * @brief Команда за извличане на стойност на атрибут (команда: select).
+ * @details Очаква ID на елемент и ключ на атрибут. Извежда стойността му.
+ */
 class SelectCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
@@ -142,6 +163,10 @@ public:
 	}
 };
 
+/**
+ * @brief Команда за задаване на стойност на атрибут (команда: set).
+ * @details Добавя нов атрибут или обновява съществуващ по дадено ID на елемент.
+ */
 class SetCommand :public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
@@ -165,6 +190,10 @@ public:
 	}
 };
 
+/**
+ * @brief Команда за изтриване на атрибут (команда: delete).
+ * @details Премахва атрибут от елемент по зададено ID и ключ.
+ */
 class DeleteCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
@@ -194,6 +223,10 @@ public:
 	}
 };
 
+/**
+ * @brief Команда за извеждане на атрибутите на всички деца (команда: children).
+ * @details Извежда списък с всички деца на подадения елемент (по ID) и техните атрибути.
+ */
 class ChildrenCommand :public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
@@ -232,6 +265,10 @@ public:
 	}
 };
 
+/**
+ * @brief Команда за достъпване на N-тото дете (команда: child).
+ * @details Очаква ID на родителя и индекс N. Принтира форматирано самото дете.
+ */
 class ChildCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
@@ -251,7 +288,7 @@ public:
 		int n = std::stoi(n_str);
 		std::vector<XmlElement*> kids = el->getChildrenOfType<XmlElement>();
 
-		if (n >= 0 && n < kids.size()) {
+		if (n >= 0 && n < (int)kids.size()) {
 			std::cout << "Child " << n << " details" << std::endl;
 			kids[n]->print(std::cout, 0);
 		}
@@ -262,6 +299,10 @@ public:
 	}
 };
 
+/**
+ * @brief Команда за извличане на текст (команда: text).
+ * @details Връща цялото текстово съдържание (XmlText възли) в даден елемент по ID.
+ */
 class TextCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
@@ -284,7 +325,10 @@ public:
 	}
 };
 
-
+/**
+*@brief Команда за създаване на ново дете(команда: newChild).
+* @details Добавя нов празен елемент(<new_element>) към зададен родител и го регистрира с уникално ID.
+*/
 class NewChildCommand :public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {

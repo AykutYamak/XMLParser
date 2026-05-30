@@ -1,19 +1,48 @@
-﻿#include <iostream>
+﻿/**
+ * @mainpage XML Parser - Документация на курсов проект
+ * * @section intro_sec Въведение
+ * Това е конзолно приложение, разработено на C++, което предоставя възможност за
+ * зареждане, редактиране и запазване на XML документи. Проектът имплементира
+ * собствена дървовидна структура и не използва външни библиотеки за парсване.
+ * * @section features_sec Основни функционалности
+ * - Пълно управление на паметта с каскадни деструктори и Move семантики.
+ * - Поддръжка на XPath заявки за бързо търсене на възли и атрибути.
+ * - Използване на Command Design Pattern за лесно разширяване на CLI интерфейса.
+ * - Автоматично управление на уникални идентификатори (ID регистър).
+ */
+
+#include <iostream>
 #include <vector>
 #include <string>
 #include "XmlCore/XmlDocument.h"
 #include "Exceptions/Exception.h"
 #include "CLI/Commands.h"
 
+ /**
+  * @brief Структура за съхранение на регистрираните команди в менюто.
+  * @details Свързва текстовото име на командата, указател към обекта,
+  * който я изпълнява, и кратко описание за help менюто.
+  */
 struct EntryCommand {
-    std::string name;
-    Command* command;
-    std::string description;
+    std::string name;        ///< Името на командата (напр. "print")
+    Command* command;        ///< Указател към обекта, имплементиращ логиката
+    std::string description; ///< Описание и очаквани параметри (за help менюто)
 };
 
+/**
+ * @brief Главна функция (Entry point) на приложението.
+ * @details Инициализира XML документа и списъка с налични команди.
+ * Стартира безкраен цикъл, който чете потребителския
+ * вход, разделя го на име на команда и аргументи, и динамично извиква
+ * съответния Command обект. Съдържа защити срещу изключения (Exceptions)
+ * и отговаря за безопасното освобождаване на паметта при изход.
+ * @return 0 при успешно завършване на програмата.
+ */
 int main() {
     XmlDocument doc;
     std::vector<EntryCommand> menu;
+
+    // Регистрация на всички поддържани команди
     menu.push_back({ "print", new PrintCommand(), "Prints the XML tree"});
     menu.push_back({ "save", new SaveCommand(), "Saves changes to the current file"});
     menu.push_back({ "saveas", new SaveAsCommand(), "Saves changes to a specific file. Usage: saveas <file>"});
@@ -28,6 +57,7 @@ int main() {
 
     std::string inputLine;
 
+    // Главен цикъл на приложението
     while (true)
     {
         std::cout << "> ";
@@ -39,6 +69,7 @@ int main() {
         std::string commandName = "";
         std::string args = "";
            
+        // Разделяне на команда и аргументи
         size_t spacePos = inputLine.find(' ');
         if (spacePos != std::string::npos) 
         { 
@@ -60,9 +91,10 @@ int main() {
             commandName = inputLine;
         }
 
+        // Обработка на вградените команди
         if (commandName == "exit")
         {
-            std::cout << "Exiting XML Parser..." << std::endl;
+            std::cout << "Exiting the program..." << std::endl;
             break;
         }
         else if (commandName == "help")
@@ -88,7 +120,7 @@ int main() {
             try
             {
                 doc.load(args);
-                std::cout << "Successfully loaded " << args << std::endl;
+                std::cout << "Successfully opened " << args << std::endl;
             }
             catch (const Exception& e)
             {
@@ -99,9 +131,11 @@ int main() {
         else if (commandName == "close")
         {
             doc.clear();
-            std::cout << "Document closed and memory cleared!" << std::endl;
+            std::cout << "Document closed " << doc.getFilePath() << " and memory cleared!" << std::endl;
             continue;
         }
+
+        // Търсене и изпълнение на динамичните команди от менюто
         bool commandFound = false;
         size_t menuCount = menu.size();
         for (size_t i = 0; i < menuCount; i++)
@@ -130,7 +164,8 @@ int main() {
             std::cout << "Unknown command: '" << commandName << "'. Type 'help' to see available commands." << std::endl;
         }
     }
-    
+
+    // Безопасно освобождаване на паметта за командите при изход
     size_t menuCount = menu.size();
     for (size_t i = 0; i < menuCount; i++)
     {
