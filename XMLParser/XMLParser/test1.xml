@@ -1,0 +1,6 @@
+<university id="su">
+    <faculty id="fmi">
+        <student id="s1" year="1">John</student>
+        <student id="s2" year="2">Alice</student>
+    </faculty>
+</university>
