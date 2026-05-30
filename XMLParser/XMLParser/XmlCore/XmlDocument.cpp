@@ -122,6 +122,46 @@ void XmlDocument::load(const std::string& filename) {
 				if (parseStack.empty()) throw ParseException("Mismatched closing tag found without an opening tag.");
 
 				parseStack.pop_back();
+				continue;
+			}
+
+			size_t firstClose = trimmed.find('>');
+			size_t lastOpen = trimmed.rfind("</");
+			if (firstClose!=std::string::npos && lastOpen != std::string::npos && firstClose < lastOpen)
+			{
+				std::string openTagContent = trimmed.substr(1, firstClose - 1);
+				std::string textContent = trimmed.substr(firstClose + 1, lastOpen - firstClose - 1);
+				XmlElement* newElement = parseOpeningTag(openTagContent);
+				std::string uniqueId = ensureUniqueId((*newElement)["id"]);
+				(*newElement)["id"] = uniqueId;
+				registry.add(uniqueId, newElement);
+				if (!textContent.empty())
+				{
+					newElement->addChild(new XmlText(textContent));
+				}
+				if (parseStack.empty())
+				{
+					if (root == nullptr)
+					{
+						root = newElement;
+					}
+					else
+					{
+						if (root->getName() != "document_wrapper")
+						{
+							XmlElement* wrapper = new XmlElement("document_wrapper");
+							wrapper->addChild(root);
+							root = wrapper;
+						}
+						root->addChild(newElement);
+					}
+				}
+				else
+				{
+					parseStack.back()->addChild(newElement);
+				}
+				continue;
+
 			}
 			else if (trimmed.front() == '<' && trimmed.back() == '>')
 			{
@@ -136,7 +176,20 @@ void XmlDocument::load(const std::string& filename) {
 				registry.add(uniqueId, newElement);
 
 				if (parseStack.empty()){
-					root = newElement;
+					if (root == nullptr)
+					{
+						root = newElement;
+					}
+					else
+					{
+						if (root->getName() != "document_wrapper")
+						{
+							XmlElement* wrapper = new XmlElement("document_wrapper");
+							wrapper->addChild(root);
+							root = wrapper;
+						}
+						root->addChild(newElement);
+					}
 				}
 				else{
 					parseStack.back()->addChild(newElement);
@@ -167,7 +220,7 @@ void XmlDocument::load(const std::string& filename) {
 }
 
 void XmlDocument::saveAs(const std::string& filename) const{
-	if (!root) throw FileException("Cannot save an empty document. Please open or create a file first."); return;
+	if (!root) throw FileException("Cannot save an empty document. Please open or create a file first."); 
 
 	std::ofstream file(filename);
 

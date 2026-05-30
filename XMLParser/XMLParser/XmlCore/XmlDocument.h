@@ -11,7 +11,8 @@ private:
 
 	void moveFrom(XmlDocument&& other);
 	
-	//Помощни функции за съкращение на load функцията
+	//Помощни функции за съкращение на 
+	// функцията
 	std::string trim(const std::string& str) const;
 	std::string ensureUniqueId(const std::string& parseId);
 	XmlElement* parseOpeningTag(const std::string& content) const;
@@ -34,6 +35,9 @@ public:
 	void save() const;
 	void saveAs(const std::string& filename) const;
 	void clear();
+	void registerElement(const std::string& id, XmlElement* element) {
+		registry.add(id, element);
+	}
 	XmlElement* getRoot() const { return root; }
 	XmlElement* getElementById(const std::string& id) const { return registry.get(id); }
 	

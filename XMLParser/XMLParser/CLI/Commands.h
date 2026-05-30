@@ -300,7 +300,8 @@ public:
 		static int newChildCounter = 1;
 		std::string tempId = "newChild_" + std::to_string(newChildCounter++);
 
-		(*newElement)["id"] = tempId;	
+		(*newElement)["id"] = tempId;
+		doc.registerElement(tempId, newElement);
 		el->addChild(newElement);
 
 		std::cout << "New child added to '" << id << "' with generated id '" << tempId << "'." << std::endl;
