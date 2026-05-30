@@ -125,7 +125,10 @@ void XmlDocument::load(const std::string& filename) {
 			}
 			else if (trimmed.front() == '<' && trimmed.back() == '>')
 			{
-				std::string content = trimmed.substr(1, trimmed.length() - 2);
+				bool isSelfClosing = (trimmed.length() >= 2 && trimmed[trimmed.length() - 2] == '/');
+				size_t charsToDrop = isSelfClosing ? 3 : 2;
+				std::string content = trimmed.substr(1, trimmed.length() - charsToDrop);
+
 				XmlElement* newElement = parseOpeningTag(content);
 				std::string uniqueId = ensureUniqueId((*newElement)["id"]);
 				
@@ -138,7 +141,11 @@ void XmlDocument::load(const std::string& filename) {
 				else{
 					parseStack.back()->addChild(newElement);
 				}
-				parseStack.push_back(newElement);
+
+				if (!isSelfClosing)
+				{
+					parseStack.push_back(newElement);
+				}
 			}
 			else
 			{
@@ -160,7 +167,7 @@ void XmlDocument::load(const std::string& filename) {
 }
 
 void XmlDocument::saveAs(const std::string& filename) const{
-	if (!root) return;
+	if (!root) throw FileException("Cannot save an empty document. Please open or create a file first."); return;
 
 	std::ofstream file(filename);
 
@@ -176,7 +183,7 @@ void XmlDocument::saveAs(const std::string& filename) const{
 void XmlDocument::save() const{
 	if (openedFilePath.empty())
 	{
-		throw FileException("Could not open file for writing: " + openedFilePath);
+		throw FileException("No file is currently open to save into. Use 'saveas <path>' instead.");
 	}
 	saveAs(openedFilePath);
 }

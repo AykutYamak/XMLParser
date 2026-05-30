@@ -8,21 +8,23 @@
 struct EntryCommand {
     std::string name;
     Command* command;
+    std::string description;
 };
 
 int main() {
     XmlDocument doc;
     std::vector<EntryCommand> menu;
-    menu.push_back({ "print", new PrintCommand() });
-    menu.push_back({ "save", new SaveCommand() });
-    menu.push_back({ "xpath", new XPathCommand() });
-    menu.push_back({ "select", new SelectCommand() });
-    menu.push_back({ "set", new SetCommand() });
-    menu.push_back({ "delete", new DeleteCommand() });
-    menu.push_back({ "children", new ChildrenCommand() });
-    menu.push_back({ "child", new ChildCommand() });
-    menu.push_back({ "newChild", new NewChildCommand() });
-    menu.push_back({ "text", new TextCommand() });
+    menu.push_back({ "print", new PrintCommand(), "Prints the XML tree"});
+    menu.push_back({ "save", new SaveCommand(), "Saves changes to the current file"});
+    menu.push_back({ "saveas", new SaveAsCommand(), "Saves changes to a specific file. Usage: saveas <file>"});
+    menu.push_back({ "xpath", new XPathCommand(), "Executes an XPath query. Usage: xpath <query>"});
+    menu.push_back({ "select", new SelectCommand() ,"Selects an attribute by element ID. Usage: select <id> <key>"});
+    menu.push_back({ "set", new SetCommand(), "Sets or updates an attribute. Usage: set <id> <key> <value>"});
+    menu.push_back({ "delete", new DeleteCommand(), "Deletes an attribute by element ID. Usage: delete <id> <key>"});
+    menu.push_back({ "children", new ChildrenCommand(), "Lists attributes of all children of an element. Usage: children <id>"});
+    menu.push_back({ "child", new ChildCommand(), "Retrieves the child element at the specified index N. Usage child <id> <n>"});
+    menu.push_back({ "newChild", new NewChildCommand() ,"Creates a new child element. Usage newChild <id>"});
+    menu.push_back({ "text", new TextCommand() ,"Sets the inner text of an element. Usage: text <id> <text>"});
 
     std::string inputLine;
 
@@ -65,14 +67,14 @@ int main() {
         }
         else if (commandName == "help")
         {
-            std::cout << "Available command: " << std::endl;
+            std::cout << "Available commands: " << std::endl;
             std::cout << " open <file> - Loads an XML file into memory" << std::endl;
             std::cout << " close - Closes the currently opened file" << std::endl;
             std::cout << " exit - Quits the program" << std::endl;
             size_t menuCount = menu.size();
             for (size_t i = 0; i < menuCount; i++)
             {
-                std::cout << "  " << menu[i].name << std::endl;
+                std::cout << "  " << menu[i].name << " - " << menu[i].description << std::endl;
             }
             continue;
         }
@@ -106,7 +108,19 @@ int main() {
         {
             if (menu[i].name == commandName)
             {
-                menu[i].command->execute(doc, args);
+                try 
+                {
+                    menu[i].command->execute(doc, args);
+                }
+                catch (const Exception& e) {
+                    std::cout << "Command error: " << e.what() << std::endl;
+                }
+                catch (const std::exception& e) {
+                    std::cout << "System error: " << e.what() << std::endl;
+                }
+                catch (...) {
+                    std::cout << "An unknown error occured during execution." << std::endl;
+                }
                 commandFound = true;
                 break;
             }

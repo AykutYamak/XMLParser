@@ -7,6 +7,10 @@
 class PrintCommand :public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return;
+		}
 		if (doc.getRoot())
 		{
 			doc.getRoot()->print(std::cout, 0);
@@ -21,6 +25,10 @@ public:
 class XPathCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return; 
+		}
 		if (args.empty())
 		{
 			std::cout << "Error: XPath query missing. Usage: xpath <query>." << std::endl;
@@ -48,11 +56,17 @@ class SaveCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override
 	{
+		if (!doc.getRoot())
+		{
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return;
+		}
 		if (!args.empty())
 		{
 			std::cout << "Error: 'save' command does not take any arguments. Use 'saveas <path>' to save to a different file." << std::endl;
 			return;
 		}
+
 		try
 		{
 			doc.save();
@@ -65,9 +79,46 @@ public:
 	}
 };
 
+class SaveAsCommand : public Command {
+public:
+	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return; 
+		}
+		if (args.empty())
+		{
+			std::cout << "Error: 'saveas' requires a file path. Usage: saveas <path>" << std::endl;
+			return;
+		}
+		std::string targetPath = args;
+		if (targetPath.front() == '"' && targetPath.back() == '"')
+		{
+			targetPath = targetPath.substr(1, targetPath.length() - 2);
+		}
+		try
+		{
+			doc.saveAs(targetPath);
+			size_t lastSlash = targetPath.find_last_of("/\\");
+			std::string filename = (lastSlash == std::string::npos) ? targetPath : targetPath.substr(lastSlash + 1);
+			
+			std::cout << "Successfully saved " << filename << "\n";
+		}
+		catch (const Exception& e)
+		{
+			std::cout << "Error saving file: " << e.what() << '\n';
+		}
+	}
+
+};
+
 class SelectCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return; 
+		}
 		size_t spacePos = args.find(' ');
 		if (spacePos == std::string::npos)
 		{
@@ -94,6 +145,11 @@ public:
 class SetCommand :public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return; 
+		}
+
 		size_t firstSpace = args.find(' ');
 		if (firstSpace == std::string::npos) { std::cout << "Error: Usage: set <id> <key> <value>" << std::endl; return; }
 		size_t secondSpace = args.find(' ', firstSpace + 1);
@@ -112,6 +168,10 @@ public:
 class DeleteCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return; 
+		}
 		size_t spacePos = args.find(' ');
 		if (spacePos == std::string::npos)
 		{
@@ -137,6 +197,10 @@ public:
 class ChildrenCommand :public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return; 
+		}
 		std::string id = args;
 		XmlElement* el = doc.getElementById(id);
 
@@ -171,6 +235,10 @@ public:
 class ChildCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return; 
+		}
 		size_t spacePos = args.find(' ');
 		if (spacePos == std::string::npos) { std::cout << "Error: Usage: child <id> <n>" << std::endl; return; }
 
@@ -197,6 +265,10 @@ public:
 class TextCommand : public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return; 
+		}
 		std::string id = args;
 		XmlElement* el = doc.getElementById(id);
 		if(!el) {std::cout << "Element with id '" << id << "' not found." << std::endl; return;}
@@ -216,6 +288,10 @@ public:
 class NewChildCommand :public Command {
 public:
 	void execute(XmlDocument& doc, const std::string& args) override {
+		if (!doc.getRoot()) {
+			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
+			return; 
+		}
 		std::string id = args;
 		XmlElement* el = doc.getElementById(id);
 		if(!el) { std::cout << "Element with id '" << id << "' not found." << std::endl; return; }
