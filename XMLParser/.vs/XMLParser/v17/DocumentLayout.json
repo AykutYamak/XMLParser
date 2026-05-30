@@ -72,7 +72,7 @@
         },
         {
           "DockedHeight": 94,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,6 +81,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\main.cpp",
+              "RelativeDocumentMoniker": "XMLParser\\main.cpp",
+              "ToolTip": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\main.cpp",
+              "RelativeToolTip": "XMLParser\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-14T07:38:40.698Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -172,19 +185,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\main.cpp",
-              "RelativeDocumentMoniker": "XMLParser\\main.cpp",
-              "ToolTip": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\main.cpp",
-              "RelativeToolTip": "XMLParser\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-14T07:38:40.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Exception.h",
               "DocumentMoniker": "D:\\\u0421\u0423 \u0424\u041C\u0418\\1 \u041A\u0443\u0440\u0441\\\u0412\u0442\u043E\u0440\u0438 \u0441\u0435\u043C\u0435\u0441\u0442\u044A\u0440\\XMLParser\\XMLParser\\XMLParser\\Exceptions\\Exception.h",
@@ -193,8 +193,7 @@
               "RelativeToolTip": "XMLParser\\Exceptions\\Exception.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-30T08:10:42.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T08:10:42.636Z"
             },
             {
               "$type": "Document",
