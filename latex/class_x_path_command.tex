@@ -1,0 +1,62 @@
+\doxysection{XPath\+Command Клас Препратка}
+\hypertarget{class_x_path_command}{}\label{class_x_path_command}\index{XPathCommand@{XPathCommand}}
+
+
+Команда за изпълнение на XPath заявки (команда:\+ xpath).  
+
+
+
+
+{\ttfamily \+\#include $<$Commands.\+h$>$}
+
+
+
+Диаграма на наследяване за XPath\+Command:\+
+% FIG 0
+
+
+Граф на зависимости за класа XPath\+Command:\+
+% FIG 1
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_x_path_command_a439178dec708de67b4152107468ca70e}{execute}} (\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&doc, const std::\+string \&args) override
+\begin{DoxyCompactList}\small\item\em Изпълнява съответната команда върху подадения XML документ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Команда за изпълнение на XPath заявки (команда:\+ xpath). 
+
+Извиква търсачката на документа и извежда номериран списък с резултатите. Очаква заявката да бъде подадена като аргумент. 
+
+\label{class_x_path_command_doc-func-members}
+\Hypertarget{class_x_path_command_doc-func-members}
+\doxysubsection{Членове Функции(методи) Документация}
+\Hypertarget{class_x_path_command_a439178dec708de67b4152107468ca70e}\index{XPathCommand@{XPathCommand}!execute@{execute}}
+\index{execute@{execute}!XPathCommand@{XPathCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_x_path_command_a439178dec708de67b4152107468ca70e} 
+void XPath\+Command::\+execute (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&}]{doc}{, }\item[{const std::\+string \&}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Изпълнява съответната команда върху подадения XML документ. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em doc} & Референция към текущо заредения XML документ. \\
+\hline
+{\em args} & Аргументите на командата, подадени от потребителя (като стринг). \\
+\hline
+\end{DoxyParams}
+
+
+Заменя \doxymbox{\hyperlink{class_command_a693610de13df3a028abf715fdf5540a7}{Command}}.
+
+Граф с извикванията за тази функция:\+
+% FIG 2
+
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+CLI/\+Commands.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,146 @@
+\doxysection{Xml\+Node Клас Препратка}
+\hypertarget{class_xml_node}{}\label{class_xml_node}\index{XmlNode@{XmlNode}}
+
+
+Абстрактен базов клас за всички възли в XML дървото.  
+
+
+
+
+{\ttfamily \+\#include $<$Xml\+Node.\+h$>$}
+
+
+
+Диаграма на наследяване за Xml\+Node:\+
+% FIG 0
+
+
+Граф на зависимости за класа Xml\+Node:\+
+% FIG 1
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}\label{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e} 
+{\bfseries Xml\+Node} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по подразбиране. Инициализира възела без родител. \end{DoxyCompactList}\item 
+\Hypertarget{class_xml_node_ae6efa9b40aa905dda85c7a93489cf50a}\label{class_xml_node_ae6efa9b40aa905dda85c7a93489cf50a} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Xml\+Node} ()=default
+\begin{DoxyCompactList}\small\item\em Виртуален деструктор. Гарантира правилното изчистване на паметта при изтриване на обекти чрез указател към базовия клас. \end{DoxyCompactList}\item 
+\Hypertarget{class_xml_node_a7944211ab1f50728883d5fd4b86200e8}\label{class_xml_node_a7944211ab1f50728883d5fd4b86200e8} 
+{\bfseries Xml\+Node} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
+\item 
+\Hypertarget{class_xml_node_a4e7d52360602a8f26f61d901f283e20c}\label{class_xml_node_a4e7d52360602a8f26f61d901f283e20c} 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
+\item 
+\Hypertarget{class_xml_node_af2d18234dc3d987ebe4f5fff87f3e4ec}\label{class_xml_node_af2d18234dc3d987ebe4f5fff87f3e4ec} 
+{\bfseries Xml\+Node} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
+\item 
+\Hypertarget{class_xml_node_adacbfe075ca11f4c1ff230ab572fcbfa}\label{class_xml_node_adacbfe075ca11f4c1ff230ab572fcbfa} 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& {\bfseries operator=} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
+\item 
+virtual void \doxymbox{\hyperlink{class_xml_node_a24959aba794d80ab9dfcc88d0189ffcf}{print}} (std::\+ostream \&os, int indent=0) const =0
+\begin{DoxyCompactList}\small\item\em Извежда съдържанието на възела в подадения изходен поток. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_node_af646cb06fcbf8af8b0654030f25c681d}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em Създава точно (дълбоко) копие на текущия възел. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_node_a7d4aa65642386e9d0897651f190661c1}{get\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Връща родителския възел на текущия обект. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_xml_node_ac32e7763b1d39ba598cccf7639932fc5}{set\+Parent}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Задава нов родителски възел. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защитени атрибути}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_xml_node_a892ef0efed5d79ef553f92ab1580b770}\label{class_xml_node_a892ef0efed5d79ef553f92ab1580b770} 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\begin{DoxyCompactList}\small\item\em Указател към родителския възел (nullptr, ако е корен). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Абстрактен базов клас за всички възли в XML дървото. 
+
+
+\begin{DoxyItemize}
+\item Този клас дефинира общия интерфейс за всеки един компонент от XML документа (например елементи или обикновен текст). Съдържа информация за родителския възел и налага имплементацията на основни полиморфни методи от наследниците си. 
+\end{DoxyItemize}
+
+\label{class_xml_node_doc-func-members}
+\Hypertarget{class_xml_node_doc-func-members}
+\doxysubsection{Членове Функции(методи) Документация}
+\Hypertarget{class_xml_node_af646cb06fcbf8af8b0654030f25c681d}\index{XmlNode@{XmlNode}!clone@{clone}}
+\index{clone@{clone}!XmlNode@{XmlNode}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_xml_node_af646cb06fcbf8af8b0654030f25c681d} 
+virtual \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} Xml\+Node::\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Създава точно (дълбоко) копие на текущия възел. 
+
+\begin{DoxyReturn}{Връща}
+Указател към новосъздаденото копие. Паметта трябва да се управлява от извикващия. 
+\end{DoxyReturn}
+
+
+Заменя в \doxymbox{\hyperlink{class_xml_element_ab9866dbc3f71cc74319dfe1ea13c3bc6}{Xml\+Element}}, и \doxymbox{\hyperlink{class_xml_text_a75a9fbf8d36e077947d3810d6ba46b10}{Xml\+Text}}.
+
+Граф с извикванията за тази функция:\+
+% FIG 2
+\Hypertarget{class_xml_node_a7d4aa65642386e9d0897651f190661c1}\index{XmlNode@{XmlNode}!getParent@{getParent}}
+\index{getParent@{getParent}!XmlNode@{XmlNode}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily \label{class_xml_node_a7d4aa65642386e9d0897651f190661c1} 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} Xml\+Node::\+get\+Parent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Връща родителския възел на текущия обект. 
+
+\begin{DoxyReturn}{Връща}
+Указател към родителя или nullptr, ако възелът е корен. 
+\end{DoxyReturn}
+Граф с извикванията за тази функция:\+
+% FIG 3
+\Hypertarget{class_xml_node_a24959aba794d80ab9dfcc88d0189ffcf}\index{XmlNode@{XmlNode}!print@{print}}
+\index{print@{print}!XmlNode@{XmlNode}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_xml_node_a24959aba794d80ab9dfcc88d0189ffcf} 
+virtual void Xml\+Node::\+print (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{os}{, }\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Извежда съдържанието на възела в подадения изходен поток. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em os} & Изходният поток (напр. std::\+cout или std::\+ofstream), в който ще се пише. \\
+\hline
+{\em indent} & Броят интервали за отстъп, използвани за форматиран (pretty-\/print) изход. \\
+\hline
+\end{DoxyParams}
+
+
+Заменя в \doxymbox{\hyperlink{class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863}{Xml\+Element}}, и \doxymbox{\hyperlink{class_xml_text_ae4d3b9c75124751084b8913ad9dd00aa}{Xml\+Text}}.
+
+\Hypertarget{class_xml_node_ac32e7763b1d39ba598cccf7639932fc5}\index{XmlNode@{XmlNode}!setParent@{setParent}}
+\index{setParent@{setParent}!XmlNode@{XmlNode}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily \label{class_xml_node_ac32e7763b1d39ba598cccf7639932fc5} 
+void Xml\+Node::\+set\+Parent (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Задава нов родителски възел. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em p} & Указател към новия родителски възел. \\
+\hline
+\end{DoxyParams}
+Граф с извикванията за тази функция:\+
+% FIG 4
+Граф на извикванията за тази функция:\+
+% FIG 5
+
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Xml\+Node.\+h\end{DoxyCompactItemize}

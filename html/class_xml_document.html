@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="bg">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: XmlDocument Клас Препратка</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Генериран от Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Търсене" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_xml_document.html','','class_xml_document-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Зареждане...</div>
+<div class="SRStatus" id="Searching">Търсене...</div>
+<div class="SRStatus" id="NoMatches">Не намерено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">XmlDocument Клас Препратка</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Главен клас, представляващ целия XML документ.  
+ <a href="#details">Допълнително...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_xml_document_8h_source.html">XmlDocument.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф на зависимости за класа XmlDocument:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document__coll__graph.png" border="0" usemap="#a_xml_document_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Общодостъпни членове функции</h2></td></tr>
+<tr class="memitem:a71daa95a33b7a692549974258893b36e" id="r_a71daa95a33b7a692549974258893b36e"><td class="memItemLeft"><a id="a71daa95a33b7a692549974258893b36e" name="a71daa95a33b7a692549974258893b36e"></a>
+&#160;</td><td class="memItemRight"><b>XmlDocument</b> ()</td></tr>
+<tr class="memdesc:a71daa95a33b7a692549974258893b36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по подразбиране. Създава празен документ. <br /></td></tr>
+<tr class="memitem:ac75a0b253455ae6cb409f574a204b763" id="r_ac75a0b253455ae6cb409f574a204b763"><td class="memItemLeft"><a id="ac75a0b253455ae6cb409f574a204b763" name="ac75a0b253455ae6cb409f574a204b763"></a>
+&#160;</td><td class="memItemRight"><b>XmlDocument</b> (const <a class="el" href="class_xml_document.html">XmlDocument</a> &amp;other)=delete</td></tr>
+<tr class="memitem:af206e74ab423befdfad87840a663ac51" id="r_af206e74ab423befdfad87840a663ac51"><td class="memItemLeft"><a id="af206e74ab423befdfad87840a663ac51" name="af206e74ab423befdfad87840a663ac51"></a>
+<a class="el" href="class_xml_document.html">XmlDocument</a> &amp;&#160;</td><td class="memItemRight"><b>operator=</b> (const <a class="el" href="class_xml_document.html">XmlDocument</a> &amp;other)=delete</td></tr>
+<tr class="memitem:ab18742228f580a5e4ec87e4b39c8a68c" id="r_ab18742228f580a5e4ec87e4b39c8a68c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab18742228f580a5e4ec87e4b39c8a68c">~XmlDocument</a> ()</td></tr>
+<tr class="memdesc:ab18742228f580a5e4ec87e4b39c8a68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. Изчиства паметта, като изтрива корена (което каскадно изтрива цялото дърво).  <br /></td></tr>
+<tr class="memitem:a0d77b8e7b7ab3db31237945f8aee813b" id="r_a0d77b8e7b7ab3db31237945f8aee813b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0d77b8e7b7ab3db31237945f8aee813b">XmlDocument</a> (<a class="el" href="class_xml_document.html">XmlDocument</a> &amp;&amp;other)</td></tr>
+<tr class="memdesc:a0d77b8e7b7ab3db31237945f8aee813b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move конструктор. Позволява ефективно прехвърляне на дървото без копиране.  <br /></td></tr>
+<tr class="memitem:af5a47a07085a4c815fbf28fbfc0c57d0" id="r_af5a47a07085a4c815fbf28fbfc0c57d0"><td class="memItemLeft"><a class="el" href="class_xml_document.html">XmlDocument</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af5a47a07085a4c815fbf28fbfc0c57d0">operator=</a> (<a class="el" href="class_xml_document.html">XmlDocument</a> &amp;&amp;other)</td></tr>
+<tr class="memdesc:af5a47a07085a4c815fbf28fbfc0c57d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move оператор за присвояване.  <br /></td></tr>
+<tr class="memitem:a31230a8d6f168da8d3f7df395a05a304" id="r_a31230a8d6f168da8d3f7df395a05a304"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a31230a8d6f168da8d3f7df395a05a304">load</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a31230a8d6f168da8d3f7df395a05a304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зарежда и парсва XML файл от диска.  <br /></td></tr>
+<tr class="memitem:a8645fb13472af75e6772d61c6ebae567" id="r_a8645fb13472af75e6772d61c6ebae567"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8645fb13472af75e6772d61c6ebae567">save</a> () const</td></tr>
+<tr class="memdesc:a8645fb13472af75e6772d61c6ebae567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запазва промените върху текущо отворения файл.  <br /></td></tr>
+<tr class="memitem:ac01d57d4967d6fc57208e5ecf39caa78" id="r_ac01d57d4967d6fc57208e5ecf39caa78"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac01d57d4967d6fc57208e5ecf39caa78">saveAs</a> (const std::string &amp;filename) const</td></tr>
+<tr class="memdesc:ac01d57d4967d6fc57208e5ecf39caa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запазва документа в нов файл.  <br /></td></tr>
+<tr class="memitem:a46fc7356ae5e844bae416f58a868d5a9" id="r_a46fc7356ae5e844bae416f58a868d5a9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a46fc7356ae5e844bae416f58a868d5a9">clear</a> ()</td></tr>
+<tr class="memdesc:a46fc7356ae5e844bae416f58a868d5a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изчиства текущия документ от паметта (унищожава дървото и речника).  <br /></td></tr>
+<tr class="memitem:aed36928312f77e34cd6bfebf36bb402e" id="r_aed36928312f77e34cd6bfebf36bb402e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aed36928312f77e34cd6bfebf36bb402e">registerElement</a> (const std::string &amp;id, <a class="el" href="class_xml_element.html">XmlElement</a> *element)</td></tr>
+<tr class="memdesc:aed36928312f77e34cd6bfebf36bb402e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрира елемент в ID речника за бързо търсене.  <br /></td></tr>
+<tr class="memitem:a9c3a6ac4ee312b41cb27997a62883470" id="r_a9c3a6ac4ee312b41cb27997a62883470"><td class="memItemLeft"><a id="a9c3a6ac4ee312b41cb27997a62883470" name="a9c3a6ac4ee312b41cb27997a62883470"></a>
+<a class="el" href="class_xml_element.html">XmlElement</a> *&#160;</td><td class="memItemRight"><b>getRoot</b> () const</td></tr>
+<tr class="memdesc:a9c3a6ac4ee312b41cb27997a62883470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Връща указател към корена на XML дървото. <br /></td></tr>
+<tr class="memitem:a4670452d5ae240c4749e4fdce2c42118" id="r_a4670452d5ae240c4749e4fdce2c42118"><td class="memItemLeft"><a class="el" href="class_xml_element.html">XmlElement</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a4670452d5ae240c4749e4fdce2c42118">getElementById</a> (const std::string &amp;id) const</td></tr>
+<tr class="memdesc:a4670452d5ae240c4749e4fdce2c42118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Търси елемент по неговото ID.  <br /></td></tr>
+<tr class="memitem:a39b259f1b254f3e8bb2ea76e9fb9efad" id="r_a39b259f1b254f3e8bb2ea76e9fb9efad"><td class="memItemLeft"><a id="a39b259f1b254f3e8bb2ea76e9fb9efad" name="a39b259f1b254f3e8bb2ea76e9fb9efad"></a>
+const std::string &amp;&#160;</td><td class="memItemRight"><b>getFilePath</b> () const</td></tr>
+<tr class="memdesc:a39b259f1b254f3e8bb2ea76e9fb9efad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Връща пътя на текущо отворения файл. <br /></td></tr>
+<tr class="memitem:a8e9205a318c3709366738b3dceab4b43" id="r_a8e9205a318c3709366738b3dceab4b43"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8e9205a318c3709366738b3dceab4b43">xpath</a> (const std::string &amp;query) const</td></tr>
+<tr class="memdesc:a8e9205a318c3709366738b3dceab4b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изпълнява XPath заявка върху документа.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробно описание</h2>
+<div class="textblock"><p>Главен клас, представляващ целия XML документ. </p>
+<ul>
+<li></li>
+</ul>
+<p>Този клас управлява жизнения цикъл на XML дървото (започвайки от корена), поддържа речника за бързо търсене по ID и предоставя основния интерфейс за зареждане, запазване и търсене (XPath) във файла. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор &amp; Деструктор Документация</h2>
+<a id="ab18742228f580a5e4ec87e4b39c8a68c" name="ab18742228f580a5e4ec87e4b39c8a68c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18742228f580a5e4ec87e4b39c8a68c">&#9670;&#160;</a></span>~XmlDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XmlDocument::~XmlDocument </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Деструктор. Изчиства паметта, като изтрива корена (което каскадно изтрива цялото дърво). </p>
+<p>Деструктор. Гарантира безопасното освобождаване на паметта, заделена за XML дървото. </p>
+<div class="dynheader">
+Граф с извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_ab18742228f580a5e4ec87e4b39c8a68c_cgraph.png" border="0" usemap="#aclass_xml_document_ab18742228f580a5e4ec87e4b39c8a68c_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+
+</div>
+</div>
+<a id="a0d77b8e7b7ab3db31237945f8aee813b" name="a0d77b8e7b7ab3db31237945f8aee813b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d77b8e7b7ab3db31237945f8aee813b">&#9670;&#160;</a></span>XmlDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XmlDocument::XmlDocument </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xml_document.html">XmlDocument</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move конструктор. Позволява ефективно прехвърляне на дървото без копиране. </p>
+<p>Move конструктор. Инициализира празен документ и веднага прехвърля ресурсите от подадения обект. </p>
+<div class="dynheader">
+Граф с извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_a0d77b8e7b7ab3db31237945f8aee813b_cgraph.png" border="0" usemap="#aclass_xml_document_a0d77b8e7b7ab3db31237945f8aee813b_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 2 -->
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Членове Функции(методи) Документация</h2>
+<a id="a46fc7356ae5e844bae416f58a868d5a9" name="a46fc7356ae5e844bae416f58a868d5a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46fc7356ae5e844bae416f58a868d5a9">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void XmlDocument::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изчиства текущия документ от паметта (унищожава дървото и речника). </p>
+<p>Изчиства цялата памет и нулира състоянието на документа.</p>
+<p>Извиква delete върху root, което каскадно изтрива всички деца. Изчиства ID речника и нулира брояча. </p>
+<div class="dynheader">
+Граф на извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_a46fc7356ae5e844bae416f58a868d5a9_icgraph.png" border="0" usemap="#aclass_xml_document_a46fc7356ae5e844bae416f58a868d5a9_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 3 -->
+</div>
+
+</div>
+</div>
+<a id="a4670452d5ae240c4749e4fdce2c42118" name="a4670452d5ae240c4749e4fdce2c42118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4670452d5ae240c4749e4fdce2c42118">&#9670;&#160;</a></span>getElementById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xml_element.html">XmlElement</a> * XmlDocument::getElementById </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Търси елемент по неговото ID. </p>
+<p>*</p><dl class="section return"><dt>Връща</dt><dd>Указател към елемента или nullptr, ако не е намерен. </dd></dl>
+<div class="dynheader">
+Граф на извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_a4670452d5ae240c4749e4fdce2c42118_icgraph.png" border="0" usemap="#aclass_xml_document_a4670452d5ae240c4749e4fdce2c42118_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 4 -->
+</div>
+
+</div>
+</div>
+<a id="a31230a8d6f168da8d3f7df395a05a304" name="a31230a8d6f168da8d3f7df395a05a304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31230a8d6f168da8d3f7df395a05a304">&#9670;&#160;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void XmlDocument::load </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Зарежда и парсва XML файл от диска. </p>
+<p>Зарежда, валидира и построява йерархичното XML дърво от текстов файл.</p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Пътят към файла за четене (ако не съществува, създава празен). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Изключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ParseException</td><td>При синтактична грешка в XML структурата. </td></tr>
+    <tr><td class="paramname">FileException</td><td>При проблем с достъпа до файла.</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li></li>
+</ul>
+<p>Тази функция е сърцето на парсъра. Тя чете файла ред по ред и използва структура от данни "стек" (std::vector&lt;XmlElement*&gt; parseStack), за да следи вложеността на таговете и да изгради правилни връзки родител-дете.</p><ul>
+<li><b>Алгоритъм на работа:</b></li>
+</ul>
+<ol type="1">
+<li><b>Отварящи тагове (<span class="tt">&lt;tag&gt;</span>):</b> Създава нов <a class="el" href="class_xml_element.html" title="Клас, представящ XML елемент (таг) в дървото.">XmlElement</a>, регистрира го в ID речника (генерирайки ID, ако липсва) и го добавя като дете на елемента, който в момента е на върха на стека. След това новият елемент се поставя (push) в стека.</li>
+<li>**Затварящи тагове (<span class="tt">&lt;/tag&gt;</span>):** Премахва (pop) най-горния елемент от стека, тъй като неговият обхват е приключил и всички негови деца са вече добавени.</li>
+<li><b>Текстови възли:</b> Ако прочетеният ред не е таг, той се третира като текст (<a class="el" href="class_xml_text.html" title="Клас, представляващ текстов възел в XML дървото.">XmlText</a>) и се добавя директно към елемента на върха на стека.</li>
+</ol>
+<ul>
+<li><b>Специални случаи, които парсърът обработва успешно:</b></li>
+<li><b>Inline тагове:</b> Разпознава тагове с текст на един ред (напр. <span class="tt">&lt;name&gt;John&lt;/name&gt;</span>), парсва ги и ги добавя в дървото, без да ги задържа в стека.</li>
+<li><b>Самозатварящи се тагове:</b> Обработва тагове завършващи на <span class="tt">/&gt;</span> (напр. <span class="tt">&lt;br/&gt;</span>), като ги инстанцира, но "прескача" добавянето им в стека.</li>
+<li><b>Множество Root елементи:</b> XML стандартът изисква само 1 корен. Ако парсърът открие множество елементи на нулево ниво, той автоматично генерира невидим <span class="tt">&lt;document_wrapper&gt;</span>, който да ги обедини и да спаси структурата от презаписване.</li>
+<li><b>Липсващ файл:</b> Ако подаденият файл не съществува на диска, функцията не гърми, а създава нов празен файл, готов за работа.</li>
+<li><dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Пътят към файла, който ще бъде прочетен и зареден в паметта. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Изключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FileException</td><td>Ако възникне критична грешка при I/O операциите. </td></tr>
+    <tr><td class="paramname">ParseException</td><td>При невалиден XML (напр. затварящ таг без отварящ, или текст извън root-а). </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader">
+Граф с извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_a31230a8d6f168da8d3f7df395a05a304_cgraph.png" border="0" usemap="#aclass_xml_document_a31230a8d6f168da8d3f7df395a05a304_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 5 -->
+</div>
+
+</div>
+</div>
+<a id="af5a47a07085a4c815fbf28fbfc0c57d0" name="af5a47a07085a4c815fbf28fbfc0c57d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a47a07085a4c815fbf28fbfc0c57d0">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xml_document.html">XmlDocument</a> &amp; XmlDocument::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xml_document.html">XmlDocument</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move оператор за присвояване. </p>
+<p>Move оператор за присвояване. Първо изчиства текущите ресурси на обекта, след което присвоява новите чрез moveFrom. </p>
+<div class="dynheader">
+Граф с извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_af5a47a07085a4c815fbf28fbfc0c57d0_cgraph.png" border="0" usemap="#aclass_xml_document_af5a47a07085a4c815fbf28fbfc0c57d0_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 6 -->
+</div>
+
+</div>
+</div>
+<a id="aed36928312f77e34cd6bfebf36bb402e" name="aed36928312f77e34cd6bfebf36bb402e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed36928312f77e34cd6bfebf36bb402e">&#9670;&#160;</a></span>registerElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void XmlDocument::registerElement </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_xml_element.html">XmlElement</a> *</td>          <td class="paramname"><span class="paramname"><em>element</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Регистрира елемент в ID речника за бързо търсене. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Уникалният идентификатор. </td></tr>
+    <tr><td class="paramname">element</td><td>Указател към елемента. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф на извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_aed36928312f77e34cd6bfebf36bb402e_icgraph.png" border="0" usemap="#aclass_xml_document_aed36928312f77e34cd6bfebf36bb402e_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 7 -->
+</div>
+
+</div>
+</div>
+<a id="a8645fb13472af75e6772d61c6ebae567" name="a8645fb13472af75e6772d61c6ebae567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8645fb13472af75e6772d61c6ebae567">&#9670;&#160;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void XmlDocument::save </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запазва промените върху текущо отворения файл. </p>
+<p>Запазва документа в текущо отворения файл.</p>
+<dl class="exception"><dt>Изключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FileException</td><td>Ако няма отворен файл.</td></tr>
+    <tr><td class="paramname">FileException</td><td>Ако няма зареден файл (напр. потребителят не е извикал open). </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф с извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_a8645fb13472af75e6772d61c6ebae567_cgraph.png" border="0" usemap="#aclass_xml_document_a8645fb13472af75e6772d61c6ebae567_cgraph" loading="lazy" alt=""/></div>
+<!-- MAP 8 -->
+</div>
+<div class="dynheader">
+Граф на извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_a8645fb13472af75e6772d61c6ebae567_icgraph.png" border="0" usemap="#aclass_xml_document_a8645fb13472af75e6772d61c6ebae567_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 9 -->
+</div>
+
+</div>
+</div>
+<a id="ac01d57d4967d6fc57208e5ecf39caa78" name="ac01d57d4967d6fc57208e5ecf39caa78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01d57d4967d6fc57208e5ecf39caa78">&#9670;&#160;</a></span>saveAs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void XmlDocument::saveAs </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запазва документа в нов файл. </p>
+<p>Запазва текущия XML документ в специфичен файл.</p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Пътят, където да бъде записан новият файл. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Изключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FileException</td><td>Ако документът е празен или файлът не може да бъде създаден.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Извиква рекурсивната функция <span class="tt">print</span> на root елемента. Ако root-ът е скритият "document_wrapper", принтира само неговите деца, за да не замърсява ID-тата. </p><dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Пътят, където да се запази файлът. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Изключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FileException</td><td>Ако документът е празен или файлът не може да се отвори. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф на извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_ac01d57d4967d6fc57208e5ecf39caa78_icgraph.png" border="0" usemap="#aclass_xml_document_ac01d57d4967d6fc57208e5ecf39caa78_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 10 -->
+</div>
+
+</div>
+</div>
+<a id="a8e9205a318c3709366738b3dceab4b43" name="a8e9205a318c3709366738b3dceab4b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9205a318c3709366738b3dceab4b43">&#9670;&#160;</a></span>xpath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; XmlDocument::xpath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изпълнява XPath заявка върху документа. </p>
+<p>Главна функция за изпълнение на пълни XPath заявки върху XML документа.</p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Стринг, съдържащ XPath израза (поддържа /, [], @ и =). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Връща</dt><dd>Вектор от стрингове (текстовите резултати от намерените възли/атрибути).</dd></dl>
+<ul>
+<li></li>
+</ul>
+<p>Обработва потребителски заявки за търсене на информация чрез задаване на път. Логиката е разделена на последователни фази, за да се гарантира правилно филтриране:</p><ul>
+<li>1. <b>Разделяне:</b> Разделя пълния стринг на заявката (напр. <span class="tt">person/address/city</span>) на отделни стъпки по разделителя <span class="tt">/</span> чрез помощната функция <span class="tt">splitXpath</span>.</li>
+</ul>
+<ol type="1">
+<li><b>Анализ на целта:</b> Проверява дали последната стъпка в заявката е насочена към извличане на атрибут (т.е. дали завършва на <span class="tt">[@attributeName]</span>). Ако да, запаметява името на атрибута и премахва тази част от пътя.</li>
+<li><b>Последователно обхождане:</b> Започвайки от корена на документа (<span class="tt">root</span>), функцията подава списъка с текущи възли към <span class="tt">evaluateXpathStep</span> за всяка една стъпка. Резултатът от всяка стъпка се превръща във вход за следващата, стеснявайки търсенето.</li>
+<li><b>Извличане на резултата:</b> След като всички стъпки са оценени, функцията итерира през финалните намерени възли:</li>
+</ol>
+<ul>
+<li>Ако заявката изисква атрибут, се извлича стойността на този атрибут за всеки възел.</li>
+<li>Ако заявката търси таг, се събира и обединява цялото му текстово съдържание (чрез <span class="tt">extractElementText</span>).</li>
+<li><dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Пълният стринг на XPath заявката, подаден от потребителя през CLI. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Връща</dt><dd>Вектор от стрингове, съдържащ намерените текстови стойности или стойности на атрибути. Ако търсенето не намери съвпадения или документът е празен, се връща празен вектор. </dd></dl>
+</li>
+</ul>
+<div class="dynheader">
+Граф на извикванията за тази функция:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xml_document_a8e9205a318c3709366738b3dceab4b43_icgraph.png" border="0" usemap="#aclass_xml_document_a8e9205a318c3709366738b3dceab4b43_icgraph" loading="lazy" alt=""/></div>
+<!-- MAP 11 -->
+</div>
+
+</div>
+</div>
+<hr/>Документация за клас генериран от следните файлове:<ul>
+<li>XMLParser/XMLParser/XmlCore/<a class="el" href="_xml_document_8h_source.html">XmlDocument.h</a></li>
+<li>XMLParser/XMLParser/XmlCore/<b>XmlDocument.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_xml_document.html">XmlDocument</a></li>
+    <li class="footer">Генериран от <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

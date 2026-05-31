@@ -1,0 +1,33 @@
+\doxysection{Entry\+Command Структура Препратка}
+\hypertarget{struct_entry_command}{}\label{struct_entry_command}\index{EntryCommand@{EntryCommand}}
+
+
+Структура за съхранение на регистрираните команди в менюто.  
+
+
+
+
+Граф на зависимости за класа Entry\+Command:\+
+% FIG 0
+\doxysubsubsection*{Общодостъпни атрибути}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_entry_command_a7af3f87dcb52fab44a9143cfbf7d391f}\label{struct_entry_command_a7af3f87dcb52fab44a9143cfbf7d391f} 
+std::\+string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Името на командата (напр. "{}print"{}). \end{DoxyCompactList}\item 
+\Hypertarget{struct_entry_command_aa0547cc7694ff07ca222276988d6c526}\label{struct_entry_command_aa0547cc7694ff07ca222276988d6c526} 
+\doxymbox{\hyperlink{class_command}{Command}} \texorpdfstring{$\ast$}{*} {\bfseries command}
+\begin{DoxyCompactList}\small\item\em Указател към обекта, имплементиращ логиката \end{DoxyCompactList}\item 
+\Hypertarget{struct_entry_command_a3bf7a89b34b1b464f6be121d1cd8f8da}\label{struct_entry_command_a3bf7a89b34b1b464f6be121d1cd8f8da} 
+std::\+string {\bfseries description}
+\begin{DoxyCompactList}\small\item\em Описание и очаквани параметри (за help менюто). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Структура за съхранение на регистрираните команди в менюто. 
+
+Свързва текстовото име на командата, указател към обекта, който я изпълнява, и кратко описание за help менюто. 
+
+Документация за структура генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+main.\+cpp\end{DoxyCompactItemize}

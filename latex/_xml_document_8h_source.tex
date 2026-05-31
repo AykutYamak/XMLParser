@@ -1,0 +1,68 @@
+\doxysection{Xml\+Document.\+h}
+\hypertarget{_xml_document_8h_source}{}\label{_xml_document_8h_source}\index{XMLParser/XMLParser/XmlCore/XmlDocument.h@{XMLParser/XMLParser/XmlCore/XmlDocument.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}XmlElement.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}IdDictionary.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_xml_document_a71daa95a33b7a692549974258893b36e}{XmlDocument}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ root;\ }
+\DoxyCodeLine{00014\ \ \ \ \ \doxymbox{\hyperlink{class_id_dictionary}{IdDictionary}}\ registry;\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ autoIdCounter;\ }
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ openedFilePath;\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ moveFrom(\doxymbox{\hyperlink{class_xml_document_a71daa95a33b7a692549974258893b36e}{XmlDocument}}\&\&\ other);}
+\DoxyCodeLine{00023\ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ Помощни\ функции\ за\ парсване\ на\ документа\ -\/-\/-\/}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ trim(\textcolor{keyword}{const}\ std::string\&\ str)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ std::string\ ensureUniqueId(\textcolor{keyword}{const}\ std::string\&\ parseId);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ parseOpeningTag(\textcolor{keyword}{const}\ std::string\&\ content)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ Помощни\ функции\ за\ XPath\ търсачката\ -\/-\/-\/}}
+\DoxyCodeLine{00038\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ std::vector<std::string>\ splitXpath(\textcolor{keyword}{const}\ std::string\&\ query)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00043\ \ \ \ \ std::vector<XmlElement*>\ evaluateXpathStep(\textcolor{keyword}{const}\ std::vector<XmlElement*>\&\ currentNodes,\ \textcolor{keyword}{const}\ std::string\&\ step)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00046\ \ \ \ \ std::string\ extractElementText(\doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ element)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ \ \ \ \ \doxymbox{\hyperlink{class_xml_document_a71daa95a33b7a692549974258893b36e}{XmlDocument}}()\ :\ root(nullptr),\ autoIdCounter(0),\ openedFilePath(\textcolor{stringliteral}{"{}"{}})\ \{\}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ Забраняваме\ копирането}}
+\DoxyCodeLine{00055\ \ \ \ \ \doxymbox{\hyperlink{class_xml_document_a71daa95a33b7a692549974258893b36e}{XmlDocument}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00056\ \ \ \ \ \doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ operator=(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \ \ \ \ \doxymbox{\hyperlink{class_xml_document_ab18742228f580a5e4ec87e4b39c8a68c}{\string~XmlDocument}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \ \ \ \ \doxymbox{\hyperlink{class_xml_document_a71daa95a33b7a692549974258893b36e}{XmlDocument}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\&\ other);}
+\DoxyCodeLine{00067\ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ operator=(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\&\ other);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_document_a31230a8d6f168da8d3f7df395a05a304}{load}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_document_a8645fb13472af75e6772d61c6ebae567}{save}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_document_ac01d57d4967d6fc57208e5ecf39caa78}{saveAs}}(\textcolor{keyword}{const}\ std::string\&\ filename)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_document_a46fc7356ae5e844bae416f58a868d5a9}{clear}}();}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_document_aed36928312f77e34cd6bfebf36bb402e}{registerElement}}(\textcolor{keyword}{const}\ std::string\&\ \textcolor{keywordtype}{id},\ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ element)\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ registry.add(\textcolor{keywordtype}{id},\ element);}
+\DoxyCodeLine{00106\ \ \ \ \ \}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00109\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ \doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ root;\ \}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00114\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ \doxymbox{\hyperlink{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}{getElementById}}(\textcolor{keyword}{const}\ std::string\&\ \textcolor{keywordtype}{id})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ registry.get(\textcolor{keywordtype}{id});\ \}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \doxymbox{\hyperlink{class_xml_document_a39b259f1b254f3e8bb2ea76e9fb9efad}{getFilePath}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ openedFilePath;\ \}}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \ \ std::vector<std::string>\ \doxymbox{\hyperlink{class_xml_document_a8e9205a318c3709366738b3dceab4b43}{xpath}}(\textcolor{keyword}{const}\ std::string\&\ query)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00125\ \};}
+
+\end{DoxyCode}

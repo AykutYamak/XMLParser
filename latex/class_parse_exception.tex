@@ -1,0 +1,72 @@
+\doxysection{Parse\+Exception Клас Препратка}
+\hypertarget{class_parse_exception}{}\label{class_parse_exception}\index{ParseException@{ParseException}}
+
+
+Изключение, хвърляно при грешка по време на парсване на XML.  
+
+
+
+
+{\ttfamily \+\#include $<$Exception.\+h$>$}
+
+
+
+Диаграма на наследяване за Parse\+Exception:\+
+% FIG 0
+
+
+Граф на зависимости за класа Parse\+Exception:\+
+% FIG 1
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_parse_exception_a013f9fef08198853282a501ab04ef54a}{Parse\+Exception}} (const std::\+string \&msg)
+\begin{DoxyCompactList}\small\item\em Конструктор за \doxylink{class_parse_exception}{Parse\+Exception}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Общодостъпни членове функции наследен от \doxymbox{\hyperlink{class_exception}{Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_exception_a35bf745d25961ebe8795f7f457aa8a05}{Exception}} (const std::\+string \&msg)
+\begin{DoxyCompactList}\small\item\em Конструктор за базовото XML изключение. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_exception_a91eace2bc486fa18d3f913a28f3921f8}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Връща обяснителното съобщение за грешката. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Допълнителни наследени членове}
+\doxysubsection*{Защитени атрибути наследен от \doxymbox{\hyperlink{class_exception}{Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+std::\+string {\bfseries message}
+\begin{DoxyCompactList}\small\item\em Форматираното съобщение за грешка. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Изключение, хвърляно при грешка по време на парсване на XML. 
+
+
+\begin{DoxyItemize}
+\item Използва се при откриване на синтактични грешки, липсващи затварящи тагове, неочакван текст или структурни несъответствия в заредения XML документ. 
+\end{DoxyItemize}
+
+\label{class_parse_exception_doc-constructors}
+\Hypertarget{class_parse_exception_doc-constructors}
+\doxysubsection{Конструктор \& Деструктор Документация}
+\Hypertarget{class_parse_exception_a013f9fef08198853282a501ab04ef54a}\index{ParseException@{ParseException}!ParseException@{ParseException}}
+\index{ParseException@{ParseException}!ParseException@{ParseException}}
+\doxysubsubsection{\texorpdfstring{ParseException()}{ParseException()}}
+{\footnotesize\ttfamily \label{class_parse_exception_a013f9fef08198853282a501ab04ef54a} 
+Parse\+Exception::\+\+Parse\+Exception (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор за \doxylink{class_parse_exception}{Parse\+Exception}. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em msg} & Детайли за грешката при парсване. \\
+\hline
+\end{DoxyParams}
+Граф с извикванията за тази функция:\+
+% FIG 2
+
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+Exceptions/\+Exception.\+h\end{DoxyCompactItemize}

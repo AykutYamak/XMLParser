@@ -1,0 +1,26 @@
+var annotated_dup =
+[
+    [ "ChildCommand", "class_child_command.html", "class_child_command" ],
+    [ "ChildrenCommand", "class_children_command.html", "class_children_command" ],
+    [ "Command", "class_command.html", "class_command" ],
+    [ "DeleteCommand", "class_delete_command.html", "class_delete_command" ],
+    [ "EntryCommand", "struct_entry_command.html", "struct_entry_command" ],
+    [ "Exception", "class_exception.html", "class_exception" ],
+    [ "FileException", "class_file_exception.html", "class_file_exception" ],
+    [ "IdDictionary", "class_id_dictionary.html", "class_id_dictionary" ],
+    [ "IdEntry", "struct_id_entry.html", "struct_id_entry" ],
+    [ "NewChildCommand", "class_new_child_command.html", "class_new_child_command" ],
+    [ "ParseException", "class_parse_exception.html", "class_parse_exception" ],
+    [ "PrintCommand", "class_print_command.html", "class_print_command" ],
+    [ "SaveAsCommand", "class_save_as_command.html", "class_save_as_command" ],
+    [ "SaveCommand", "class_save_command.html", "class_save_command" ],
+    [ "SelectCommand", "class_select_command.html", "class_select_command" ],
+    [ "SetCommand", "class_set_command.html", "class_set_command" ],
+    [ "TextCommand", "class_text_command.html", "class_text_command" ],
+    [ "XmlAttribute", "struct_xml_attribute.html", "struct_xml_attribute" ],
+    [ "XmlDocument", "class_xml_document.html", "class_xml_document" ],
+    [ "XmlElement", "class_xml_element.html", "class_xml_element" ],
+    [ "XmlNode", "class_xml_node.html", "class_xml_node" ],
+    [ "XmlText", "class_xml_text.html", "class_xml_text" ],
+    [ "XPathCommand", "class_x_path_command.html", "class_x_path_command" ]
+];

@@ -1,0 +1,731 @@
+{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+XmlDocument Клас Препратка\par \pard\plain 
+{\tc\tcl2 \v XmlDocument}
+{\xe \v XmlDocument}
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Главен клас, представляващ целия XML документ. }}\par
+{
+{\f2 #include <XmlDocument.h>}}\par
+Граф на зависимости за класа XmlDocument:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Общодостъпни членове функции\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlDocument} (){\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Конструктор по подразбиране. Създава празен документ. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlDocument} (const {\b XmlDocument} &other)=delete{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlDocument} & {\b operator=} (const {\b XmlDocument} &other)=delete{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~XmlDocument} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Деструктор. Изчиства паметта, като изтрива корена (което каскадно изтрива цялото дърво). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b XmlDocument} ({\b XmlDocument} &&other)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Move конструктор. Позволява ефективно прехвърляне на дървото без копиране. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b XmlDocument} & {\b operator=} ({\b XmlDocument} &&other)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Move оператор за присвояване. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b load} (const std::string &filename)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Зарежда и парсва XML файл от диска. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b save} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Запазва промените върху текущо отворения файл. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b saveAs} (const std::string &filename) const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Запазва документа в нов файл. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b clear} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Изчиства текущия документ от паметта (унищожава дървото и речника). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b registerElement} (const std::string &id, {\b XmlElement} *element)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Регистрира елемент в ID речника за бързо търсене. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlElement} * {\b getRoot} () const{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща указател към корена на XML дървото. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b XmlElement} * {\b getElementById} (const std::string &id) const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Търси елемент по неговото ID. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+const std::string & {\b getFilePath} () const{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща пътя на текущо отворения файл. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::vector< std::string > {\b xpath} (const std::string &query) const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Изпълнява XPath заявка върху документа. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Подробно описание\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Главен клас, представляващ целия XML документ. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u8226\tab}\ilvl0\ls1 \li0\ri0\lin0\rin0\fi-360\tx360\li360\ri0\lin360\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+\par}
+\par
+Този клас управлява жизнения цикъл на XML дървото (започвайки от корена), поддържа речника за бързо търсене по ID и предоставя основния интерфейс за зареждане, запазване и търсене (XPath) във файла. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Конструктор & Деструктор Документация\par
+\pard\plain 
+{\xe \v ~XmlDocument\:XmlDocument}
+{\xe \v XmlDocument\:~XmlDocument}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+XmlDocument::~XmlDocument ()}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Деструктор. Изчиства паметта, като изтрива корена (което каскадно изтрива цялото дърво). }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Деструктор. Гарантира безопасното освобождаване на паметта, заделена за XML дървото. \par
+}Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_ab18742228f580a5e4ec87e4b39c8a68c_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v XmlDocument\:XmlDocument}
+{\xe \v XmlDocument\:XmlDocument}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+XmlDocument::XmlDocument ({\b XmlDocument} && other)}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Move конструктор. Позволява ефективно прехвърляне на дървото без копиране. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Move конструктор. Инициализира празен документ и веднага прехвърля ресурсите от подадения обект. \par
+}Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_a0d77b8e7b7ab3db31237945f8aee813b_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Членове Функции(методи) Документация\par
+\pard\plain 
+{\xe \v clear\:XmlDocument}
+{\xe \v XmlDocument\:clear}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void XmlDocument::clear ()}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Изчиства текущия документ от паметта (унищожава дървото и речника). }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Изчиства цялата памет и нулира състоянието на документа.\par
+Извиква delete върху root, което каскадно изтрива всички деца. Изчиства ID речника и нулира брояча. \par
+}Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_a46fc7356ae5e844bae416f58a868d5a9_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v getElementById\:XmlDocument}
+{\xe \v XmlDocument\:getElementById}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b XmlElement} * XmlDocument::getElementById (const std::string & id) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Търси елемент по неговото ID. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+*\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Указател към елемента или nullptr, ако не е намерен. \par
+}}}Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_a4670452d5ae240c4749e4fdce2c42118_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v load\:XmlDocument}
+{\xe \v XmlDocument\:load}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void XmlDocument::load (const std::string & filename)}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Зарежда и парсва XML файл от диска. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Зарежда, валидира и построява йерархичното XML дърво от текстов файл.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i filename} \cell }{Пътят към файла за четене (ако не съществува, създава празен). \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Изключения\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i ParseException} \cell }{При синтактична грешка в XML структурата. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i FileException} \cell }{При проблем с достъпа до файла.\cell }
+{\row }
+}
+{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+\par}
+Тази функция е сърцето на парсъра. Тя чете файла ред по ред и използва структура от данни "стек" (std::vector<XmlElement*> parseStack), за да следи вложеността на таговете и да изгради правилни връзки родител-дете.{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\b Алгоритъм на работа:} \par}
+{
+\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab {\b Отварящи тагове ({\f2 <tag>} ):}  Създава нов {\b XmlElement}, регистрира го в ID речника (генерирайки ID, ако липсва) и го добавя като дете на елемента, който в момента е на върха на стека. След това новият елемент се поставя (push) в стека.\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab **Затварящи тагове ({\f2 </tag>} ):** Премахва (pop) най-горния елемент от стека, тъй като неговият обхват е приключил и всички негови деца са вече добавени.\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab {\b Текстови възли:}  Ако прочетеният ред не е таг, той се третира като текст ({\b XmlText}) и се добавя директно към елемента на върха на стека.\par}
+{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\b Специални случаи, които парсърът обработва успешно:} \par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\b Inline тагове:}  Разпознава тагове с текст на един ред (напр. {\f2 <name>John</name>} ), парсва ги и ги добавя в дървото, без да ги задържа в стека.\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\b Самозатварящи се тагове:}  Обработва тагове завършващи на {\f2 />}  (напр. {\f2 <br/>} ), като ги инстанцира, но "прескача" добавянето им в стека.\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\b Множество Root елементи:}  XML стандартът изисква само 1 корен. Ако парсърът открие множество елементи на нулево ниво, той автоматично генерира невидим {\f2 <document_wrapper>} , който да ги обедини и да спаси структурата от презаписване.\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\b Липсващ файл:}  Ако подаденият файл не съществува на диска, функцията не гърми, а създава нов празен файл, готов за работа.\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i filename} \cell }{Пътят към файла, който ще бъде прочетен и зареден в паметта. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Изключения\par}
+\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i FileException} \cell }{Ако възникне критична грешка при I/O операциите. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i ParseException} \cell }{При невалиден XML (напр. затварящ таг без отварящ, или текст извън root-а). \cell }
+{\row }
+}
+}
+}Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_a31230a8d6f168da8d3f7df395a05a304_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v operator=\:XmlDocument}
+{\xe \v XmlDocument\:operator=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b XmlDocument} & XmlDocument::operator= ({\b XmlDocument} && other)}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Move оператор за присвояване. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Move оператор за присвояване. Първо изчиства текущите ресурси на обекта, след което присвоява новите чрез moveFrom. \par
+}Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_af5a47a07085a4c815fbf28fbfc0c57d0_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v registerElement\:XmlDocument}
+{\xe \v XmlDocument\:registerElement}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void XmlDocument::registerElement (const std::string & id, {\b XmlElement} * element){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Регистрира елемент в ID речника за бързо търсене. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i id} \cell }{Уникалният идентификатор. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i element} \cell }{Указател към елемента. \cell }
+{\row }
+}
+}Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_aed36928312f77e34cd6bfebf36bb402e_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v save\:XmlDocument}
+{\xe \v XmlDocument\:save}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void XmlDocument::save () const}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Запазва промените върху текущо отворения файл. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Запазва документа в текущо отворения файл.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Изключения\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i FileException} \cell }{Ако няма отворен файл.\cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i FileException} \cell }{Ако няма зареден файл (напр. потребителят не е извикал open). \cell }
+{\row }
+}
+}Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_a8645fb13472af75e6772d61c6ebae567_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_a8645fb13472af75e6772d61c6ebae567_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v saveAs\:XmlDocument}
+{\xe \v XmlDocument\:saveAs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void XmlDocument::saveAs (const std::string & filename) const}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Запазва документа в нов файл. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Запазва текущия XML документ в специфичен файл.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i filename} \cell }{Пътят, където да бъде записан новият файл. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Изключения\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i FileException} \cell }{Ако документът е празен или файлът не може да бъде създаден.\cell }
+{\row }
+}
+Извиква рекурсивната функция {\f2 print}  на root елемента. Ако root-ът е скритият "document_wrapper", принтира само неговите деца, за да не замърсява ID-тата. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i filename} \cell }{Пътят, където да се запази файлът. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Изключения\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i FileException} \cell }{Ако документът е празен или файлът не може да се отвори. \cell }
+{\row }
+}
+}Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_ac01d57d4967d6fc57208e5ecf39caa78_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v xpath\:XmlDocument}
+{\xe \v XmlDocument\:xpath}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::vector< std::string > XmlDocument::xpath (const std::string & query) const}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Изпълнява XPath заявка върху документа. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Главна функция за изпълнение на пълни XPath заявки върху XML документа.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i query} \cell }{Стринг, съдържащ XPath израза (поддържа /, [], @ и =). \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Вектор от стрингове (текстовите резултати от намерените възли/атрибути).\par
+}}{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+\par}
+Обработва потребителски заявки за търсене на информация чрез задаване на път. Логиката е разделена на последователни фази, за да се гарантира правилно филтриране:{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+1. {\b Разделяне:}  Разделя пълния стринг на заявката (напр. {\f2 person/address/city} ) на отделни стъпки по разделителя {\f2 /}  чрез помощната функция {\f2 splitXpath} .\par}
+{
+\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab {\b Анализ на целта:}  Проверява дали последната стъпка в заявката е насочена към извличане на атрибут (т.е. дали завършва на {\f2 [@attributeName]} ). Ако да, запаметява името на атрибута и премахва тази част от пътя.\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab {\b Последователно обхождане:}  Започвайки от корена на документа ({\f2 root} ), функцията подава списъка с текущи възли към {\f2 evaluateXpathStep}  за всяка една стъпка. Резултатът от всяка стъпка се превръща във вход за следващата, стеснявайки търсенето.\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab {\b Извличане на резултата:}  След като всички стъпки са оценени, функцията итерира през финалните намерени възли:\par}
+{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+Ако заявката изисква атрибут, се извлича стойността на този атрибут за всеки възел.\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+Ако заявката търси таг, се събира и обединява цялото му текстово съдържание (чрез {\f2 extractElementText} ).\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i query} \cell }{Пълният стринг на XPath заявката, подаден от потребителя през CLI. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Вектор от стрингове, съдържащ намерените текстови стойности или стойности на атрибути. Ако търсенето не намери съвпадения или документът е празен, се връща празен вектор. \par
+}}}
+}Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_document_a8e9205a318c3709366738b3dceab4b43_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Документация за клас генериран от следните файлове:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+XMLParser/XMLParser/XmlCore/XmlDocument.h\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+XMLParser/XMLParser/XmlCore/XmlDocument.cpp\par
+}}

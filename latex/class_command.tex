@@ -1,0 +1,60 @@
+\doxysection{Command Клас Препратка}
+\hypertarget{class_command}{}\label{class_command}\index{Command@{Command}}
+
+
+Базов интерфейс за всички CLI команди в приложението.  
+
+
+
+
+{\ttfamily \+\#include $<$Command.\+h$>$}
+
+
+
+Диаграма на наследяване за Command:\+
+% FIG 0
+
+
+Граф на зависимости за класа Command:\+
+% FIG 1
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \doxymbox{\hyperlink{class_command_a693610de13df3a028abf715fdf5540a7}{execute}} (\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&doc, const std::\+string \&args)=0
+\begin{DoxyCompactList}\small\item\em Изпълнява съответната команда върху подадения XML документ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Базов интерфейс за всички CLI команди в приложението. 
+
+Използва \doxylink{class_command}{Command} Design Pattern, което позволява лесно добавяне на нови команди без промяна по основния цикъл на програмата (Open-\/\+Closed Principle). 
+
+\label{class_command_doc-func-members}
+\Hypertarget{class_command_doc-func-members}
+\doxysubsection{Членове Функции(методи) Документация}
+\Hypertarget{class_command_a693610de13df3a028abf715fdf5540a7}\index{Command@{Command}!execute@{execute}}
+\index{execute@{execute}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_command_a693610de13df3a028abf715fdf5540a7} 
+virtual void Command::\+execute (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&}]{doc}{, }\item[{const std::\+string \&}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Изпълнява съответната команда върху подадения XML документ. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em doc} & Референция към текущо заредения XML документ. \\
+\hline
+{\em args} & Аргументите на командата, подадени от потребителя (като стринг). \\
+\hline
+\end{DoxyParams}
+
+
+Заменя в \doxymbox{\hyperlink{class_child_command_a041dddcc91533d3f6a832fa68848ad72}{Child\+Command}}, \doxymbox{\hyperlink{class_children_command_ac9a7d1b0b08f44b1d845bb554a22820d}{Children\+Command}}, \doxymbox{\hyperlink{class_delete_command_a67f6d9dffbd9e3c0f51f6c56ec0a92a5}{Delete\+Command}}, \doxymbox{\hyperlink{class_new_child_command_a1e9d98a19fbfa5680f8ac1d50c20e795}{New\+Child\+Command}}, \doxymbox{\hyperlink{class_print_command_adf7b4ac737d241683f556973e127cb67}{Print\+Command}}, \doxymbox{\hyperlink{class_save_as_command_a1445cad0df530bf8b3c206d9b799cc7a}{Save\+As\+Command}}, \doxymbox{\hyperlink{class_save_command_a27417dc4897ec461c4d3690aaea719c5}{Save\+Command}}, \doxymbox{\hyperlink{class_select_command_a6b40aa548276beed85cebebde80174df}{Select\+Command}}, \doxymbox{\hyperlink{class_set_command_a6fc8fafae682e5cd738c4d9094e1f50f}{Set\+Command}}, \doxymbox{\hyperlink{class_text_command_af5b1e488b171792a7a5546d3370107c5}{Text\+Command}}, и \doxymbox{\hyperlink{class_x_path_command_a439178dec708de67b4152107468ca70e}{XPath\+Command}}.
+
+
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+CLI/\+Command.\+h\end{DoxyCompactItemize}

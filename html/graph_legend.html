@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="bg">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Графична легенда</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Генериран от Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Търсене" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('graph_legend.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Зареждане...</div>
+<div class="SRStatus" id="Searching">Търсене...</div>
+<div class="SRStatus" id="NoMatches">Не намерено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Графична легенда</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Тази страница обяснява как да интерпретирате графиките, генерирани от doxygen.</p>
+<p>Разгледайте следният пример: </p><div class="fragment"><div class="line"><span class="comment">/*! Невидим клас поради съкращаване */</span></div>
+<div class="line"><span class="keyword">class </span>Invisible { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Съкратен клас, наследствена връзка е скрита */</span></div>
+<div class="line"><span class="keyword">class </span>Truncated : <span class="keyword">public</span> Invisible { };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* Класът не е документиран с doxygen коментари */</span></div>
+<div class="line"><span class="keyword">class </span>Undocumented { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Клас, който се наследява чрез публично наследяване */</span></div>
+<div class="line"><span class="keyword">class </span>PublicBase : <span class="keyword">public</span> Truncated { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Шаблонен клас */</span></div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span>Templ { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Клас, който се наследява чрез защитено наследяване */</span></div>
+<div class="line"><span class="keyword">class </span>ProtectedBase { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Клас, който се наследява чрез частно наследяване */</span></div>
+<div class="line"><span class="keyword">class </span>PrivateBase { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Клас, използващ наследеният клас */</span></div>
+<div class="line"><span class="keyword">class </span>Used { };</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/*! Супер клас, който наследява редица други класове */</span></div>
+<div class="line"><span class="keyword">class </span>Inherited : <span class="keyword">public</span> PublicBase,</div>
+<div class="line">                  <span class="keyword">protected</span> ProtectedBase,</div>
+<div class="line">                  <span class="keyword">private</span> PrivateBase,</div>
+<div class="line">                  <span class="keyword">public</span> Undocumented,</div>
+<div class="line">                  <span class="keyword">public</span> Templ&lt;int&gt;</div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">private</span>:</div>
+<div class="line">    Used *m_usedClass;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p> Правоъгълниците в този граф имат следното значение:</p>
+<center><img src="graph_legend.png" alt="" class="inline"/></center><p>Правоъгълниците в този граф имат следното значение: </p>
+<ul>
+<li>
+Запълненият сиво правоъгълник представлява структурата или клас, за който е създаден графа. </li>
+<li>
+Правоъгълника с черна рамка обозначава документирана структура или клас. </li>
+<li>
+Правоъгълника със сива рамка обозначава недокументирана структура или клас. </li>
+<li>
+Правоъгълника с червена рамка обозначава документирана структура или клас закойто не са показани всички отношения наследяване/съдържание. A Графa eсъкратен, ако не се вписва в определените граници. </li>
+</ul>
+<p>Стрелките имат следното значение: </p>
+<ul>
+<li>
+Тъмносиня стрелка се използва за визуализиране на публично наследство между два класа. </li>
+<li>
+Тъмнозелена стрелка се използва за защитено наследяване. </li>
+<li>
+Тъмночервена стрелка се използва за частно наследяване. </li>
+<li>
+Лилава пунктирана стрелка се използва, ако клас се съдържа или използва от друг клас. Стрелката указва променлива(и) чрез който е достъпен посоченият клас или структура. </li>
+<li>
+Жълта пунктирана стрелка обозначава връзка между екземпляр на шаблон и класът шаблон, от който е създаден. Стрелката указва параметрите на шаблона на екземпляра. </li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Генериран от <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

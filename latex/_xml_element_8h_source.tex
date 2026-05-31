@@ -1,0 +1,105 @@
+\doxysection{Xml\+Element.\+h}
+\hypertarget{_xml_element_8h_source}{}\label{_xml_element_8h_source}\index{XMLParser/XMLParser/XmlCore/XmlElement.h@{XMLParser/XMLParser/XmlCore/XmlElement.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}XmlNode.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_xml_attribute}{XmlAttribute}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ std::string\ \doxymbox{\hyperlink{struct_xml_attribute_a2577932b4ae1ff649e5b67cf8096209f}{key}};\ }
+\DoxyCodeLine{00012\ \ \ \ \ std::string\ \doxymbox{\hyperlink{struct_xml_attribute_afcd9e2cf708a0e41e1278db93c858253}{value}};\ }
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_xml_element_a71707526acc8fe423c5088afd1abe8f1}{XmlElement}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ name;\ }
+\DoxyCodeLine{00023\ \ \ \ \ std::vector<XmlAttribute>\ attributes;\ }
+\DoxyCodeLine{00024\ \ \ \ \ std::vector<XmlNode*>\ children;\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element_a71707526acc8fe423c5088afd1abe8f1}{XmlElement}}()\ :\ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}(),\ name(\textcolor{stringliteral}{"{}"{}})\{\}}
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element_ab17c21eab01a90ef7922bfcbe018e088}{XmlElement}}(\textcolor{keyword}{const}\ std::string\&\ elementName)\ :\ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}(),\ name(elementName)\ \{\}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ Забраняваме\ копирането\ и\ присвояването\ за\ безопасно\ управление\ на\ паметта}}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element_a71707526acc8fe423c5088afd1abe8f1}{XmlElement}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00039\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}\&\ operator=(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element_a1ee9fc2b9a0ab357eb20592de9e9c5ae}{\string~XmlElement}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863}{print}}(std::ostream\&\ os,\ \textcolor{keywordtype}{int}\ indent\ =\ 0)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00054\ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ \doxymbox{\hyperlink{class_xml_node}{XmlNode}}*\ \doxymbox{\hyperlink{class_xml_element_ab9866dbc3f71cc74319dfe1ea13c3bc6}{clone}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_element_ac9b7e2eef08c7a04095e8bd63024308c}{addChild}}(\doxymbox{\hyperlink{class_xml_node}{XmlNode}}*\ child);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<XmlAttribute>\&\ \doxymbox{\hyperlink{class_xml_element_acf851c8b1ea784479fb7411bba7d84d1}{getAttributes}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ attributes;}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_element_a3ad06da534ce1891c55d37cc9106f619}{addAttribute}}(\textcolor{keyword}{const}\ std::string\&\ key,\ \textcolor{keyword}{const}\ std::string\&\ value);}
+\DoxyCodeLine{00083\ \ \ \ \ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \doxymbox{\hyperlink{class_xml_element_ad4d33dd365dda9233c33ea555d4c637f}{getName}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>name;\ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_element_aaaa9635e353a5c07ed2f5664815400e2}{removeAttribute}}(\textcolor{keyword}{const}\ std::string\&\ key)\ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ attributesSize\ =\ attributes.size();}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ attributesSize;\ ++i)\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (attributes[i].key\ ==\ key)\{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ attributes.erase(attributes.begin()\ +\ i);}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00102\ \ \ \ \ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00111\ \ \ \ \ std::string\&\ \doxymbox{\hyperlink{class_xml_element_a48357ed9c0bc18812b6a9f563da6d732}{operator[]}}(\textcolor{keyword}{const}\ std::string\&\ key)\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\doxymbox{\hyperlink{struct_xml_attribute}{XmlAttribute}}\&\ attribute\ :\ attributes)\{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (attribute.key\ ==\ key)\{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ attribute.value;}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ attributes.push\_back(\{\ key,\textcolor{stringliteral}{"{}"{}}\ \});}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ attributes.back().value;}
+\DoxyCodeLine{00119\ \ \ \ \ \}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00127\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_xml_element_aafeb59e91c1f00954461b89ab420fe40}{getAttributeValue}}(\textcolor{keyword}{const}\ std::string\&\ key)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00128\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \doxymbox{\hyperlink{struct_xml_attribute}{XmlAttribute}}\&\ attribute\ :\ attributes)\{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (attribute.key\ ==\ key)\{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ attribute.value;}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00135\ \ \ \ \ \}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00144\ \ \ \ \ std::vector<T*>\ \doxymbox{\hyperlink{class_xml_element_adc5d91e0607a879a7ca4731aa6257877}{getChildrenOfType}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ std::vector<T*>\ result;}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}*\ child\ :\ children)\ \{}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (T*\ castedChild\ =\ \textcolor{keyword}{dynamic\_cast<}T*\textcolor{keyword}{>}(child))\ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.push\_back(castedChild);}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00152\ \ \ \ \ \}}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}}\ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ std::vector<XmlNode*>*\ collection;\ }
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ index;\ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}}(std::vector<XmlNode*>*\ coll,\ \textcolor{keywordtype}{size\_t}\ index)\ :\ collection(coll),\ index(index)\{\}}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}}\&\ \doxymbox{\hyperlink{class_xml_element_1_1_iterator_acdddee0f58116e790dd1e4a4bdf28bf9}{operator++}}()\ \{\ ++index;\ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};\ \}}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}*\&\ \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a4a40dd4f6e34738a4d7b1dfa03bcefef}{operator*}}()\ \{\ \textcolor{keywordflow}{return}\ (*collection)[index];\ \}}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a48b64f0ded9c2f483202215195abb348}{operator!=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}}\&\ other)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>index\ !=\ other.index;\ \}}
+\DoxyCodeLine{00181\ \ \ \ \ \};}
+\DoxyCodeLine{00182\ \ \ \ }
+\DoxyCodeLine{00184\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}}\ \doxymbox{\hyperlink{class_xml_element_a8e5b6bd76bf871f4cc7f97201cfe4f31}{begin}}()\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}}(\&children,\ 0);\ \}}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00187\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}}\ \doxymbox{\hyperlink{class_xml_element_a05042dd05d4b727946e16fc8cc9ca4e6}{end}}()\ \{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}}(\&children,\ children.size());\ \}}
+\DoxyCodeLine{00188\ \};}
+
+\end{DoxyCode}

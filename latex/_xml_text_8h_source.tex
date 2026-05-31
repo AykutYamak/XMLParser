@@ -1,0 +1,33 @@
+\doxysection{Xml\+Text.\+h}
+\hypertarget{_xml_text_8h_source}{}\label{_xml_text_8h_source}\index{XMLParser/XMLParser/XmlCore/XmlText.h@{XMLParser/XMLParser/XmlCore/XmlText.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}XmlNode.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_xml_text_a43088b0b6b4bc3bbd180730d05fcebf2}{XmlText}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ std::string\ content;\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{class_xml_text_a43088b0b6b4bc3bbd180730d05fcebf2}{XmlText}}()\ :\ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}(),\ content(\textcolor{stringliteral}{"{}"{}})\{\}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{class_xml_text_afadbe0177e6753f305a4e6f22416f09e}{XmlText}}(\textcolor{keyword}{const}\ std::string\&\ textContent)\ :\ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}(),\ content(textContent)\ \{\}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Забраняваме\ копирането,\ за\ да\ сме\ консистентни\ с\ базовия\ клас}}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{class_xml_text_a43088b0b6b4bc3bbd180730d05fcebf2}{XmlText}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_xml_text}{XmlText}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00031\ \ \ \ \ \doxymbox{\hyperlink{class_xml_text}{XmlText}}\&\ operator=(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_xml_text}{XmlText}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{class_xml_text_a3552d28a1736db4cf8d42822986cbc3f}{\string~XmlText}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_text_ae4d3b9c75124751084b8913ad9dd00aa}{print}}(std::ostream\&\ os,\textcolor{keywordtype}{int}\ indent\ =\ 0)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}*\ \doxymbox{\hyperlink{class_xml_text_a75a9fbf8d36e077947d3810d6ba46b10}{clone}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \doxymbox{\hyperlink{class_xml_text_a2d51c80b49dc2b556aed1e66cbd4c195}{getContent}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ content;\ \}}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+
+\end{DoxyCode}

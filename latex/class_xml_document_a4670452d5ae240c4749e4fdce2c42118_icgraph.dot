@@ -1,0 +1,23 @@
+digraph "XmlDocument::getElementById"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="XmlDocument::getElementById",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Търси елемент по неговото ID."];
+  Node1 -> Node2 [id="edge8_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ChildCommand::execute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_child_command.html#a041dddcc91533d3f6a832fa68848ad72",tooltip="Изпълнява съответната команда върху подадения XML документ."];
+  Node1 -> Node3 [id="edge9_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ChildrenCommand::execute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_children_command.html#ac9a7d1b0b08f44b1d845bb554a22820d",tooltip="Изпълнява съответната команда върху подадения XML документ."];
+  Node1 -> Node4 [id="edge10_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="DeleteCommand::execute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_delete_command.html#a67f6d9dffbd9e3c0f51f6c56ec0a92a5",tooltip="Изпълнява съответната команда върху подадения XML документ."];
+  Node1 -> Node5 [id="edge11_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="NewChildCommand::execute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_new_child_command.html#a1e9d98a19fbfa5680f8ac1d50c20e795",tooltip="Изпълнява съответната команда върху подадения XML документ."];
+  Node1 -> Node6 [id="edge12_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="SelectCommand::execute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_select_command.html#a6b40aa548276beed85cebebde80174df",tooltip="Изпълнява съответната команда върху подадения XML документ."];
+  Node1 -> Node7 [id="edge13_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="SetCommand::execute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_set_command.html#a6fc8fafae682e5cd738c4d9094e1f50f",tooltip="Изпълнява съответната команда върху подадения XML документ."];
+  Node1 -> Node8 [id="edge14_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="TextCommand::execute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_text_command.html#af5b1e488b171792a7a5546d3370107c5",tooltip="Изпълнява съответната команда върху подадения XML документ."];
+}

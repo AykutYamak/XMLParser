@@ -1,0 +1,62 @@
+\doxysection{Child\+Command Клас Препратка}
+\hypertarget{class_child_command}{}\label{class_child_command}\index{ChildCommand@{ChildCommand}}
+
+
+Команда за достъпване на N-\/тото дете (команда:\+ child).  
+
+
+
+
+{\ttfamily \+\#include $<$Commands.\+h$>$}
+
+
+
+Диаграма на наследяване за Child\+Command:\+
+% FIG 0
+
+
+Граф на зависимости за класа Child\+Command:\+
+% FIG 1
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_child_command_a041dddcc91533d3f6a832fa68848ad72}{execute}} (\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&doc, const std::\+string \&args) override
+\begin{DoxyCompactList}\small\item\em Изпълнява съответната команда върху подадения XML документ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Команда за достъпване на N-\/тото дете (команда:\+ child). 
+
+Очаква ID на родителя и индекс N. Принтира форматирано самото дете. 
+
+\label{class_child_command_doc-func-members}
+\Hypertarget{class_child_command_doc-func-members}
+\doxysubsection{Членове Функции(методи) Документация}
+\Hypertarget{class_child_command_a041dddcc91533d3f6a832fa68848ad72}\index{ChildCommand@{ChildCommand}!execute@{execute}}
+\index{execute@{execute}!ChildCommand@{ChildCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_child_command_a041dddcc91533d3f6a832fa68848ad72} 
+void Child\+Command::\+execute (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&}]{doc}{, }\item[{const std::\+string \&}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Изпълнява съответната команда върху подадения XML документ. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em doc} & Референция към текущо заредения XML документ. \\
+\hline
+{\em args} & Аргументите на командата, подадени от потребителя (като стринг). \\
+\hline
+\end{DoxyParams}
+
+
+Заменя \doxymbox{\hyperlink{class_command_a693610de13df3a028abf715fdf5540a7}{Command}}.
+
+Граф с извикванията за тази функция:\+
+% FIG 2
+
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+CLI/\+Commands.\+h\end{DoxyCompactItemize}

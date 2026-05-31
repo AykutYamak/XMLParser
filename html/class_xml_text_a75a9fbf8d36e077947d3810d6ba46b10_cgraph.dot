@@ -1,0 +1,14 @@
+digraph "XmlText::clone"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="XmlText::clone",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Създава точно копие на текстовия възел."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="XmlNode::XmlNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xml_node.html#a9ba652be4d38ecccaa3933b5dde6401e",tooltip="Конструктор по подразбиране. Инициализира възела без родител."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="XmlText::XmlText",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xml_text.html#a43088b0b6b4bc3bbd180730d05fcebf2",tooltip="Конструктор по подразбиране. Създава празен текстов възел (без съдържание)."];
+  Node3 -> Node2 [id="edge3_Node000003_Node000002",color="steelblue1",style="solid",tooltip=" "];
+}

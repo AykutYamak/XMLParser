@@ -1,0 +1,45 @@
+\doxysection{Xml\+Element::\+Iterator Клас Препратка}
+\hypertarget{class_xml_element_1_1_iterator}{}\label{class_xml_element_1_1_iterator}\index{XmlElement::Iterator@{XmlElement::Iterator}}
+
+
+Вграден клас Итератор за безопасно и удобно обхождане на XML дървото.  
+
+
+
+
+{\ttfamily \+\#include $<$Xml\+Element.\+h$>$}
+
+
+
+Граф на зависимости за класа Xml\+Element::\+Iterator:\+
+% FIG 0
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}\label{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278} 
+{\bfseries Iterator} (std::\+vector$<$ \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}coll, size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Конструктор за итератора. \end{DoxyCompactList}\item 
+\Hypertarget{class_xml_element_1_1_iterator_acdddee0f58116e790dd1e4a4bdf28bf9}\label{class_xml_element_1_1_iterator_acdddee0f58116e790dd1e4a4bdf28bf9} 
+\doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}} \& {\bfseries operator++} ()
+\begin{DoxyCompactList}\small\item\em Оператор за преминаване към следващия елемент. \end{DoxyCompactList}\item 
+\Hypertarget{class_xml_element_1_1_iterator_a4a40dd4f6e34738a4d7b1dfa03bcefef}\label{class_xml_element_1_1_iterator_a4a40dd4f6e34738a4d7b1dfa03bcefef} 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*}\& {\bfseries operator\texorpdfstring{$\ast$}{*}} ()
+\begin{DoxyCompactList}\small\item\em Оператор за дереференциране. Връща референция към указателя на възела. \end{DoxyCompactList}\item 
+\Hypertarget{class_xml_element_1_1_iterator_a48b64f0ded9c2f483202215195abb348}\label{class_xml_element_1_1_iterator_a48b64f0ded9c2f483202215195abb348} 
+bool {\bfseries operator!=} (const \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}} \&other) const
+\begin{DoxyCompactList}\small\item\em Оператор за сравнение (проверка за край на колекцията). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Вграден клас Итератор за безопасно и удобно обхождане на XML дървото. 
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+Имплементирането на собствен итератор енкапсулира (скрива) вътрешното представяне на децата ({\ttfamily std::\+vector\texorpdfstring{$<$}{<}Xml\+Node\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>}}). Най-\/голямото предимство на този клас е, че предоставяйки методите {\ttfamily \doxylink{class_xml_element_a8e5b6bd76bf871f4cc7f97201cfe4f31}{begin()}} и {\ttfamily \doxylink{class_xml_element_a05042dd05d4b727946e16fc8cc9ca4e6}{end()}}, той прави {\ttfamily \doxylink{class_xml_element}{Xml\+Element}} съвместим със стандартните C++ range-\/based for цикли (напр. {\ttfamily for(auto child :\+ \texorpdfstring{$\ast$}{*}element)}). Това прави кода в целия проект много по-\/четим и устойчив на грешки, в сравнение с ръчното индексиране. 
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Xml\+Element.\+h\end{DoxyCompactItemize}

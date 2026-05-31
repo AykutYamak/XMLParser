@@ -1,0 +1,50 @@
+\doxysection{Id\+Dictionary.\+h}
+\hypertarget{_id_dictionary_8h_source}{}\label{_id_dictionary_8h_source}\index{XMLParser/XMLParser/XmlCore/IdDictionary.h@{XMLParser/XMLParser/XmlCore/IdDictionary.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}XmlElement.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_id_entry}{IdEntry}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ std::string\ \doxymbox{\hyperlink{struct_id_entry_a02f1d819050707a6861b63529f88eb38}{id}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00012\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ \doxymbox{\hyperlink{struct_id_entry_a940dc7f501667f9db8b7038849172be2}{element}};\ \ \ }
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_id_dictionary}{IdDictionary}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ std::vector<IdEntry>\ entries;\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_id_dictionary_a8c8205e48c697ebde991ca12afce98cc}{contains}}(\textcolor{keyword}{const}\ std::string\&\ \textcolor{keywordtype}{id})\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \doxymbox{\hyperlink{struct_id_entry}{IdEntry}}\&\ entry\ :\ entries\ )}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (entry.id\ ==\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_id_dictionary_aa092cbb795803f11bbc65afa302415c4}{add}}(\textcolor{keyword}{const}\ std::string\&\ \textcolor{keywordtype}{id},\ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ element)\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ entries.push\_back(\{\ id,element\ \});}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ \doxymbox{\hyperlink{class_id_dictionary_ab7e277a89537f537bb0a1aa2814a734e}{get}}(\textcolor{keyword}{const}\ std::string\&\ \textcolor{keywordtype}{id})\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \doxymbox{\hyperlink{struct_id_entry}{IdEntry}}\&\ entry\ :\ entries)}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (entry.id\ ==\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ entry.element;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_id_dictionary_aed37784bce79622c17ccde9b9587a25b}{clear}}()\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ entries.clear();}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \};}
+
+\end{DoxyCode}

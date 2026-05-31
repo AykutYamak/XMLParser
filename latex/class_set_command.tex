@@ -1,0 +1,62 @@
+\doxysection{Set\+Command Клас Препратка}
+\hypertarget{class_set_command}{}\label{class_set_command}\index{SetCommand@{SetCommand}}
+
+
+Команда за задаване на стойност на атрибут (команда:\+ set).  
+
+
+
+
+{\ttfamily \+\#include $<$Commands.\+h$>$}
+
+
+
+Диаграма на наследяване за Set\+Command:\+
+% FIG 0
+
+
+Граф на зависимости за класа Set\+Command:\+
+% FIG 1
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_set_command_a6fc8fafae682e5cd738c4d9094e1f50f}{execute}} (\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&doc, const std::\+string \&args) override
+\begin{DoxyCompactList}\small\item\em Изпълнява съответната команда върху подадения XML документ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Команда за задаване на стойност на атрибут (команда:\+ set). 
+
+Добавя нов атрибут или обновява съществуващ по дадено ID на елемент. 
+
+\label{class_set_command_doc-func-members}
+\Hypertarget{class_set_command_doc-func-members}
+\doxysubsection{Членове Функции(методи) Документация}
+\Hypertarget{class_set_command_a6fc8fafae682e5cd738c4d9094e1f50f}\index{SetCommand@{SetCommand}!execute@{execute}}
+\index{execute@{execute}!SetCommand@{SetCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_set_command_a6fc8fafae682e5cd738c4d9094e1f50f} 
+void Set\+Command::\+execute (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&}]{doc}{, }\item[{const std::\+string \&}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Изпълнява съответната команда върху подадения XML документ. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em doc} & Референция към текущо заредения XML документ. \\
+\hline
+{\em args} & Аргументите на командата, подадени от потребителя (като стринг). \\
+\hline
+\end{DoxyParams}
+
+
+Заменя \doxymbox{\hyperlink{class_command_a693610de13df3a028abf715fdf5540a7}{Command}}.
+
+Граф с извикванията за тази функция:\+
+% FIG 2
+
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+CLI/\+Commands.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\doxysection{Delete\+Command Клас Препратка}
+\hypertarget{class_delete_command}{}\label{class_delete_command}\index{DeleteCommand@{DeleteCommand}}
+
+
+Команда за изтриване на атрибут (команда:\+ delete).  
+
+
+
+
+{\ttfamily \+\#include $<$Commands.\+h$>$}
+
+
+
+Диаграма на наследяване за Delete\+Command:\+
+% FIG 0
+
+
+Граф на зависимости за класа Delete\+Command:\+
+% FIG 1
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_delete_command_a67f6d9dffbd9e3c0f51f6c56ec0a92a5}{execute}} (\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&doc, const std::\+string \&args) override
+\begin{DoxyCompactList}\small\item\em Изпълнява съответната команда върху подадения XML документ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Команда за изтриване на атрибут (команда:\+ delete). 
+
+Премахва атрибут от елемент по зададено ID и ключ. 
+
+\label{class_delete_command_doc-func-members}
+\Hypertarget{class_delete_command_doc-func-members}
+\doxysubsection{Членове Функции(методи) Документация}
+\Hypertarget{class_delete_command_a67f6d9dffbd9e3c0f51f6c56ec0a92a5}\index{DeleteCommand@{DeleteCommand}!execute@{execute}}
+\index{execute@{execute}!DeleteCommand@{DeleteCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_delete_command_a67f6d9dffbd9e3c0f51f6c56ec0a92a5} 
+void Delete\+Command::\+execute (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&}]{doc}{, }\item[{const std::\+string \&}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Изпълнява съответната команда върху подадения XML документ. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em doc} & Референция към текущо заредения XML документ. \\
+\hline
+{\em args} & Аргументите на командата, подадени от потребителя (като стринг). \\
+\hline
+\end{DoxyParams}
+
+
+Заменя \doxymbox{\hyperlink{class_command_a693610de13df3a028abf715fdf5540a7}{Command}}.
+
+Граф с извикванията за тази функция:\+
+% FIG 2
+
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+CLI/\+Commands.\+h\end{DoxyCompactItemize}

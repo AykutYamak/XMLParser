@@ -1,0 +1,72 @@
+\doxysection{File\+Exception Клас Препратка}
+\hypertarget{class_file_exception}{}\label{class_file_exception}\index{FileException@{FileException}}
+
+
+Изключение, свързано с файлови операции.  
+
+
+
+
+{\ttfamily \+\#include $<$Exception.\+h$>$}
+
+
+
+Диаграма на наследяване за File\+Exception:\+
+% FIG 0
+
+
+Граф на зависимости за класа File\+Exception:\+
+% FIG 1
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_file_exception_a45332a9dc21b2f6cacef7ea545fe4842}{File\+Exception}} (const std::\+string \&msg)
+\begin{DoxyCompactList}\small\item\em Конструктор за \doxylink{class_file_exception}{File\+Exception}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Общодостъпни членове функции наследен от \doxymbox{\hyperlink{class_exception}{Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_exception_a35bf745d25961ebe8795f7f457aa8a05}{Exception}} (const std::\+string \&msg)
+\begin{DoxyCompactList}\small\item\em Конструктор за базовото XML изключение. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_exception_a91eace2bc486fa18d3f913a28f3921f8}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Връща обяснителното съобщение за грешката. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Допълнителни наследени членове}
+\doxysubsection*{Защитени атрибути наследен от \doxymbox{\hyperlink{class_exception}{Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+std::\+string {\bfseries message}
+\begin{DoxyCompactList}\small\item\em Форматираното съобщение за грешка. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Изключение, свързано с файлови операции. 
+
+
+\begin{DoxyItemize}
+\item Използва се, когато даден файл не може да бъде отворен, създаден, прочетен или при опит за запазване на данни без предварително зареден файл. 
+\end{DoxyItemize}
+
+\label{class_file_exception_doc-constructors}
+\Hypertarget{class_file_exception_doc-constructors}
+\doxysubsection{Конструктор \& Деструктор Документация}
+\Hypertarget{class_file_exception_a45332a9dc21b2f6cacef7ea545fe4842}\index{FileException@{FileException}!FileException@{FileException}}
+\index{FileException@{FileException}!FileException@{FileException}}
+\doxysubsubsection{\texorpdfstring{FileException()}{FileException()}}
+{\footnotesize\ttfamily \label{class_file_exception_a45332a9dc21b2f6cacef7ea545fe4842} 
+File\+Exception::\+\+File\+Exception (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор за \doxylink{class_file_exception}{File\+Exception}. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em msg} & Детайли за файловата грешка. \\
+\hline
+\end{DoxyParams}
+Граф с извикванията за тази функция:\+
+% FIG 2
+
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+Exceptions/\+Exception.\+h\end{DoxyCompactItemize}

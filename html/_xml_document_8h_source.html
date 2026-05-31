@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="bg">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: XMLParser/XMLParser/XmlCore/XmlDocument.h Изходен файл</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Генериран от Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Търсене" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_xml_document_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Зареждане...</div>
+<div class="SRStatus" id="Searching">Търсене...</div>
+<div class="SRStatus" id="NoMatches">Не намерено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">XmlDocument.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;XmlElement.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;IdDictionary.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_xml_document.html">   11</a></span><span class="keyword">class </span><a class="code hl_function" href="class_xml_document.html#a71daa95a33b7a692549974258893b36e">XmlDocument</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_class" href="class_xml_element.html">XmlElement</a>* root; </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_class" href="class_id_dictionary.html">IdDictionary</a> registry; </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">int</span> autoIdCounter; </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    std::string openedFilePath; </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> moveFrom(<a class="code hl_function" href="class_xml_document.html#a71daa95a33b7a692549974258893b36e">XmlDocument</a>&amp;&amp; other);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// --- Помощни функции за парсване на документа ---</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::string trim(<span class="keyword">const</span> std::string&amp; str) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    std::string ensureUniqueId(<span class="keyword">const</span> std::string&amp; parseId);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_xml_element.html">XmlElement</a>* parseOpeningTag(<span class="keyword">const</span> std::string&amp; content) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// --- Помощни функции за XPath търсачката ---</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    std::vector&lt;std::string&gt; splitXpath(<span class="keyword">const</span> std::string&amp; query) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    std::vector&lt;XmlElement*&gt; evaluateXpathStep(<span class="keyword">const</span> std::vector&lt;XmlElement*&gt;&amp; currentNodes, <span class="keyword">const</span> std::string&amp; step) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    std::string extractElementText(<a class="code hl_class" href="class_xml_element.html">XmlElement</a>* element) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_xml_document.html#a71daa95a33b7a692549974258893b36e">   52</a></span>    <a class="code hl_function" href="class_xml_document.html#a71daa95a33b7a692549974258893b36e">XmlDocument</a>() : root(nullptr), autoIdCounter(0), openedFilePath(<span class="stringliteral">&quot;&quot;</span>) {}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// Забраняваме копирането</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="class_xml_document.html#a71daa95a33b7a692549974258893b36e">XmlDocument</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_xml_document.html">XmlDocument</a>&amp; other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_class" href="class_xml_document.html">XmlDocument</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_xml_document.html">XmlDocument</a>&amp; other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="class_xml_document.html#ab18742228f580a5e4ec87e4b39c8a68c">~XmlDocument</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_function" href="class_xml_document.html#a71daa95a33b7a692549974258893b36e">XmlDocument</a>(<a class="code hl_class" href="class_xml_document.html">XmlDocument</a>&amp;&amp; other);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_class" href="class_xml_document.html">XmlDocument</a>&amp; operator=(<a class="code hl_class" href="class_xml_document.html">XmlDocument</a>&amp;&amp; other);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_xml_document.html#a31230a8d6f168da8d3f7df395a05a304">load</a>(<span class="keyword">const</span> std::string&amp; filename);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_xml_document.html#a8645fb13472af75e6772d61c6ebae567">save</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_xml_document.html#ac01d57d4967d6fc57208e5ecf39caa78">saveAs</a>(<span class="keyword">const</span> std::string&amp; filename) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_xml_document.html#a46fc7356ae5e844bae416f58a868d5a9">clear</a>();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_xml_document.html#aed36928312f77e34cd6bfebf36bb402e">  104</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_xml_document.html#aed36928312f77e34cd6bfebf36bb402e">registerElement</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>, <a class="code hl_class" href="class_xml_element.html">XmlElement</a>* element) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        registry.add(<span class="keywordtype">id</span>, element);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="class_xml_document.html#a9c3a6ac4ee312b41cb27997a62883470">  109</a></span>    <a class="code hl_class" href="class_xml_element.html">XmlElement</a>* <a class="code hl_function" href="class_xml_document.html#a9c3a6ac4ee312b41cb27997a62883470">getRoot</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> root; }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="class_xml_document.html#a4670452d5ae240c4749e4fdce2c42118">  114</a></span>    <a class="code hl_class" href="class_xml_element.html">XmlElement</a>* <a class="code hl_function" href="class_xml_document.html#a4670452d5ae240c4749e4fdce2c42118">getElementById</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> registry.get(<span class="keywordtype">id</span>); }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_xml_document.html#a39b259f1b254f3e8bb2ea76e9fb9efad">  117</a></span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="class_xml_document.html#a39b259f1b254f3e8bb2ea76e9fb9efad">getFilePath</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> openedFilePath; }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="class_xml_document.html#a8e9205a318c3709366738b3dceab4b43">xpath</a>(<span class="keyword">const</span> std::string&amp; query) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
+</div>
+<div class="ttc" id="aclass_id_dictionary_html"><div class="ttname"><a href="class_id_dictionary.html">IdDictionary</a></div><div class="ttdoc">Речник за регистриране и бързо търсене на XML елементи по тяхното ID.</div><div class="ttdef"><b>Definition</b> IdDictionary.h:21</div></div>
+<div class="ttc" id="aclass_xml_document_html"><div class="ttname"><a href="class_xml_document.html">XmlDocument</a></div><div class="ttdoc">Главен клас, представляващ целия XML документ.</div><div class="ttdef"><b>Definition</b> XmlDocument.h:11</div></div>
+<div class="ttc" id="aclass_xml_document_html_a31230a8d6f168da8d3f7df395a05a304"><div class="ttname"><a href="class_xml_document.html#a31230a8d6f168da8d3f7df395a05a304">XmlDocument::load</a></div><div class="ttdeci">void load(const std::string &amp;filename)</div><div class="ttdoc">Зарежда и парсва XML файл от диска.</div><div class="ttdef"><b>Definition</b> XmlDocument.cpp:178</div></div>
+<div class="ttc" id="aclass_xml_document_html_a39b259f1b254f3e8bb2ea76e9fb9efad"><div class="ttname"><a href="class_xml_document.html#a39b259f1b254f3e8bb2ea76e9fb9efad">XmlDocument::getFilePath</a></div><div class="ttdeci">const std::string &amp; getFilePath() const</div><div class="ttdoc">Връща пътя на текущо отворения файл.</div><div class="ttdef"><b>Definition</b> XmlDocument.h:117</div></div>
+<div class="ttc" id="aclass_xml_document_html_a4670452d5ae240c4749e4fdce2c42118"><div class="ttname"><a href="class_xml_document.html#a4670452d5ae240c4749e4fdce2c42118">XmlDocument::getElementById</a></div><div class="ttdeci">XmlElement * getElementById(const std::string &amp;id) const</div><div class="ttdoc">Търси елемент по неговото ID.</div><div class="ttdef"><b>Definition</b> XmlDocument.h:114</div></div>
+<div class="ttc" id="aclass_xml_document_html_a46fc7356ae5e844bae416f58a868d5a9"><div class="ttname"><a href="class_xml_document.html#a46fc7356ae5e844bae416f58a868d5a9">XmlDocument::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Изчиства текущия документ от паметта (унищожава дървото и речника).</div><div class="ttdef"><b>Definition</b> XmlDocument.cpp:345</div></div>
+<div class="ttc" id="aclass_xml_document_html_a71daa95a33b7a692549974258893b36e"><div class="ttname"><a href="class_xml_document.html#a71daa95a33b7a692549974258893b36e">XmlDocument::XmlDocument</a></div><div class="ttdeci">XmlDocument()</div><div class="ttdoc">Конструктор по подразбиране. Създава празен документ.</div><div class="ttdef"><b>Definition</b> XmlDocument.h:52</div></div>
+<div class="ttc" id="aclass_xml_document_html_a8645fb13472af75e6772d61c6ebae567"><div class="ttname"><a href="class_xml_document.html#a8645fb13472af75e6772d61c6ebae567">XmlDocument::save</a></div><div class="ttdeci">void save() const</div><div class="ttdoc">Запазва промените върху текущо отворения файл.</div><div class="ttdef"><b>Definition</b> XmlDocument.cpp:332</div></div>
+<div class="ttc" id="aclass_xml_document_html_a8e9205a318c3709366738b3dceab4b43"><div class="ttname"><a href="class_xml_document.html#a8e9205a318c3709366738b3dceab4b43">XmlDocument::xpath</a></div><div class="ttdeci">std::vector&lt; std::string &gt; xpath(const std::string &amp;query) const</div><div class="ttdoc">Изпълнява XPath заявка върху документа.</div><div class="ttdef"><b>Definition</b> XmlDocument.cpp:548</div></div>
+<div class="ttc" id="aclass_xml_document_html_a9c3a6ac4ee312b41cb27997a62883470"><div class="ttname"><a href="class_xml_document.html#a9c3a6ac4ee312b41cb27997a62883470">XmlDocument::getRoot</a></div><div class="ttdeci">XmlElement * getRoot() const</div><div class="ttdoc">Връща указател към корена на XML дървото.</div><div class="ttdef"><b>Definition</b> XmlDocument.h:109</div></div>
+<div class="ttc" id="aclass_xml_document_html_ab18742228f580a5e4ec87e4b39c8a68c"><div class="ttname"><a href="class_xml_document.html#ab18742228f580a5e4ec87e4b39c8a68c">XmlDocument::~XmlDocument</a></div><div class="ttdeci">~XmlDocument()</div><div class="ttdoc">Деструктор. Изчиства паметта, като изтрива корена (което каскадно изтрива цялото дърво).</div><div class="ttdef"><b>Definition</b> XmlDocument.cpp:56</div></div>
+<div class="ttc" id="aclass_xml_document_html_ac01d57d4967d6fc57208e5ecf39caa78"><div class="ttname"><a href="class_xml_document.html#ac01d57d4967d6fc57208e5ecf39caa78">XmlDocument::saveAs</a></div><div class="ttdeci">void saveAs(const std::string &amp;filename) const</div><div class="ttdoc">Запазва документа в нов файл.</div><div class="ttdef"><b>Definition</b> XmlDocument.cpp:307</div></div>
+<div class="ttc" id="aclass_xml_document_html_aed36928312f77e34cd6bfebf36bb402e"><div class="ttname"><a href="class_xml_document.html#aed36928312f77e34cd6bfebf36bb402e">XmlDocument::registerElement</a></div><div class="ttdeci">void registerElement(const std::string &amp;id, XmlElement *element)</div><div class="ttdoc">Регистрира елемент в ID речника за бързо търсене.</div><div class="ttdef"><b>Definition</b> XmlDocument.h:104</div></div>
+<div class="ttc" id="aclass_xml_element_html"><div class="ttname"><a href="class_xml_element.html">XmlElement</a></div><div class="ttdoc">Клас, представящ XML елемент (таг) в дървото.</div><div class="ttdef"><b>Definition</b> XmlElement.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>XMLParser</b></li><li class="navelem"><b>XMLParser</b></li><li class="navelem"><b>XmlCore</b></li><li class="navelem"><b>XmlDocument.h</b></li>
+    <li class="footer">Генериран от <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

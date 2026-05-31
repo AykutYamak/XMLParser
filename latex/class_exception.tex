@@ -1,0 +1,87 @@
+\doxysection{Exception Клас Препратка}
+\hypertarget{class_exception}{}\label{class_exception}\index{Exception@{Exception}}
+
+
+Базов клас за изключенията в XML парсъра.  
+
+
+
+
+{\ttfamily \+\#include $<$Exception.\+h$>$}
+
+
+
+Диаграма на наследяване за Exception:\+
+% FIG 0
+
+
+Граф на зависимости за класа Exception:\+
+% FIG 1
+\doxysubsubsection*{Общодостъпни членове функции}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_exception_a35bf745d25961ebe8795f7f457aa8a05}{Exception}} (const std::\+string \&msg)
+\begin{DoxyCompactList}\small\item\em Конструктор за базовото XML изключение. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_exception_a91eace2bc486fa18d3f913a28f3921f8}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Връща обяснителното съобщение за грешката. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защитени атрибути}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_exception_a80bf622a8fc3c48fa6ab1a3fc024ff91}\label{class_exception_a80bf622a8fc3c48fa6ab1a3fc024ff91} 
+std::\+string {\bfseries message}
+\begin{DoxyCompactList}\small\item\em Форматираното съобщение за грешка. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробно описание}
+Базов клас за изключенията в XML парсъра. 
+
+
+\begin{DoxyItemize}
+\item Наследява std::\+exception и служи като основа за всички специфични изключения, хвърляни от приложението. Автоматично добавя префикса "{}\+XML error:\+ "{} към съобщенията за грешка. 
+\end{DoxyItemize}
+
+\label{class_exception_doc-constructors}
+\Hypertarget{class_exception_doc-constructors}
+\doxysubsection{Конструктор \& Деструктор Документация}
+\Hypertarget{class_exception_a35bf745d25961ebe8795f7f457aa8a05}\index{Exception@{Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{Exception()}{Exception()}}
+{\footnotesize\ttfamily \label{class_exception_a35bf745d25961ebe8795f7f457aa8a05} 
+Exception::\+\+Exception (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор за базовото XML изключение. 
+
+
+\begin{DoxyParams}{Аргументи}
+{\em msg} & Конкретният текст на грешката. \\
+\hline
+\end{DoxyParams}
+Граф на извикванията за тази функция:\+
+% FIG 2
+
+
+\label{class_exception_doc-func-members}
+\Hypertarget{class_exception_doc-func-members}
+\doxysubsection{Членове Функции(методи) Документация}
+\Hypertarget{class_exception_a91eace2bc486fa18d3f913a28f3921f8}\index{Exception@{Exception}!what@{what}}
+\index{what@{what}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily \label{class_exception_a91eace2bc486fa18d3f913a28f3921f8} 
+const char \texorpdfstring{$\ast$}{*} Exception::\+what (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Връща обяснителното съобщение за грешката. 
+
+\begin{DoxyReturn}{Връща}
+Указател към C-\/style низ (null-\/terminated), съдържащ съобщението. 
+\end{DoxyReturn}
+Граф на извикванията за тази функция:\+
+% FIG 3
+
+
+Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+Exceptions/\+Exception.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,314 @@
+\doxysection{Commands.\+h}
+\hypertarget{_commands_8h_source}{}\label{_commands_8h_source}\index{XMLParser/XMLParser/CLI/Commands.h@{XMLParser/XMLParser/CLI/Commands.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Command.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../XmlCore/XmlText.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../Exceptions/Exception.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_print_command}{PrintCommand}}\ :\textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_print_command_adf7b4ac737d241683f556973e127cb67}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}()-\/>\doxymbox{\hyperlink{class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863}{print}}(std::cout,\ 0);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}No\ document\ loaded\ or\ document\ is\ emtpy."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_x_path_command}{XPathCommand}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_x_path_command_a439178dec708de67b4152107468ca70e}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (args.empty())}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ XPath\ query\ missing.\ Usage:\ xpath\ <query>."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ std::vector<std::string>\ results\ =\ doc.\doxymbox{\hyperlink{class_xml_document_a8e9205a318c3709366738b3dceab4b43}{xpath}}(args);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (results.empty())}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}No\ results\ found."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Results:\ "{}}\ <<\ std::endl;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ resultsSize\ =\ results.size();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ resultsSize;\ i++)}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}["{}}\ <<\ i\ <<\ \textcolor{stringliteral}{"{}]"{}}\ <<\ results[i]\ <<\ std::endl;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_save_command}{SaveCommand}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00069\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_save_command_a27417dc4897ec461c4d3690aaea719c5}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00071\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!args.empty())}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ 'save'\ command\ does\ not\ take\ any\ arguments.\ Use\ 'saveas\ <path>'\ to\ save\ to\ a\ different\ file."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ doc.\doxymbox{\hyperlink{class_xml_document_a8645fb13472af75e6772d61c6ebae567}{save}}();}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Successfully\ saved\ changes\ to\ the\ current\ file."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_exception}{Exception}}\&\ e)}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error\ saving:\ "{}}\ <<\ e.\doxymbox{\hyperlink{class_exception_a91eace2bc486fa18d3f913a28f3921f8}{what}}()\ <<\ std::endl;}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_save_as_command}{SaveAsCommand}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00100\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_save_as_command_a1445cad0df530bf8b3c206d9b799cc7a}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (args.empty())}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ 'saveas'\ requires\ a\ file\ path.\ Usage:\ saveas\ <path>"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ std::string\ targetPath\ =\ args;}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (targetPath.front()\ ==\ \textcolor{charliteral}{'"{}'}\ \&\&\ targetPath.back()\ ==\ \textcolor{charliteral}{'"{}'})}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ targetPath\ =\ targetPath.substr(1,\ targetPath.length()\ -\/\ 2);}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ doc.\doxymbox{\hyperlink{class_xml_document_ac01d57d4967d6fc57208e5ecf39caa78}{saveAs}}(targetPath);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ lastSlash\ =\ targetPath.find\_last\_of(\textcolor{stringliteral}{"{}/\(\backslash\)\(\backslash\)"{}});}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ filename\ =\ (lastSlash\ ==\ std::string::npos)\ ?\ targetPath\ :\ targetPath.substr(lastSlash\ +\ 1);}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Successfully\ saved\ "{}}\ <<\ filename\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_exception}{Exception}}\&\ e)}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error\ saving\ file:\ "{}}\ <<\ e.\doxymbox{\hyperlink{class_exception_a91eace2bc486fa18d3f913a28f3921f8}{what}}()\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00128\ \ \ \ \ \}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \};}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00136\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_select_command}{SelectCommand}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00137\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_select_command_a6b40aa548276beed85cebebde80174df}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ spacePos\ =\ args.find(\textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (spacePos\ ==\ std::string::npos)}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ Usage:\ select\ <id>\ <key>"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ std::string\ \textcolor{keywordtype}{id}\ =\ args.substr(0,\ spacePos);}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ std::string\ key\ =\ args.substr(spacePos\ +\ 1);}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ el\ =\ doc.\doxymbox{\hyperlink{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}{getElementById}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!el)}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Element\ with\ id\ '"{}}\ <<\ \textcolor{keywordtype}{id}\ <<\ \textcolor{stringliteral}{"{}'\ not\ found."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ val\ =\ el-\/>\doxymbox{\hyperlink{class_xml_element_aafeb59e91c1f00954461b89ab420fe40}{getAttributeValue}}(key);}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (val.empty())\ std::cout\ <<\ \textcolor{stringliteral}{"{}Attribute\ '"{}}\ <<\ key\ <<\ \textcolor{stringliteral}{"{}'\ not\ found\ or\ empty."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ std::cout\ <<\ \textcolor{stringliteral}{"{}Value:\ "{}}\ <<\ val\ <<\ std::endl;}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00163\ \ \ \ \ \}}
+\DoxyCodeLine{00164\ \};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00170\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_set_command}{SetCommand}}\ :\textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00171\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_set_command_a6fc8fafae682e5cd738c4d9094e1f50f}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ firstSpace\ =\ args.find(\textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (firstSpace\ ==\ std::string::npos)\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ Usage:\ set\ <id>\ <key>\ <value>"{}}\ <<\ std::endl;\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ secondSpace\ =\ args.find(\textcolor{charliteral}{'\ '},\ firstSpace\ +\ 1);}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (secondSpace\ ==\ std::string::npos)\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ Usage:\ set\ <id>\ <key>\ <value>"{}}\ <<\ std::endl;\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ std::string\ \textcolor{keywordtype}{id}\ =\ args.substr(0,\ firstSpace);}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ std::string\ key\ =\ args.substr(firstSpace\ +\ 1,\ secondSpace\ -\/\ firstSpace\ -\/\ 1);}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ std::string\ value\ =\ args.substr(secondSpace\ +\ 1);}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ el\ =\ doc.\doxymbox{\hyperlink{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}{getElementById}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!el)\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Element\ with\ id\ '"{}}\ <<\ \textcolor{keywordtype}{id}\ <<\ \textcolor{stringliteral}{"{}'\ not\ found."{}}\ <<\ std::endl;\ \}}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{\ (*el)[key]\ =\ value;\ std::cout\ <<\ \textcolor{stringliteral}{"{}Attribute\ set\ successfully."{}}\ <<\ std::endl;\ \}}
+\DoxyCodeLine{00190\ \ \ \ \ \}}
+\DoxyCodeLine{00191\ \};}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00197\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_delete_command}{DeleteCommand}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00198\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_delete_command_a67f6d9dffbd9e3c0f51f6c56ec0a92a5}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ spacePos\ =\ args.find(\textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (spacePos\ ==\ std::string::npos)}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ Usage:\ delete\ <id>\ <key>"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ std::string\ \textcolor{keywordtype}{id}\ =\ args.substr(0,\ spacePos);}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ std::string\ key\ =\ args.substr(spacePos\ +\ 1);}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ el\ =\ doc.\doxymbox{\hyperlink{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}{getElementById}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!el)}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Element\ with\ id\ '"{}}\ <<\ \textcolor{keywordtype}{id}\ <<\ \textcolor{stringliteral}{"{}'\ not\ found."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ el-\/>\doxymbox{\hyperlink{class_xml_element_aaaa9635e353a5c07ed2f5664815400e2}{removeAttribute}}(key);}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Attribute\ '"{}}\ <<\ key\ <<\ \textcolor{stringliteral}{"{}'\ deleted"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00223\ \ \ \ \ \}}
+\DoxyCodeLine{00224\ \};}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00230\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_children_command}{ChildrenCommand}}\ :\textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00231\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_children_command_ac9a7d1b0b08f44b1d845bb554a22820d}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ std::string\ \textcolor{keywordtype}{id}\ =\ args;}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ el\ =\ doc.\doxymbox{\hyperlink{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}{getElementById}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!el)\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Element\ with\ id\ '"{}}\ <<\ \textcolor{keywordtype}{id}\ <<\ \textcolor{stringliteral}{"{}'\ not\ found."{}}\ <<\ std::endl;\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ std::vector<XmlElement*>\ kids\ =\ el-\/>\doxymbox{\hyperlink{class_xml_element_adc5d91e0607a879a7ca4731aa6257877}{getChildrenOfType}}<\doxymbox{\hyperlink{class_xml_element}{XmlElement}}>();}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (kids.empty())\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}No\ child\ elements\ found."{}}\ <<\ std::endl;\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ kidsSize\ =\ kids.size();}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ kidsSize;\ i++)}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Child\ "{}}\ <<\ i\ <<\ \textcolor{stringliteral}{"{}\ ("{}}\ <<\ kids[i]-\/>getName()\ <<\ \textcolor{stringliteral}{"{})\ attributes:\ "{}};}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ attributes\ =\ kids[i]-\/>getAttributes();}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (attributes.empty())}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}None"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ attributesSize\ =\ attributes.size();}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ j\ =\ 0;\ j\ <\ attributesSize;\ j++)}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ attributes[j].key\ <<\ \textcolor{stringliteral}{"{}=\(\backslash\)"{}"{}}\ <<\ attributes[j].value\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)"{}\ "{}};}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00265\ \ \ \ \ \}}
+\DoxyCodeLine{00266\ \};}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00272\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_child_command}{ChildCommand}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00273\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00274\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_child_command_a041dddcc91533d3f6a832fa68848ad72}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ spacePos\ =\ args.find(\textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (spacePos\ ==\ std::string::npos)\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ Usage:\ child\ <id>\ <n>"{}}\ <<\ std::endl;\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00281\ }
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ std::string\ \textcolor{keywordtype}{id}\ =\ args.substr(0,\ spacePos);}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ std::string\ n\_str\ =\ args.substr(spacePos\ +\ 1);}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ el\ =\ doc.\doxymbox{\hyperlink{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}{getElementById}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!el)\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Element\ with\ id\ '"{}}\ <<\ \textcolor{keywordtype}{id}\ <<\ \textcolor{stringliteral}{"{}'\ not\ found."{}}\ <<\ std::endl;\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00287\ }
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ n\ =\ std::stoi(n\_str);}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ std::vector<XmlElement*>\ kids\ =\ el-\/>\doxymbox{\hyperlink{class_xml_element_adc5d91e0607a879a7ca4731aa6257877}{getChildrenOfType}}<\doxymbox{\hyperlink{class_xml_element}{XmlElement}}>();}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (n\ >=\ 0\ \&\&\ n\ <\ (\textcolor{keywordtype}{int})kids.size())\ \{}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Child\ "{}}\ <<\ n\ <<\ \textcolor{stringliteral}{"{}\ details"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \ \ \ \ kids[n]-\/>print(std::cout,\ 0);}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ Index\ "{}}\ <<\ n\ <<\ \textcolor{stringliteral}{"{}\ is\ out\ of\ bounds.\ "{}}\ <<\ std::endl;}
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00299\ \ \ \ \ \}}
+\DoxyCodeLine{00300\ \};}
+\DoxyCodeLine{00301\ }
+\DoxyCodeLine{00306\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_text_command}{TextCommand}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00307\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00308\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_text_command_af5b1e488b171792a7a5546d3370107c5}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ std::string\ \textcolor{keywordtype}{id}\ =\ args;}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ el\ =\ doc.\doxymbox{\hyperlink{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}{getElementById}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!el)\ \{std::cout\ <<\ \textcolor{stringliteral}{"{}Element\ with\ id\ '"{}}\ <<\ \textcolor{keywordtype}{id}\ <<\ \textcolor{stringliteral}{"{}'\ not\ found."{}}\ <<\ std::endl;\ \textcolor{keywordflow}{return};\}}
+\DoxyCodeLine{00316\ }
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ std::vector<XmlText*>\ txtNodes\ =\ el-\/>\doxymbox{\hyperlink{class_xml_element_adc5d91e0607a879a7ca4731aa6257877}{getChildrenOfType}}<\doxymbox{\hyperlink{class_xml_text}{XmlText}}>();}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ std::string\ result\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ txtNodesSize\ =\ txtNodes.size();}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ txtNodesSize;\ i++)}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \ \ \ \ result\ +=\ txtNodes[i]-\/>getContent();}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Text:\ "{}}\ <<\ result\ <<\ std::endl;}
+\DoxyCodeLine{00325\ \ \ \ \ \}}
+\DoxyCodeLine{00326\ \};}
+\DoxyCodeLine{00327\ }
+\DoxyCodeLine{00332\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_new_child_command}{NewChildCommand}}\ :\textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00333\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00334\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_new_child_command_a1e9d98a19fbfa5680f8ac1d50c20e795}{execute}}(\doxymbox{\hyperlink{class_xml_document}{XmlDocument}}\&\ doc,\ \textcolor{keyword}{const}\ std::string\&\ args)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!doc.\doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{getRoot}}())\ \{}
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ file\ is\ currently\ loaded.\ Please\ use\ 'open'\ first."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ std::string\ \textcolor{keywordtype}{id}\ =\ args;}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ el\ =\ doc.\doxymbox{\hyperlink{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}{getElementById}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!el)\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Element\ with\ id\ '"{}}\ <<\ \textcolor{keywordtype}{id}\ <<\ \textcolor{stringliteral}{"{}'\ not\ found."{}}\ <<\ std::endl;\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00342\ }
+\DoxyCodeLine{00343\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}*\ newElement\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_xml_element}{XmlElement}}(\textcolor{stringliteral}{"{}new\_element"{}});}
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ newChildCounter\ =\ 1;}
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ std::string\ tempId\ =\ \textcolor{stringliteral}{"{}newChild\_"{}}\ +\ std::to\_string(newChildCounter++);}
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ (*newElement)[\textcolor{stringliteral}{"{}id"{}}]\ =\ tempId;}
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ doc.\doxymbox{\hyperlink{class_xml_document_aed36928312f77e34cd6bfebf36bb402e}{registerElement}}(tempId,\ newElement);}
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ el-\/>\doxymbox{\hyperlink{class_xml_element_ac9b7e2eef08c7a04095e8bd63024308c}{addChild}}(newElement);}
+\DoxyCodeLine{00350\ }
+\DoxyCodeLine{00351\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}New\ child\ added\ to\ '"{}}\ <<\ \textcolor{keywordtype}{id}\ <<\ \textcolor{stringliteral}{"{}'\ with\ generated\ id\ '"{}}\ <<\ tempId\ <<\ \textcolor{stringliteral}{"{}'."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00352\ \ \ \ \ \}}
+\DoxyCodeLine{00353\ \};}
+
+\end{DoxyCode}

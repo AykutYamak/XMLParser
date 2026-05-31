@@ -1,0 +1,32 @@
+\doxysection{Xml\+Node.\+h}
+\hypertarget{_xml_node_8h_source}{}\label{_xml_node_8h_source}\index{XMLParser/XMLParser/XmlCore/XmlNode.h@{XMLParser/XMLParser/XmlCore/XmlNode.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <ostream>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00012\ \ \ \ \ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}*\ \doxymbox{\hyperlink{class_xml_node_a892ef0efed5d79ef553f92ab1580b770}{parent}};\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}()\ :\ \doxymbox{\hyperlink{class_xml_node_a892ef0efed5d79ef553f92ab1580b770}{parent}}(nullptr)\{\}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_xml_node_ae6efa9b40aa905dda85c7a93489cf50a}{\string~XmlNode}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ Забраняваме\ копирането\ и\ преместването\ (Rule\ of\ Deleted\ Functions),}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ за\ да\ предотвратим\ проблеми\ с\ паметта\ при\ работа\ с\ полиморфни\ обекти.\ \ \ \ }}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}\&\ operator=(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00031\ \ \ \ \ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}(\doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}\&\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}\&\ operator=(\doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}\&\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_node_a24959aba794d80ab9dfcc88d0189ffcf}{print}}(std::ostream\&\ os,\textcolor{keywordtype}{int}\ indent\ =\ 0)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}*\ \doxymbox{\hyperlink{class_xml_node_af646cb06fcbf8af8b0654030f25c681d}{clone}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}*\ \doxymbox{\hyperlink{class_xml_node_a7d4aa65642386e9d0897651f190661c1}{getParent}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_xml_node_a892ef0efed5d79ef553f92ab1580b770}{parent}};\ \}}
+\DoxyCodeLine{00052\ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_xml_node_ac32e7763b1d39ba598cccf7639932fc5}{setParent}}(\doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{XmlNode}}*\ p)\ \{\ \doxymbox{\hyperlink{class_xml_node_a892ef0efed5d79ef553f92ab1580b770}{parent}}\ =\ p;\ \}}
+\DoxyCodeLine{00058\ \};}
+
+\end{DoxyCode}

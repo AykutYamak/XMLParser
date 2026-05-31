@@ -1,0 +1,885 @@
+{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+XmlElement Клас Препратка\par \pard\plain 
+{\tc\tcl2 \v XmlElement}
+{\xe \v XmlElement}
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Клас, представящ XML елемент (таг) в дървото. }}\par
+{
+{\f2 #include <XmlElement.h>}}\par
+Диаграма на наследяване за XmlElement:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Граф на зависимости за класа XmlElement:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Класове\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Iterator}{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Вграден клас Итератор за безопасно и удобно обхождане на XML дървото. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Общодостъпни членове функции\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlElement} (){\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Конструктор по подразбиране. Създава празен елемент. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b XmlElement} (const std::string &elementName)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Конструктор с параметър. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlElement} (const {\b XmlElement} &other)=delete{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlElement} & {\b operator=} (const {\b XmlElement} &other)=delete{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~XmlElement} () override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Деструктор. Отговаря за рекурсивното изтриване (delete) на всички дещерни възли в children вектора, за да предотврати изтичане на памет. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b print} (std::ostream &os, int indent=0) const override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Извежда елемента (тага, атрибутите и децата му) в изходен поток. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b XmlNode} * {\b clone} () const override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Създава динамично (дълбоко) копие на текущия елемент. Копира името, атрибутите и рекурсивно клонира всички дещерни възли. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b addChild} ({\b XmlNode} *child)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Добавя нов дещерен възел към текущия елемент. Автоматично задава текущия елемент като родител на добавеното дете. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const std::vector< {\b XmlAttribute} > & {\b getAttributes} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща списък с всички атрибути на елемента. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b addAttribute} (const std::string &key, const std::string &value)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Добавя нов атрибут или обновява стойността на съществуващ. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const std::string & {\b getName} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща името на XML тага. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b removeAttribute} (const std::string &key)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Премахва атрибут по зададен ключ, ако съществува. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string & {\b operator[]} (const std::string &key)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Оператор за индексиране по ключ на атрибут. Позволява лесен достъп и промяна на стойности (напр. element["id"] = "5"). Ако атрибут с такъв ключ не съществува, той автоматично се създава. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b getAttributeValue} (const std::string &key) const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Безопасно извлича стойността на атрибут (read-only). За разлика от operator[], тази функция не създава нов атрибут, ако ключът липсва. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T> std::vector< T * > {\b getChildrenOfType} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Шаблонна функция, която връща всички дещерни възли от специфичен тип. Използва dynamic_cast за безопасно филтриране (напр. само {\b XmlElement} или само {\b XmlText}). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Iterator} {\b begin} (){\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща итератор, сочещ към първото дете на елемента. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Iterator} {\b end} (){\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща итератор, сочещ след последното дете на елемента. }{
+}\par
+}\par}
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Общодостъпни членове функции наследен от {\b XmlNode}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlNode} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Конструктор по подразбиране. Инициализира възела без родител. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+virtual {\b ~XmlNode} ()=default\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Виртуален деструктор. Гарантира правилното изчистване на паметта при изтриване на обекти чрез указател към базовия клас. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlNode} (const {\b XmlNode} &other)=delete\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlNode} & {\b operator=} (const {\b XmlNode} &other)=delete\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlNode} ({\b XmlNode} &&other)=delete\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlNode} & {\b operator=} ({\b XmlNode} &&other)=delete\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b XmlNode} * {\b getParent} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща родителския възел на текущия обект. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b setParent} ({\b XmlNode} *p)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Задава нов родителски възел. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Допълнителни наследени членове\par
+\pard\plain 
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Защитени атрибути наследен от {\b XmlNode}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b XmlNode} * {\b parent}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Указател към родителския възел (nullptr, ако е корен). }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Подробно описание\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Клас, представящ XML елемент (таг) в дървото. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u8226\tab}\ilvl0\ls1 \li0\ri0\lin0\rin0\fi-360\tx360\li360\ri0\lin360\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+Наследява {\b XmlNode}. Може да съдържа име (напр. "person"), списък от атрибути (напр. id="1") и вектор от дещерни възли (други елементи или текст). \par}
+\par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Конструктор & Деструктор Документация\par
+\pard\plain 
+{\xe \v XmlElement\:XmlElement}
+{\xe \v XmlElement\:XmlElement}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+XmlElement::XmlElement (const std::string & elementName){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Конструктор с параметър. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i elementName} \cell }{Името на XML тага, който се създава. \cell }
+{\row }
+}
+}Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_ab17c21eab01a90ef7922bfcbe018e088_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ~XmlElement\:XmlElement}
+{\xe \v XmlElement\:~XmlElement}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+XmlElement::~XmlElement (){\f2 [override]}}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Деструктор. Отговаря за рекурсивното изтриване (delete) на всички дещерни възли в children вектора, за да предотврати изтичане на памет. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Деструктор на елемента, гарантиращ липсата на изтичане на памет.\par
+{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+\par}
+Тъй като XML дървото е йерархична структура, изградена от динамично заделени обекти (чрез {\f2 new} ), паметта трябва да се освобождава внимателно. Този деструктор реализира {\b каскадно (рекурсивно) изтриване} .{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+Когато се извика {\f2 delete}  върху коренния елемент (например от деструктора на {\f2 {\b XmlDocument}} ), този деструктор се активира и завърта цикъл през всички деца във вектора {\f2 children} . Извикването на {\f2 delete child}  вътре в цикъла автоматично извиква деструкторите на самите деца (които изтриват техните деца и т.н., чак до листата на дървото). Тъй като деструкторът в базовия клас {\f2 {\b XmlNode}}  е маркиран като {\f2 virtual} , C++ гарантира, че винаги ще се извика правилният деструктор ({\f2 {\b XmlElement}}  или {\f2 {\b XmlText}} ), дори когато трием през указател към базовия клас. \par}
+}Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_a1ee9fc2b9a0ab357eb20592de9e9c5ae_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Членове Функции(методи) Документация\par
+\pard\plain 
+{\xe \v addAttribute\:XmlElement}
+{\xe \v XmlElement\:addAttribute}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void XmlElement::addAttribute (const std::string & key, const std::string & value)}}
+\par
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Добавя нов атрибут или обновява стойността на съществуващ. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Добавя нов атрибут към елемента (без проверка за дубликати).\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i key} \cell }{Името на атрибута. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i value} \cell }{Стойността на атрибута.\cell }
+{\row }
+}
+{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i key} \cell }{Името на атрибута. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i value} \cell }{Стойността на атрибута. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Изключения\par}
+\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i Exception} \cell }{Хвърля изключение, ако подаденият ключ е празен низ. \cell }
+{\row }
+}
+}
+}}
+{\xe \v addChild\:XmlElement}
+{\xe \v XmlElement\:addChild}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void XmlElement::addChild ({\b XmlNode} * child)}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Добавя нов дещерен възел към текущия елемент. Автоматично задава текущия елемент като родител на добавеното дете. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Добавя възел като дете на текущия елемент и обновява връзките.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i child} \cell }{Указател към възела ({\b XmlElement} или {\b XmlText}), който ще бъде добавен.\cell }
+{\row }
+}
+{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+\par}
+Освен че добавя възела във вътрешния вектор {\f2 children} , методът автоматично задава текущия обект ({\f2 this} ) като родител на добавеното дете.{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i child} \cell }{Указател към възела, който трябва да бъде добавен. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Изключения\par}
+\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i Exception} \cell }{Хвърля изключение, ако се направи опит за добавяне на nullptr. \cell }
+{\row }
+}
+}
+}Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_ac9b7e2eef08c7a04095e8bd63024308c_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_ac9b7e2eef08c7a04095e8bd63024308c_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v clone\:XmlElement}
+{\xe \v XmlElement\:clone}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b XmlNode} * XmlElement::clone () const{\f2 [override]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Създава динамично (дълбоко) копие на текущия елемент. Копира името, атрибутите и рекурсивно клонира всички дещерни възли. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Създава динамично дълбоко копие (Deep Copy) на текущия XML елемент и цялото му поддърво.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Указател към новия обект. Паметта се управлява от извикващия.\par
+}}{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+\par}
+Използването на виртуална функция {\f2 {\b clone()}}  е класически OOP шаблон (Virtual Constructor Pattern). Той е абсолютно задължителен тук, тъй като работим с полиморфна колекция от указатели към базовия клас ({\f2 std::vector<XmlNode*>} ). Ако се опитаме да използваме стандартен Copy Constructor, ще се получи т.нар. "Object Slicing" (изрязване на обекта) и ще загубим специфичните данни на наследниците.{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\b Как работи:} \par}
+{
+\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Създава нов {\f2 {\b XmlElement}}  със същото име.\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Копира директно всички атрибути (тъй като векторът от {\f2 {\b XmlAttribute}}  се копира по стойност).\par
+\pard\plain \s141\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab Обхожда рекурсивно всички дещерни възли ({\f2 children} ) и извиква техния собствен метод {\f2 {\b clone()}} . По този начин се изгражда напълно независимо ново дърво в паметта, което не споделя никакви указатели с оригиналното.\par}
+{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Указател към новосъздадения корен на копираното поддърво. Паметта трябва да се управлява от извикващата функция. \par
+}}}
+}{
+Заменя {\b XmlNode} ({\i стр.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADX \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_ab9866dbc3f71cc74319dfe1ea13c3bc6_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v getAttributes\:XmlElement}
+{\xe \v XmlElement\:getAttributes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const std::vector< {\b XmlAttribute} > & XmlElement::getAttributes () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща списък с всички атрибути на елемента. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Константна референция към вектора с атрибути. \par
+}}}}
+{\xe \v getAttributeValue\:XmlElement}
+{\xe \v XmlElement\:getAttributeValue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string XmlElement::getAttributeValue (const std::string & key) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Безопасно извлича стойността на атрибут (read-only). За разлика от operator[], тази функция не създава нов атрибут, ако ключът липсва. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i key} \cell }{Името на атрибута. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Стойността на атрибута или празен низ (""), ако не е намерен. \par
+}}}Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_aafeb59e91c1f00954461b89ab420fe40_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v getChildrenOfType\:XmlElement}
+{\xe \v XmlElement\:getChildrenOfType}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T> std::vector< T * > XmlElement::getChildrenOfType () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Шаблонна функция, която връща всички дещерни възли от специфичен тип. Използва dynamic_cast за безопасно филтриране (напр. само {\b XmlElement} или само {\b XmlText}). }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Шаблона Параметри\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i T} \cell }{Типът на възлите, които търсим. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Вектор от указатели към филтрираните възли. \par
+}}}Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_adc5d91e0607a879a7ca4731aa6257877_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_adc5d91e0607a879a7ca4731aa6257877_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v getName\:XmlElement}
+{\xe \v XmlElement\:getName}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const std::string & XmlElement::getName () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща името на XML тага. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Константна референция към низа, съдържащ името. \par
+}}}}
+{\xe \v operator[]\:XmlElement}
+{\xe \v XmlElement\:operator[]}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string & XmlElement::operator[] (const std::string & key){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Оператор за индексиране по ключ на атрибут. Позволява лесен достъп и промяна на стойности (напр. element["id"] = "5"). Ако атрибут с такъв ключ не съществува, той автоматично се създава. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i key} \cell }{Името на атрибута. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Референция към стойността на атрибута (позволява промяна). \par
+}}}}
+{\xe \v print\:XmlElement}
+{\xe \v XmlElement\:print}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void XmlElement::print (std::ostream & os, int indent = {\f2 0}) const{\f2 [override]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAAED}
+{\bkmkend AAAAAAAAED}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Извежда елемента (тага, атрибутите и децата му) в изходен поток. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Извежда елемента, неговите атрибути и съдържание във форматиран вид.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i os} \cell }{Изходният поток (напр. std::cout или std::ofstream). \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i indent} \cell }{Броят интервали за отстъп, спрямо дълбочината в дървото.\cell }
+{\row }
+}
+{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+\par}
+Логиката автоматично разпознава дали елементът е празен (няма деца) и в такъв случай го принтира като самозатварящ се (напр. {\f2 <tag />} ). Ако има деца, отваря тага, извиква рекурсивно {\f2 {\b print}}  за всяко дете с увеличен отстъп (4 интервала), и накрая принтира затварящия таг.{
+\par
+\pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i os} \cell }{Изходният поток, в който се записват данните. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i indent} \cell }{Броят интервали за отместване на текущия елемент. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Изключения\par}
+\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i Exception} \cell }{Хвърля изключение, ако отстъпът е отрицателно число. \cell }
+{\row }
+}
+}
+}{
+Заменя {\b XmlNode} ({\i стр.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEE \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Граф с извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v removeAttribute\:XmlElement}
+{\xe \v XmlElement\:removeAttribute}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void XmlElement::removeAttribute (const std::string & key){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEF}
+{\bkmkend AAAAAAAAEF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Премахва атрибут по зададен ключ, ако съществува. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Аргументи\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i key} \cell }{Името на атрибута, който трябва да бъде премахнат. \cell }
+{\row }
+}
+}Граф на извикванията за тази функция:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_aaaa9635e353a5c07ed2f5664815400e2_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Документация за клас генериран от следните файлове:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+XMLParser/XMLParser/XmlCore/XmlElement.h\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+XMLParser/XMLParser/XmlCore/XmlElement.cpp\par
+}}
