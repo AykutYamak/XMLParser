@@ -105,7 +105,7 @@
 <configuration id="config">
     <window id="main_win" width="800" height="600" theme="dark" />
 </configuration>
-
+```
 Стъпки за изпълнение:
 
     open test7.xml
