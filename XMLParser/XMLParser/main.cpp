@@ -17,7 +17,7 @@
 #include "XmlCore/XmlDocument.h"
 #include "Exceptions/Exception.h"
 #include "CLI/Commands.h"
-#include "doctest.h"
+
  /**
   * @brief Структура за съхранение на регистрираните команди в менюто.
   * @details Свързва текстовото име на командата, указател към обекта,

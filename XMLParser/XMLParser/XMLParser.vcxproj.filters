@@ -22,6 +22,9 @@
     <Filter Include="Exceptions">
       <UniqueIdentifier>{07aab632-c9ac-4073-a942-0599576643c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{17ef7c30-7258-4f66-bb05-ae7c7ca1602d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -35,6 +38,24 @@
     </ClCompile>
     <ClCompile Include="XmlCore\XmlText.cpp">
       <Filter>XmlCore</Filter>
+    </ClCompile>
+    <ClCompile Include="test_main.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlNodeTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlTextTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlElementTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="IdDictionaryTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlDocumentTests.cpp">
+      <Filter>Tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +82,9 @@
     </ClInclude>
     <ClInclude Include="CLI\Commands.h">
       <Filter>CLI</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\doctest.h">
+      <Filter>Tests</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
