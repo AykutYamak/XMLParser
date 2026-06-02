@@ -1,4 +1,4 @@
-\doxysection{Xml\+Text Клас Препратка}
+\doxysection{Xml\+Text Class Reference}
 \hypertarget{class_xml_text}{}\label{class_xml_text}\index{XmlText@{XmlText}}
 
 
@@ -9,65 +9,59 @@
 
 {\ttfamily \+\#include $<$Xml\+Text.\+h$>$}
 
-
-
-Диаграма на наследяване за Xml\+Text:\+
-% FIG 0
-
-
-Граф на зависимости за класа Xml\+Text:\+
-% FIG 1
-\doxysubsubsection*{Общодостъпни членове функции}
+Inheritance diagram for Xml\+Text:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_xml_text}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_xml_text_a43088b0b6b4bc3bbd180730d05fcebf2}\label{class_xml_text_a43088b0b6b4bc3bbd180730d05fcebf2} 
-{\bfseries Xml\+Text} ()
+\doxymbox{\hyperlink{class_xml_text_a43088b0b6b4bc3bbd180730d05fcebf2}{Xml\+Text}} ()
 \begin{DoxyCompactList}\small\item\em Конструктор по подразбиране. Създава празен текстов възел (без съдържание). \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_xml_text_afadbe0177e6753f305a4e6f22416f09e}{Xml\+Text}} (const std::\+string \&text\+Content)
 \begin{DoxyCompactList}\small\item\em Конструктор с параметър за текст. \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_text_a5ca23990c80da6856be826db9bfb15a6}\label{class_xml_text_a5ca23990c80da6856be826db9bfb15a6} 
-{\bfseries Xml\+Text} (const \doxymbox{\hyperlink{class_xml_text}{Xml\+Text}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_text_a5ca23990c80da6856be826db9bfb15a6}{Xml\+Text}} (const \doxymbox{\hyperlink{class_xml_text}{Xml\+Text}} \&other)=delete
 \item 
-\Hypertarget{class_xml_text_ad057c4126d4783dd804e91f5b61008ef}\label{class_xml_text_ad057c4126d4783dd804e91f5b61008ef} 
-\doxymbox{\hyperlink{class_xml_text}{Xml\+Text}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{class_xml_text}{Xml\+Text}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_text}{Xml\+Text}} \& \doxymbox{\hyperlink{class_xml_text_ad057c4126d4783dd804e91f5b61008ef}{operator=}} (const \doxymbox{\hyperlink{class_xml_text}{Xml\+Text}} \&other)=delete
 \item 
-\Hypertarget{class_xml_text_a3552d28a1736db4cf8d42822986cbc3f}\label{class_xml_text_a3552d28a1736db4cf8d42822986cbc3f} 
-{\bfseries \texorpdfstring{$\sim$}{\string~}\+Xml\+Text} () override=default
+\doxymbox{\hyperlink{class_xml_text_a3552d28a1736db4cf8d42822986cbc3f}{\texorpdfstring{$\sim$}{\string~}\+Xml\+Text}} () override=default
 \begin{DoxyCompactList}\small\item\em Деструктор по подразбиране. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{class_xml_text_ae4d3b9c75124751084b8913ad9dd00aa}{print}} (std::\+ostream \&os, int indent=0) const override
+void \doxymbox{\hyperlink{class_xml_text_ae4d3b9c75124751084b8913ad9dd00aa}{print}} (\doxymbox{\hyperlink{namespacestd_a6d1736434ff6d516a3df38cbb7487ea5}{std::\+ostream}} \&os, int indent=0) const override
 \begin{DoxyCompactList}\small\item\em Извежда текстовото съдържание в подадения изходен поток. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_text_a75a9fbf8d36e077947d3810d6ba46b10}{clone}} () const override
 \begin{DoxyCompactList}\small\item\em Създава точно копие на текстовия възел. \end{DoxyCompactList}\item 
 const std::\+string \& \doxymbox{\hyperlink{class_xml_text_a2d51c80b49dc2b556aed1e66cbd4c195}{get\+Content}} () const
 \begin{DoxyCompactList}\small\item\em Връща съдържанието на текстовия възел. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Общодостъпни членове функции наследен от \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Xml\+Node} ()
+\doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{Xml\+Node}} ()
 \begin{DoxyCompactList}\small\item\em Конструктор по подразбиране. Инициализира възела без родител. \end{DoxyCompactList}\item 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Xml\+Node} ()=default
+virtual \doxymbox{\hyperlink{class_xml_node_ae6efa9b40aa905dda85c7a93489cf50a}{\texorpdfstring{$\sim$}{\string~}\+Xml\+Node}} ()=default
 \begin{DoxyCompactList}\small\item\em Виртуален деструктор. Гарантира правилното изчистване на паметта при изтриване на обекти чрез указател към базовия клас. \end{DoxyCompactList}\item 
-{\bfseries Xml\+Node} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_node_a7944211ab1f50728883d5fd4b86200e8}{Xml\+Node}} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
 \item 
-\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& \doxymbox{\hyperlink{class_xml_node_a4e7d52360602a8f26f61d901f283e20c}{operator=}} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
 \item 
-{\bfseries Xml\+Node} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
+\doxymbox{\hyperlink{class_xml_node_af2d18234dc3d987ebe4f5fff87f3e4ec}{Xml\+Node}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
 \item 
-\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& {\bfseries operator=} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& \doxymbox{\hyperlink{class_xml_node_adacbfe075ca11f4c1ff230ab572fcbfa}{operator=}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
 \item 
 \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_node_a7d4aa65642386e9d0897651f190661c1}{get\+Parent}} () const
 \begin{DoxyCompactList}\small\item\em Връща родителския възел на текущия обект. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_xml_node_ac32e7763b1d39ba598cccf7639932fc5}{set\+Parent}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*}p)
 \begin{DoxyCompactList}\small\item\em Задава нов родителски възел. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Допълнителни наследени членове}
-\doxysubsection*{Защитени атрибути наследен от \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_node_a892ef0efed5d79ef553f92ab1580b770}{parent}}
 \begin{DoxyCompactList}\small\item\em Указател към родителския възел (nullptr, ако е корен). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Подробно описание}
+\doxysubsection{Detailed Description}
 Клас, представляващ текстов възел в XML дървото. 
 
 
@@ -77,10 +71,20 @@ void \doxymbox{\hyperlink{class_xml_node_ac32e7763b1d39ba598cccf7639932fc5}{set\
 
 \label{class_xml_text_doc-constructors}
 \Hypertarget{class_xml_text_doc-constructors}
-\doxysubsection{Конструктор \& Деструктор Документация}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_xml_text_a43088b0b6b4bc3bbd180730d05fcebf2}\index{XmlText@{XmlText}!XmlText@{XmlText}}
+\index{XmlText@{XmlText}!XmlText@{XmlText}}
+\doxysubsubsection{\texorpdfstring{XmlText()}{XmlText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_xml_text_a43088b0b6b4bc3bbd180730d05fcebf2} 
+Xml\+Text::\+\+Xml\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по подразбиране. Създава празен текстов възел (без съдържание). 
+
 \Hypertarget{class_xml_text_afadbe0177e6753f305a4e6f22416f09e}\index{XmlText@{XmlText}!XmlText@{XmlText}}
 \index{XmlText@{XmlText}!XmlText@{XmlText}}
-\doxysubsubsection{\texorpdfstring{XmlText()}{XmlText()}}
+\doxysubsubsection{\texorpdfstring{XmlText()}{XmlText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily \label{class_xml_text_afadbe0177e6753f305a4e6f22416f09e} 
 Xml\+Text::\+\+Xml\+Text (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{text\+Content}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -89,17 +93,31 @@ Xml\+Text::\+\+Xml\+Text (\begin{DoxyParamCaption}\item[{const std::\+string \&}
 Конструктор с параметър за текст. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em text\+Content} & Текстът, с който да бъде инициализиран възелът. \\
 \hline
 \end{DoxyParams}
-Граф с извикванията за тази функция:\+
-% FIG 2
+\Hypertarget{class_xml_text_a5ca23990c80da6856be826db9bfb15a6}\index{XmlText@{XmlText}!XmlText@{XmlText}}
+\index{XmlText@{XmlText}!XmlText@{XmlText}}
+\doxysubsubsection{\texorpdfstring{XmlText()}{XmlText()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_xml_text_a5ca23990c80da6856be826db9bfb15a6} 
+Xml\+Text::\+\+Xml\+Text (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_xml_text}{Xml\+Text}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_xml_text_a3552d28a1736db4cf8d42822986cbc3f}\index{XmlText@{XmlText}!````~XmlText@{\texorpdfstring{$\sim$}{\string~}XmlText}}
+\index{````~XmlText@{\texorpdfstring{$\sim$}{\string~}XmlText}!XmlText@{XmlText}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}XmlText()}{\string~XmlText()}}
+{\footnotesize\ttfamily \label{class_xml_text_a3552d28a1736db4cf8d42822986cbc3f} 
+Xml\+Text::\+\texorpdfstring{$\sim$}{\string~}\+Xml\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Деструктор по подразбиране. 
+
 
 
 \label{class_xml_text_doc-func-members}
 \Hypertarget{class_xml_text_doc-func-members}
-\doxysubsection{Членове Функции(методи) Документация}
+\doxysubsection{Member Function Documentation}
 \Hypertarget{class_xml_text_a75a9fbf8d36e077947d3810d6ba46b10}\index{XmlText@{XmlText}!clone@{clone}}
 \index{clone@{clone}!XmlText@{XmlText}}
 \doxysubsubsection{\texorpdfstring{clone()}{clone()}}
@@ -112,21 +130,19 @@ Xml\+Text::\+\+Xml\+Text (\begin{DoxyParamCaption}\item[{const std::\+string \&}
 
 Създава динамично (дълбоко) копие на текущия текстов възел.
 
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Указател към новия обект \doxylink{class_xml_text}{Xml\+Text}, съдържащ същия текст. Паметта трябва да се освободи от извикващия.
 \end{DoxyReturn}
 
 \begin{DoxyItemize}
-\item \begin{DoxyReturn}{Връща}
+\item \begin{DoxyReturn}{Returns}
 Указател към новосъздадения обект \doxylink{class_xml_text}{Xml\+Text}, съдържащ същото текстово съдържание. Отговорност на извикващия код е да освободи заделената памет чрез delete. 
 \end{DoxyReturn}
 
 \end{DoxyItemize}
 
-Заменя \doxymbox{\hyperlink{class_xml_node_af646cb06fcbf8af8b0654030f25c681d}{Xml\+Node}}.
+Implements \doxymbox{\hyperlink{class_xml_node_af646cb06fcbf8af8b0654030f25c681d}{Xml\+Node}}.
 
-Граф с извикванията за тази функция:\+
-% FIG 3
 \Hypertarget{class_xml_text_a2d51c80b49dc2b556aed1e66cbd4c195}\index{XmlText@{XmlText}!getContent@{getContent}}
 \index{getContent@{getContent}!XmlText@{XmlText}}
 \doxysubsubsection{\texorpdfstring{getContent()}{getContent()}}
@@ -137,21 +153,27 @@ const std::\+string \& Xml\+Text::\+get\+Content (\begin{DoxyParamCaption}{}{}\e
 
 Връща съдържанието на текстовия възел. 
 
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Константна референция към низа (string), съдържащ текста. 
 \end{DoxyReturn}
+\Hypertarget{class_xml_text_ad057c4126d4783dd804e91f5b61008ef}\index{XmlText@{XmlText}!operator=@{operator=}}
+\index{operator=@{operator=}!XmlText@{XmlText}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_xml_text_ad057c4126d4783dd804e91f5b61008ef} 
+\doxymbox{\hyperlink{class_xml_text}{Xml\+Text}} \& Xml\+Text::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_xml_text}{Xml\+Text}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
 \Hypertarget{class_xml_text_ae4d3b9c75124751084b8913ad9dd00aa}\index{XmlText@{XmlText}!print@{print}}
 \index{print@{print}!XmlText@{XmlText}}
 \doxysubsubsection{\texorpdfstring{print()}{print()}}
 {\footnotesize\ttfamily \label{class_xml_text_ae4d3b9c75124751084b8913ad9dd00aa} 
-void Xml\+Text::\+print (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{os}{, }\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Xml\+Text::\+print (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacestd_a6d1736434ff6d516a3df38cbb7487ea5}{std::\+ostream}} \&}]{os}{, }\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Извежда текстовото съдържание в подадения изходен поток. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em os} & Изходният поток (напр. std::\+cout или std::\+ofstream). \\
 \hline
 {\em indent} & Отстъпът се подава за съвместимост с интерфейса, но често текстът се принтира директно до тага без допълнителен отстъп.\\
@@ -161,25 +183,25 @@ void Xml\+Text::\+print (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{os}{
 \begin{DoxyItemize}
 \item Създава низ от празни пространства, отговарящ на зададения отстъп, след което принтира същинския текст, последван от нов ред.
 \item 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em os} & Изходният поток (напр. std::\+cout или файлов поток), в който ще се записва. \\
 \hline
 {\em indent} & Броят интервали, които ще бъдат добавени преди текста. \\
 \hline
 \end{DoxyParams}
 
-\begin{DoxyExceptions}{Изключения}
+\begin{DoxyExceptions}{Exceptions}
 {\em Exception} & Хвърля изключение, ако подаденият отстъп е отрицателно число. \\
 \hline
 \end{DoxyExceptions}
 
 \end{DoxyItemize}
 
-Заменя \doxymbox{\hyperlink{class_xml_node_a24959aba794d80ab9dfcc88d0189ffcf}{Xml\+Node}}.
+Implements \doxymbox{\hyperlink{class_xml_node_a24959aba794d80ab9dfcc88d0189ffcf}{Xml\+Node}}.
 
 
 
-Документация за клас генериран от следните файлове:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
 \item 
-XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Xml\+Text.\+h\item 
-XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Xml\+Text.\+cpp\end{DoxyCompactItemize}
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+\doxymbox{\hyperlink{_xml_text_8h}{Xml\+Text.\+h}}\item 
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+\doxymbox{\hyperlink{_xml_text_8cpp}{Xml\+Text.\+cpp}}\end{DoxyCompactItemize}

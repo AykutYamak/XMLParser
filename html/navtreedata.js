@@ -26,27 +26,62 @@ var NAVTREE =
 [
   [ "My Project", "index.html", [
     [ "XML Parser - Документация на курсов проект", "index.html", "index" ],
-    [ "Класове", "annotated.html", [
-      [ "Класове Списък", "annotated.html", "annotated_dup" ],
-      [ "Класове Указател", "classes.html", null ],
-      [ "Класове Йерархия", "hierarchy.html", "hierarchy" ],
-      [ "Членове на класа", "functions.html", [
-        [ "Указател към не филтриран списък на всички членове", "functions.html", null ],
-        [ "Функции", "functions_func.html", null ],
-        [ "Променливи", "functions_vars.html", null ]
+    [ "XML Parser", "md__r_e_a_d_m_e.html", [
+      [ "Архитектура", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Поддържани команди", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Тестови Сценарии (Use Cases &amp; Edge Cases)", "md__r_e_a_d_m_e.html#autotoc_md4", [
+        [ "Сценарий 1: Стандартна работа и XPath (Happy Path)", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
+        [ "Сценарий 2: Невалидна структура на документа (Множество корени)", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
+        [ "Сценарий 3: Синтактични грешки и Управление на изключения (Error Handling)", "md__r_e_a_d_m_e.html#autotoc_md7", null ],
+        [ "Сценарий 4: Динамична редакция на дървото и Персистенция (Tree Mutation &amp; Persistence)", "md__r_e_a_d_m_e.html#autotoc_md8", null ],
+        [ "Инструкции за компилация", "md__r_e_a_d_m_e.html#autotoc_md9", null ]
       ] ]
     ] ],
-    [ "Файлове", "files.html", [
-      [ "Файлове Списък", "files.html", "files_dup" ]
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
+      ] ]
+    ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Related Symbols", "functions_rela.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", "globals_defs" ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_command_8h_source.html"
+"_command_8h.html",
+"classdoctest_1_1_string.html#afc06e2f0bc08246c54d12cb5c2ece4ed",
+"doctest_8h.html#a8b75d37da2864af17a65dd436038614b",
+"globals_defs_c.html",
+"struct_xml_attribute.html#afcd9e2cf708a0e41e1278db93c858253",
+"structdoctest_1_1_test_case_data.html#aa4876d06d5172070efeeb7d15bd786cf",
+"structdoctest_1_1detail_1_1types_1_1enable__if_3_01true_00_01_t_01_4.html"
 ];
 
-const SYNCONMSG = 'натиснете на изключване за синхронизация на панела';
-const SYNCOFFMSG = 'натиснете на включване за синхронизация на панела';
-const LISTOFALLMEMBERS = 'Списък на всички членове';
+const SYNCONMSG = 'click to disable panel synchronization';
+const SYNCOFFMSG = 'click to enable panel synchronization';
+const LISTOFALLMEMBERS = 'List of all members';

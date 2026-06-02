@@ -1,0 +1,36 @@
+\doxysection{XMLParser/\+\+XMLParser/\+main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{XMLParser/XMLParser/main.cpp@{XMLParser/XMLParser/main.cpp}}
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include "{}Xml\+Core/\+\+Xml\+Document.\+h"{}}\newline
+{\ttfamily \+\#include "{}Exceptions/\+\+Exception.\+h"{}}\newline
+{\ttfamily \+\#include "{}CLI/\+\+Commands.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_entry_command}{Entry\+Command}}
+\begin{DoxyCompactList}\small\item\em Структура за съхранение на регистрираните команди в менюто. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главна функция (Entry point) на приложението. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{main_8cpp_doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Главна функция (Entry point) на приложението. 
+
+Инициализира XML документа и списъка с налични команди. Стартира безкраен цикъл, който чете потребителския вход, разделя го на име на команда и аргументи, и динамично извиква съответния \doxylink{class_command}{Command} обект. Съдържа защити срещу изключения (Exceptions) и отговаря за безопасното освобождаване на паметта при изход. \begin{DoxyReturn}{Returns}
+0 при успешно завършване на програмата. 
+\end{DoxyReturn}

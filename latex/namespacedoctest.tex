@@ -1,0 +1,534 @@
+\doxysection{doctest Namespace Reference}
+\hypertarget{namespacedoctest}{}\label{namespacedoctest}\index{doctest@{doctest}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacedoctest_1_1detail}{detail}}
+\item 
+namespace \doxymbox{\hyperlink{namespacedoctest_1_1assert_type}{assert\+Type}}
+\item 
+namespace \doxymbox{\hyperlink{namespacedoctest_1_1_color}{Color}}
+\item 
+namespace \doxymbox{\hyperlink{namespacedoctest_1_1_test_case_failure_reason}{Test\+Case\+Failure\+Reason}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classdoctest_1_1_string}{String}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_string_maker}{String\+Maker}}
+\item 
+class \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_approx}{Approx}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{Is\+NaN}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_context_options}{Context\+Options}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_assert_data}{Assert\+Data}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_subcase_signature}{Subcase\+Signature}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_test_case_data}{Test\+Case\+Data}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_i_context_scope}{IContext\+Scope}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_message_data}{Message\+Data}}
+\item 
+class \doxymbox{\hyperlink{classdoctest_1_1_context}{Context}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_current_test_case_stats}{Current\+Test\+Case\+Stats}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_test_case_exception}{Test\+Case\+Exception}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_test_run_stats}{Test\+Run\+Stats}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_query_data}{Query\+Data}}
+\item 
+struct \doxymbox{\hyperlink{structdoctest_1_1_i_reporter}{IReporter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef decltype(sizeof(void \texorpdfstring{$\ast$}{*})) \doxymbox{\hyperlink{namespacedoctest_a1ada4110a09572b70659f08d6eb27c17}{size\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a4e6e927e850a36fa569c08011fde2a49}{operator+}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_ae332e5e775f83a532884303780f79f9f}{operator==}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_ab9a88e4c19857cd86a0f037d27bcad72}{operator!=}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_afa15b277b9a277793b7adf129e0128d9}{operator$<$}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_acef5990b03a973c74ff2dd6cfc112913}{operator$>$}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_a27c6c308e814ad9384499bafc03f9e39}{operator$<$=}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_ac32accb42e937cf870de2f6865ea236a}{operator$>$=}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&rhs)
+\item 
+{\footnotesize template$<$typename T$>$ }\\\doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_ad4b29418fb58bb6c7cfdbefe2d8f7714}{to\+String}} ()
+\item 
+{\footnotesize template$<$typename T, typename \doxymbox{\hyperlink{structdoctest_1_1detail_1_1types_1_1enable__if}{detail::\+types::\+enable\+\_\+if}}$<$!\doxymbox{\hyperlink{structdoctest_1_1detail_1_1should__stringify__as__underlying__type}{detail::\+should\+\_\+stringify\+\_\+as\+\_\+underlying\+\_\+type}}$<$ T $>$::\+value, bool $>$::\+type = true$>$ }\\\doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a468ff6c2b0a692bcf88a7a97a5de0a53}{to\+String}} (const \doxymbox{\hyperlink{doctest_8h_af2901cafb023c57fb672ccb1bf14f2eb}{DOCTEST\+\_\+\+REF\+\_\+\+WRAP}}(T) value)
+\item 
+\doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&\& \doxymbox{\hyperlink{namespacedoctest_aab1210b0ad4b363f714d1f9df198cc68}{to\+String}} (\doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&\&in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a3496f159fa92190fa6203e18a3f8b0f8}{to\+String}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a6bb27d33f7b25b3ff5fc6872f47f329b}{to\+String}} (\doxymbox{\hyperlink{namespacestd_a147badd87f1e15108e8dbee257b60b84}{std::\+nullptr\+\_\+t}})
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a70fd23e88074d38b9d61476005305df5}{to\+String}} (bool in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a68660ce630bd88a551ab3108709e6592}{to\+String}} (float in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a43b51978c9505f682cbff9462a02f8af}{to\+String}} (double in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_ae4e12dd9865bb31f417f9df0c41813cf}{to\+String}} (double long in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_af106dff2a0c068d301349b754c466378}{to\+String}} (char in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a1f910fdc13d84a538090b959a97a6fa5}{to\+String}} (char signed in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_ae2c3e60e3ee32da5d8fc4f778b7a225a}{to\+String}} (char unsigned in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a03688f50a1c6c85c68d24d1280f66626}{to\+String}} (short in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a952f661f63e4c76d8025da928632e98c}{to\+String}} (short unsigned in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_abd1337b597e5968eb9be5b585a16ea8f}{to\+String}} (signed in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_ad2e7368b576fc0ca420b92c0042498e8}{to\+String}} (unsigned in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a042e53409374cba1ba423c57d3a58a6f}{to\+String}} (long in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a6ebcd3a7a6807c5bd2b960736851225c}{to\+String}} (long unsigned in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a0a5486a03f9ff2a7c311df0dc6c1b149}{to\+String}} (long long in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a13e028fb8470e4f87fe8e41f5300364e}{to\+String}} (long long unsigned in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_af8d23a352e257456ffed49cb3ac11b4e}{to\+String}} (const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_ab014e201f8c86823a763beaf8da5dbf1}{operator==}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_a0607d91cd645129372a57329cdd0e4a8}{operator==}} (const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_abd38f81ff821b9296e768e834af13ae0}{operator!=}} (const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_a820c5e748e427ef3f5ccf48da73abf5c}{operator!=}} (const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&lhs, const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&rhs)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a63aa06a8555c5aa34a7a6e76e87a3bca}{to\+String}} (const \doxymbox{\hyperlink{structdoctest_1_1_approx}{Approx}} \&in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a542bab2e5cb29a07cf5939362d2e6bdc}{to\+String}} (\doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{Is\+NaN}}$<$ float $>$ in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_a5e0bd449e6b10c53aab4af2957a1f45f}{to\+String}} (\doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{Is\+NaN}}$<$ double $>$ in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \doxymbox{\hyperlink{namespacedoctest_afa7161751ef3e45340183ada2b8b11bc}{to\+String}} (\doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{Is\+NaN}}$<$ double long $>$ in)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} const \doxymbox{\hyperlink{structdoctest_1_1_context_options}{Context\+Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespacedoctest_a13c02a469cfc2264d547fc0fc3a55569}{get\+Context\+Options}} ()
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespacedoctest_a44bf1260a82383247d446170810493cf}{assert\+String}} (\doxymbox{\hyperlink{namespacedoctest_1_1assert_type_ae1bb5bed722f34f1c38b83cb19d326d3}{assert\+Type::\+\+Enum}} at)
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespacedoctest_a3fcfa9f7f479ad1b46d142e210c8ca75}{failure\+String}} (\doxymbox{\hyperlink{namespacedoctest_1_1assert_type_ae1bb5bed722f34f1c38b83cb19d326d3}{assert\+Type::\+\+Enum}} at)
+\item 
+\doxymbox{\hyperlink{namespacedoctest_a104a0e533475e45acbddd9266c4d687e}{DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR}} (test\+\_\+suite, const char \texorpdfstring{$\ast$}{*}, "{}"{})
+\item 
+\doxymbox{\hyperlink{namespacedoctest_a07f4a26e2b7cce41abb7d71124951792}{DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR}} (description, const char \texorpdfstring{$\ast$}{*}, "{}"{})
+\item 
+\doxymbox{\hyperlink{namespacedoctest_a0ce903d8e37a8fdc185f6e8c73f9b1dd}{DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR}} (skip, bool, true)
+\item 
+\doxymbox{\hyperlink{namespacedoctest_a676e4a5ac5927180d445cf8d15d5e723}{DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR}} (no\+\_\+breaks, bool, true)
+\item 
+\doxymbox{\hyperlink{namespacedoctest_affa95f6124caa21081e93dc81eee67d6}{DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR}} (no\+\_\+output, bool, true)
+\item 
+\doxymbox{\hyperlink{namespacedoctest_a09d01a6e97677b7bb508bf925e421963}{DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR}} (timeout, double, 0)
+\item 
+\doxymbox{\hyperlink{namespacedoctest_a44ea7d81a1561f2222b8ffa69eecc599}{DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR}} (may\+\_\+fail, bool, true)
+\item 
+\doxymbox{\hyperlink{namespacedoctest_a0da07f59e77fcb14943788b2c85e2355}{DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR}} (should\+\_\+fail, bool, true)
+\item 
+\doxymbox{\hyperlink{namespacedoctest_ab1678966da9d93629130f083220403da}{DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR}} (expected\+\_\+failures, int, 0)
+\item 
+{\footnotesize template$<$typename T$>$ }\\int \doxymbox{\hyperlink{namespacedoctest_a2d91aee871a31fc4679cf000eb0aa2fd}{register\+Exception\+Translator}} (\doxymbox{\hyperlink{classdoctest_1_1_string}{String}}(\texorpdfstring{$\ast$}{*}translate\+Function)(T)) noexcept
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespacedoctest_a31b19b71f2b30f77f84b6a8bb4943925}{skip\+Path\+From\+Filename}} (const char \texorpdfstring{$\ast$}{*}file)
+\item 
+{\footnotesize template$<$typename Reporter$>$ }\\int \doxymbox{\hyperlink{namespacedoctest_a89a5a1fe86004e1f426f7bf0f08d97ea}{register\+Reporter}} (const char \texorpdfstring{$\ast$}{*}name, int priority, bool is\+Reporter) noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+template struct \doxymbox{\hyperlink{doctest_8h_a423c7e3dc94b0f49db2d45be8c65c921}{DOCTEST\+\_\+\+INTERFACE\+\_\+\+DECL}} \doxymbox{\hyperlink{namespacedoctest_ae635964db555b85aefd7874bc9cc7b51}{Is\+Na\+N$<$ float $>$}}
+\item 
+template struct \doxymbox{\hyperlink{doctest_8h_a423c7e3dc94b0f49db2d45be8c65c921}{DOCTEST\+\_\+\+INTERFACE\+\_\+\+DECL}} \doxymbox{\hyperlink{namespacedoctest_a4084d3d9bcaef83013a4789c1f41666b}{Is\+Na\+N$<$ double $>$}}
+\item 
+template struct \doxymbox{\hyperlink{doctest_8h_a423c7e3dc94b0f49db2d45be8c65c921}{DOCTEST\+\_\+\+INTERFACE\+\_\+\+DECL}} \doxymbox{\hyperlink{namespacedoctest_a82230b0925bdd6dffac05c78f8f2d1b9}{Is\+Na\+N$<$ long double $>$}}
+\item 
+struct \doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{namespacedoctest_af58b86ee775413b2a4e6123092bf56f7}{Test\+Case\+Data}}
+\item 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool \doxymbox{\hyperlink{namespacedoctest_a0b03060093b3894c976b6ae84e55f3f2}{is\+\_\+running\+\_\+in\+\_\+test}}
+\end{DoxyCompactItemize}
+
+
+\label{namespacedoctest_doc-typedef-members}
+\Hypertarget{namespacedoctest_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{namespacedoctest_a1ada4110a09572b70659f08d6eb27c17}\index{doctest@{doctest}!size\_t@{size\_t}}
+\index{size\_t@{size\_t}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{size\_t}{size\_t}}
+{\footnotesize\ttfamily \label{namespacedoctest_a1ada4110a09572b70659f08d6eb27c17} 
+typedef decltype(sizeof(void \texorpdfstring{$\ast$}{*})) \doxymbox{\hyperlink{namespacestd_a1ada4110a09572b70659f08d6eb27c17}{std::\+size\+\_\+t}}}
+
+
+
+\label{namespacedoctest_doc-func-members}
+\Hypertarget{namespacedoctest_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedoctest_a44bf1260a82383247d446170810493cf}\index{doctest@{doctest}!assertString@{assertString}}
+\index{assertString@{assertString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{assertString()}{assertString()}}
+{\footnotesize\ttfamily \label{namespacedoctest_a44bf1260a82383247d446170810493cf} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} const char \texorpdfstring{$\ast$}{*} doctest::\+assert\+String (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacedoctest_1_1assert_type_ae1bb5bed722f34f1c38b83cb19d326d3}{assert\+Type::\+\+Enum}}}]{at}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a07f4a26e2b7cce41abb7d71124951792}\index{doctest@{doctest}!DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}}
+\index{DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{DOCTEST\_DEFINE\_DECORATOR()}{DOCTEST\_DEFINE\_DECORATOR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a07f4a26e2b7cce41abb7d71124951792} 
+doctest::\+\+DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR (\begin{DoxyParamCaption}\item[{description}]{}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{}{, }\item[{"{}"{}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_ab1678966da9d93629130f083220403da}\index{doctest@{doctest}!DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}}
+\index{DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{DOCTEST\_DEFINE\_DECORATOR()}{DOCTEST\_DEFINE\_DECORATOR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily \label{namespacedoctest_ab1678966da9d93629130f083220403da} 
+doctest::\+\+DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR (\begin{DoxyParamCaption}\item[{expected\+\_\+failures}]{}{, }\item[{int}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a44ea7d81a1561f2222b8ffa69eecc599}\index{doctest@{doctest}!DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}}
+\index{DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{DOCTEST\_DEFINE\_DECORATOR()}{DOCTEST\_DEFINE\_DECORATOR()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a44ea7d81a1561f2222b8ffa69eecc599} 
+doctest::\+\+DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR (\begin{DoxyParamCaption}\item[{may\+\_\+fail}]{}{, }\item[{bool}]{}{, }\item[{true}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a676e4a5ac5927180d445cf8d15d5e723}\index{doctest@{doctest}!DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}}
+\index{DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{DOCTEST\_DEFINE\_DECORATOR()}{DOCTEST\_DEFINE\_DECORATOR()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a676e4a5ac5927180d445cf8d15d5e723} 
+doctest::\+\+DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR (\begin{DoxyParamCaption}\item[{no\+\_\+breaks}]{}{, }\item[{bool}]{}{, }\item[{true}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_affa95f6124caa21081e93dc81eee67d6}\index{doctest@{doctest}!DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}}
+\index{DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{DOCTEST\_DEFINE\_DECORATOR()}{DOCTEST\_DEFINE\_DECORATOR()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily \label{namespacedoctest_affa95f6124caa21081e93dc81eee67d6} 
+doctest::\+\+DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR (\begin{DoxyParamCaption}\item[{no\+\_\+output}]{}{, }\item[{bool}]{}{, }\item[{true}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a0da07f59e77fcb14943788b2c85e2355}\index{doctest@{doctest}!DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}}
+\index{DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{DOCTEST\_DEFINE\_DECORATOR()}{DOCTEST\_DEFINE\_DECORATOR()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a0da07f59e77fcb14943788b2c85e2355} 
+doctest::\+\+DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR (\begin{DoxyParamCaption}\item[{should\+\_\+fail}]{}{, }\item[{bool}]{}{, }\item[{true}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a0ce903d8e37a8fdc185f6e8c73f9b1dd}\index{doctest@{doctest}!DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}}
+\index{DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{DOCTEST\_DEFINE\_DECORATOR()}{DOCTEST\_DEFINE\_DECORATOR()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a0ce903d8e37a8fdc185f6e8c73f9b1dd} 
+doctest::\+\+DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR (\begin{DoxyParamCaption}\item[{skip}]{}{, }\item[{bool}]{}{, }\item[{true}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a104a0e533475e45acbddd9266c4d687e}\index{doctest@{doctest}!DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}}
+\index{DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{DOCTEST\_DEFINE\_DECORATOR()}{DOCTEST\_DEFINE\_DECORATOR()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a104a0e533475e45acbddd9266c4d687e} 
+doctest::\+\+DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR (\begin{DoxyParamCaption}\item[{test\+\_\+suite}]{}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{}{, }\item[{"{}"{}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a09d01a6e97677b7bb508bf925e421963}\index{doctest@{doctest}!DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}}
+\index{DOCTEST\_DEFINE\_DECORATOR@{DOCTEST\_DEFINE\_DECORATOR}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{DOCTEST\_DEFINE\_DECORATOR()}{DOCTEST\_DEFINE\_DECORATOR()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a09d01a6e97677b7bb508bf925e421963} 
+doctest::\+\+DOCTEST\+\_\+\+DEFINE\+\_\+\+DECORATOR (\begin{DoxyParamCaption}\item[{timeout}]{}{, }\item[{double}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a3fcfa9f7f479ad1b46d142e210c8ca75}\index{doctest@{doctest}!failureString@{failureString}}
+\index{failureString@{failureString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{failureString()}{failureString()}}
+{\footnotesize\ttfamily \label{namespacedoctest_a3fcfa9f7f479ad1b46d142e210c8ca75} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} const char \texorpdfstring{$\ast$}{*} doctest::\+failure\+String (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacedoctest_1_1assert_type_ae1bb5bed722f34f1c38b83cb19d326d3}{assert\+Type::\+\+Enum}}}]{at}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a13c02a469cfc2264d547fc0fc3a55569}\index{doctest@{doctest}!getContextOptions@{getContextOptions}}
+\index{getContextOptions@{getContextOptions}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{getContextOptions()}{getContextOptions()}}
+{\footnotesize\ttfamily \label{namespacedoctest_a13c02a469cfc2264d547fc0fc3a55569} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} const \doxymbox{\hyperlink{structdoctest_1_1_context_options}{Context\+Options}} \texorpdfstring{$\ast$}{*} doctest::\+get\+Context\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a820c5e748e427ef3f5ccf48da73abf5c}\index{doctest@{doctest}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a820c5e748e427ef3f5ccf48da73abf5c} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_abd38f81ff821b9296e768e834af13ae0}\index{doctest@{doctest}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespacedoctest_abd38f81ff821b9296e768e834af13ae0} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_ab9a88e4c19857cd86a0f037d27bcad72}\index{doctest@{doctest}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespacedoctest_ab9a88e4c19857cd86a0f037d27bcad72} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a4e6e927e850a36fa569c08011fde2a49}\index{doctest@{doctest}!operator+@{operator+}}
+\index{operator+@{operator+}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{namespacedoctest_a4e6e927e850a36fa569c08011fde2a49} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+operator+ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_afa15b277b9a277793b7adf129e0128d9}\index{doctest@{doctest}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{namespacedoctest_afa15b277b9a277793b7adf129e0128d9} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator$<$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a27c6c308e814ad9384499bafc03f9e39}\index{doctest@{doctest}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily \label{namespacedoctest_a27c6c308e814ad9384499bafc03f9e39} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator$<$= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a0607d91cd645129372a57329cdd0e4a8}\index{doctest@{doctest}!operator==@{operator==}}
+\index{operator==@{operator==}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a0607d91cd645129372a57329cdd0e4a8} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_ab014e201f8c86823a763beaf8da5dbf1}\index{doctest@{doctest}!operator==@{operator==}}
+\index{operator==@{operator==}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespacedoctest_ab014e201f8c86823a763beaf8da5dbf1} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_ae332e5e775f83a532884303780f79f9f}\index{doctest@{doctest}!operator==@{operator==}}
+\index{operator==@{operator==}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespacedoctest_ae332e5e775f83a532884303780f79f9f} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_acef5990b03a973c74ff2dd6cfc112913}\index{doctest@{doctest}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{namespacedoctest_acef5990b03a973c74ff2dd6cfc112913} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator$>$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_ac32accb42e937cf870de2f6865ea236a}\index{doctest@{doctest}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily \label{namespacedoctest_ac32accb42e937cf870de2f6865ea236a} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+operator$>$= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a2d91aee871a31fc4679cf000eb0aa2fd}\index{doctest@{doctest}!registerExceptionTranslator@{registerExceptionTranslator}}
+\index{registerExceptionTranslator@{registerExceptionTranslator}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{registerExceptionTranslator()}{registerExceptionTranslator()}}
+{\footnotesize\ttfamily \label{namespacedoctest_a2d91aee871a31fc4679cf000eb0aa2fd} 
+template$<$typename T$>$ \\
+int doctest::\+register\+Exception\+Translator (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classdoctest_1_1_string}{String}}(\texorpdfstring{$\ast$}{*}}]{translate\+Function~}{)(T)}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{namespacedoctest_a89a5a1fe86004e1f426f7bf0f08d97ea}\index{doctest@{doctest}!registerReporter@{registerReporter}}
+\index{registerReporter@{registerReporter}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{registerReporter()}{registerReporter()}}
+{\footnotesize\ttfamily \label{namespacedoctest_a89a5a1fe86004e1f426f7bf0f08d97ea} 
+template$<$typename Reporter$>$ \\
+int doctest::\+register\+Reporter (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{int}]{priority}{, }\item[{bool}]{is\+Reporter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{namespacedoctest_a31b19b71f2b30f77f84b6a8bb4943925}\index{doctest@{doctest}!skipPathFromFilename@{skipPathFromFilename}}
+\index{skipPathFromFilename@{skipPathFromFilename}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{skipPathFromFilename()}{skipPathFromFilename()}}
+{\footnotesize\ttfamily \label{namespacedoctest_a31b19b71f2b30f77f84b6a8bb4943925} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} const char \texorpdfstring{$\ast$}{*} doctest::\+skip\+Path\+From\+Filename (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_ad4b29418fb58bb6c7cfdbefe2d8f7714}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_ad4b29418fb58bb6c7cfdbefe2d8f7714} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a70fd23e88074d38b9d61476005305df5}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a70fd23e88074d38b9d61476005305df5} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{bool}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_af106dff2a0c068d301349b754c466378}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_af106dff2a0c068d301349b754c466378} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{char}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a1f910fdc13d84a538090b959a97a6fa5}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [4/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a1f910fdc13d84a538090b959a97a6fa5} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{char signed}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_ae2c3e60e3ee32da5d8fc4f778b7a225a}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [5/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_ae2c3e60e3ee32da5d8fc4f778b7a225a} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{char unsigned}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a63aa06a8555c5aa34a7a6e76e87a3bca}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [6/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a63aa06a8555c5aa34a7a6e76e87a3bca} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdoctest_1_1_approx}{Approx}} \&}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_af8d23a352e257456ffed49cb3ac11b4e}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [7/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_af8d23a352e257456ffed49cb3ac11b4e} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_contains}{Contains}} \&}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a468ff6c2b0a692bcf88a7a97a5de0a53}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [8/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a468ff6c2b0a692bcf88a7a97a5de0a53} 
+template$<$typename T, typename \doxymbox{\hyperlink{structdoctest_1_1detail_1_1types_1_1enable__if}{detail::\+types::\+enable\+\_\+if}}$<$!\doxymbox{\hyperlink{structdoctest_1_1detail_1_1should__stringify__as__underlying__type}{detail::\+should\+\_\+stringify\+\_\+as\+\_\+underlying\+\_\+type}}$<$ T $>$::\+value, bool $>$::\+type = true$>$ \\
+\doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{doctest_8h_af2901cafb023c57fb672ccb1bf14f2eb}{DOCTEST\+\_\+\+REF\+\_\+\+WRAP}}(T)}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a3496f159fa92190fa6203e18a3f8b0f8}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [9/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a3496f159fa92190fa6203e18a3f8b0f8} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a43b51978c9505f682cbff9462a02f8af}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [10/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a43b51978c9505f682cbff9462a02f8af} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{double}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_ae4e12dd9865bb31f417f9df0c41813cf}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [11/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_ae4e12dd9865bb31f417f9df0c41813cf} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{double long}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a68660ce630bd88a551ab3108709e6592}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [12/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a68660ce630bd88a551ab3108709e6592} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{float}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a5e0bd449e6b10c53aab4af2957a1f45f}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [13/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a5e0bd449e6b10c53aab4af2957a1f45f} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{Is\+NaN}}$<$ double $>$}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_afa7161751ef3e45340183ada2b8b11bc}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [14/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_afa7161751ef3e45340183ada2b8b11bc} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{Is\+NaN}}$<$ double long $>$}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a542bab2e5cb29a07cf5939362d2e6bdc}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [15/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a542bab2e5cb29a07cf5939362d2e6bdc} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{Is\+NaN}}$<$ float $>$}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a042e53409374cba1ba423c57d3a58a6f}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [16/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a042e53409374cba1ba423c57d3a58a6f} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{long}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a0a5486a03f9ff2a7c311df0dc6c1b149}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [17/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a0a5486a03f9ff2a7c311df0dc6c1b149} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{long long}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a13e028fb8470e4f87fe8e41f5300364e}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [18/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a13e028fb8470e4f87fe8e41f5300364e} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{long long unsigned}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a6ebcd3a7a6807c5bd2b960736851225c}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [19/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a6ebcd3a7a6807c5bd2b960736851225c} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{long unsigned}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a03688f50a1c6c85c68d24d1280f66626}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [20/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a03688f50a1c6c85c68d24d1280f66626} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{short}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a952f661f63e4c76d8025da928632e98c}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [21/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a952f661f63e4c76d8025da928632e98c} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{short unsigned}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_abd1337b597e5968eb9be5b585a16ea8f}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [22/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_abd1337b597e5968eb9be5b585a16ea8f} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{signed}]{in}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_a6bb27d33f7b25b3ff5fc6872f47f329b}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [23/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_a6bb27d33f7b25b3ff5fc6872f47f329b} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacestd_a147badd87f1e15108e8dbee257b60b84}{std::\+nullptr\+\_\+t}}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedoctest_aab1210b0ad4b363f714d1f9df198cc68}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [24/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_aab1210b0ad4b363f714d1f9df198cc68} 
+\doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&\& doctest::\+to\+String (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classdoctest_1_1_string}{String}} \&\&}]{in}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedoctest_ad2e7368b576fc0ca420b92c0042498e8}\index{doctest@{doctest}!toString@{toString}}
+\index{toString@{toString}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [25/25]}}
+{\footnotesize\ttfamily \label{namespacedoctest_ad2e7368b576fc0ca420b92c0042498e8} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} \doxymbox{\hyperlink{classdoctest_1_1_string}{String}} doctest::\+to\+String (\begin{DoxyParamCaption}\item[{unsigned}]{in}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespacedoctest_doc-var-members}
+\Hypertarget{namespacedoctest_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedoctest_a0b03060093b3894c976b6ae84e55f3f2}\index{doctest@{doctest}!is\_running\_in\_test@{is\_running\_in\_test}}
+\index{is\_running\_in\_test@{is\_running\_in\_test}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{is\_running\_in\_test}{is\_running\_in\_test}}
+{\footnotesize\ttfamily \label{namespacedoctest_a0b03060093b3894c976b6ae84e55f3f2} 
+\doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} bool doctest::\+is\+\_\+running\+\_\+in\+\_\+test\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{namespacedoctest_a4084d3d9bcaef83013a4789c1f41666b}\index{doctest@{doctest}!IsNaN$<$ double $>$@{IsNaN$<$ double $>$}}
+\index{IsNaN$<$ double $>$@{IsNaN$<$ double $>$}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{IsNaN$<$ double $>$}{IsNaN< double >}}
+{\footnotesize\ttfamily \label{namespacedoctest_a4084d3d9bcaef83013a4789c1f41666b} 
+template struct \doxymbox{\hyperlink{doctest_8h_a423c7e3dc94b0f49db2d45be8c65c921}{DOCTEST\+\_\+\+INTERFACE\+\_\+\+DECL}} \doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{doctest::\+\+Is\+NaN}}$<$ double $>$\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{namespacedoctest_ae635964db555b85aefd7874bc9cc7b51}\index{doctest@{doctest}!IsNaN$<$ float $>$@{IsNaN$<$ float $>$}}
+\index{IsNaN$<$ float $>$@{IsNaN$<$ float $>$}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{IsNaN$<$ float $>$}{IsNaN< float >}}
+{\footnotesize\ttfamily \label{namespacedoctest_ae635964db555b85aefd7874bc9cc7b51} 
+template struct \doxymbox{\hyperlink{doctest_8h_a423c7e3dc94b0f49db2d45be8c65c921}{DOCTEST\+\_\+\+INTERFACE\+\_\+\+DECL}} \doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{doctest::\+\+Is\+NaN}}$<$ float $>$\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{namespacedoctest_a82230b0925bdd6dffac05c78f8f2d1b9}\index{doctest@{doctest}!IsNaN$<$ long double $>$@{IsNaN$<$ long double $>$}}
+\index{IsNaN$<$ long double $>$@{IsNaN$<$ long double $>$}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{IsNaN$<$ long double $>$}{IsNaN< long double >}}
+{\footnotesize\ttfamily \label{namespacedoctest_a82230b0925bdd6dffac05c78f8f2d1b9} 
+template struct \doxymbox{\hyperlink{doctest_8h_a423c7e3dc94b0f49db2d45be8c65c921}{DOCTEST\+\_\+\+INTERFACE\+\_\+\+DECL}} \doxymbox{\hyperlink{structdoctest_1_1_is_na_n}{doctest::\+\+Is\+NaN}}$<$ long double $>$\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{namespacedoctest_af58b86ee775413b2a4e6123092bf56f7}\index{doctest@{doctest}!TestCaseData@{TestCaseData}}
+\index{TestCaseData@{TestCaseData}!doctest@{doctest}}
+\doxysubsubsection{\texorpdfstring{TestCaseData}{TestCaseData}}
+{\footnotesize\ttfamily \label{namespacedoctest_af58b86ee775413b2a4e6123092bf56f7} 
+struct \doxymbox{\hyperlink{doctest_8h_a9c16ffc635ec47f07797d21ede26b1a5}{DOCTEST\+\_\+\+INTERFACE}} doctest::\+\+Test\+Case\+Data}
+

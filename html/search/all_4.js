@@ -1,8 +1,22 @@
 var searchData=
 [
-  ['element_0',['element',['../struct_id_entry.html#a940dc7f501667f9db8b7038849172be2',1,'IdEntry']]],
-  ['end_1',['end',['../class_xml_element.html#a05042dd05d4b727946e16fc8cc9ca4e6',1,'XmlElement']]],
-  ['entrycommand_2',['EntryCommand',['../struct_entry_command.html',1,'']]],
-  ['exception_3',['Exception',['../class_exception.html',1,'Exception'],['../class_exception.html#a35bf745d25961ebe8795f7f457aa8a05',1,'Exception::Exception()']]],
-  ['execute_4',['execute',['../class_command.html#a693610de13df3a028abf715fdf5540a7',1,'Command::execute()'],['../class_print_command.html#adf7b4ac737d241683f556973e127cb67',1,'PrintCommand::execute()'],['../class_x_path_command.html#a439178dec708de67b4152107468ca70e',1,'XPathCommand::execute()'],['../class_save_command.html#a27417dc4897ec461c4d3690aaea719c5',1,'SaveCommand::execute()'],['../class_save_as_command.html#a1445cad0df530bf8b3c206d9b799cc7a',1,'SaveAsCommand::execute()'],['../class_select_command.html#a6b40aa548276beed85cebebde80174df',1,'SelectCommand::execute()'],['../class_set_command.html#a6fc8fafae682e5cd738c4d9094e1f50f',1,'SetCommand::execute()'],['../class_delete_command.html#a67f6d9dffbd9e3c0f51f6c56ec0a92a5',1,'DeleteCommand::execute()'],['../class_children_command.html#ac9a7d1b0b08f44b1d845bb554a22820d',1,'ChildrenCommand::execute()'],['../class_child_command.html#a041dddcc91533d3f6a832fa68848ad72',1,'ChildCommand::execute()'],['../class_text_command.html#af5b1e488b171792a7a5546d3370107c5',1,'TextCommand::execute()'],['../class_new_child_command.html#a1e9d98a19fbfa5680f8ac1d50c20e795',1,'NewChildCommand::execute()']]]
+  ['abort_5fafter_0',['abort_after',['../structdoctest_1_1_context_options.html#a8ba5bfec2229bc2da9ab917f4bdee5e7',1,'doctest::ContextOptions']]],
+  ['acquiregeneratordecisionindex_1',['acquireGeneratorDecisionIndex',['../namespacedoctest_1_1detail.html#a797b9236eaabb54253865dac3069d994',1,'doctest::detail']]],
+  ['acquiregeneratorvalue_2',['acquireGeneratorValue',['../namespacedoctest_1_1detail.html#a8100da1f695d2727a7c10145b4c5c1e4',1,'doctest::detail']]],
+  ['add_3',['add',['../class_id_dictionary.html#aa092cbb795803f11bbc65afa302415c4',1,'IdDictionary']]],
+  ['add_5ffail_5fat_4',['ADD_FAIL_AT',['../doctest_8h.html#a1937649cc9503739c20b3c81b97b5e5d',1,'doctest.h']]],
+  ['add_5ffail_5fcheck_5fat_5',['ADD_FAIL_CHECK_AT',['../doctest_8h.html#a4608a06d7117332c14b21b93f9655653',1,'doctest.h']]],
+  ['add_5fmessage_5fat_6',['ADD_MESSAGE_AT',['../doctest_8h.html#adb66a4c291609d4a1c554ad0a23f0662',1,'doctest.h']]],
+  ['addattribute_7',['addAttribute',['../class_xml_element.html#a3ad06da534ce1891c55d37cc9106f619',1,'XmlElement']]],
+  ['addchild_8',['addChild',['../class_xml_element.html#ac9b7e2eef08c7a04095e8bd63024308c',1,'XmlElement']]],
+  ['addfilter_9',['addFilter',['../classdoctest_1_1_context.html#a60ad57a46c19db2b142468c3acac448a',1,'doctest::Context']]],
+  ['and_5fgiven_10',['AND_GIVEN',['../doctest_8h.html#ae5e1d15ea2e7471fa4199a5701ad5542',1,'doctest.h']]],
+  ['and_5fthen_11',['AND_THEN',['../doctest_8h.html#aff5ab767c4b4b5f02218e9060d09e826',1,'doctest.h']]],
+  ['and_5fwhen_12',['AND_WHEN',['../doctest_8h.html#a49fd020eb5d05b1e021d84558ef297a5',1,'doctest.h']]],
+  ['applycommandline_13',['applyCommandLine',['../classdoctest_1_1_context.html#ad55229220bf9ca74e6e0c6323bf672e1',1,'doctest::Context']]],
+  ['approx_14',['Approx',['../structdoctest_1_1_approx.html',1,'doctest::Approx'],['../structdoctest_1_1_approx.html#a86f0d1b44c1cf095697f23ccdab00802',1,'doctest::Approx::Approx()']]],
+  ['assert_5fhandler_15',['assert_handler',['../namespacedoctest_1_1detail.html#a62180333ba424c5f9e3004191e614527',1,'doctest::detail']]],
+  ['assertdata_16',['AssertData',['../structdoctest_1_1_assert_data.html',1,'doctest::AssertData'],['../structdoctest_1_1_assert_data.html#ae1f9906888c2dd06b6291ab196f5074e',1,'doctest::AssertData::AssertData()']]],
+  ['assertfailure_17',['AssertFailure',['../namespacedoctest_1_1_test_case_failure_reason.html#aecb2ca1f80416d60f0d6b96f65859d3ca06ab32ff93cacaa65c6a2667ddde64e9',1,'doctest::TestCaseFailureReason']]],
+  ['assertstring_18',['assertString',['../namespacedoctest.html#a44bf1260a82383247d446170810493cf',1,'doctest']]]
 ];

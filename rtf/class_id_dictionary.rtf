@@ -1,7 +1,7 @@
-{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
-{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
-{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
-{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
 {\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
 }
 {\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
@@ -148,24 +148,19 @@
 }
 {\comment begin body}
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
-IdDictionary Клас Препратка\par \pard\plain 
+IdDictionary Class Reference\par \pard\plain 
 {\tc\tcl2 \v IdDictionary}
 {\xe \v IdDictionary}
-{\bkmkstart AAAAAAAABP}
-{\bkmkend AAAAAAAABP}
+{\bkmkstart AAAAAAAATK}
+{\bkmkend AAAAAAAATK}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Речник за регистриране и бързо търсене на XML елементи по тяхното ID. }}\par
 {
 {\f2 #include <IdDictionary.h>}}\par
-Граф на зависимости за класа IdDictionary:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_id_dictionary__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-\par
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Общодостъпни членове функции\par
+Public Member Functions\par
 \pard\plain 
 
 {
@@ -200,7 +195,7 @@ void {\b clear} ()\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Подробно описание\par
+Detailed Description\par
 \pard\plain 
 {
 \pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -216,10 +211,10 @@ void {\b clear} ()\par
 Този клас поддържа плосък списък (вектор) от всички елементи в дървото, които притежават атрибут {\f2 id} . Това позволява изпълнението на команди като {\f2 select}  или {\f2 set}  да се случва бързо, без нужда от рекурсивно обхождане на цялото XML дърво. \par
 }}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAABQ}
-{\bkmkend AAAAAAAABQ}
+{\bkmkstart AAAAAAAATL}
+{\bkmkend AAAAAAAATL}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Членове Функции(методи) Документация\par
+Member Function Documentation\par
 \pard\plain 
 {\xe \v add\:IdDictionary}
 {\xe \v IdDictionary\:add}
@@ -227,8 +222,8 @@ void {\b clear} ()\par
 {\b 
 void IdDictionary::add (const std::string & id, {\b XmlElement} * element){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAABR}
-{\bkmkend AAAAAAAABR}
+{\bkmkstart AAAAAAAATM}
+{\bkmkend AAAAAAAATM}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -238,7 +233,7 @@ void IdDictionary::add (const std::string & id, {\b XmlElement} * element){\f2 [
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Методът не прави проверка за дубликати. Гарантирането на уникалност е отговорност на парсъра (напр. чрез метода ensureUniqueId). {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -259,8 +254,8 @@ void IdDictionary::add (const std::string & id, {\b XmlElement} * element){\f2 [
 {\b 
 void IdDictionary::clear (){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAABS}
-{\bkmkend AAAAAAAABS}
+{\bkmkstart AAAAAAAATN}
+{\bkmkend AAAAAAAATN}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -276,8 +271,8 @@ void IdDictionary::clear (){\f2 [inline]}}}
 {\b 
 bool IdDictionary::contains (const std::string & id) const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAABT}
-{\bkmkend AAAAAAAABT}
+{\bkmkstart AAAAAAAATO}
+{\bkmkend AAAAAAAATO}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -287,7 +282,7 @@ bool IdDictionary::contains (const std::string & id) const{\f2 [inline]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -296,7 +291,7 @@ bool IdDictionary::contains (const std::string & id) const{\f2 [inline]}}}
 {\row }
 }
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 {\f2 true} , ако ID-то е намерено, и {\f2 false} , ако такова ID не съществува. \par
 }}}}
 {\xe \v get\:IdDictionary}
@@ -305,8 +300,8 @@ bool IdDictionary::contains (const std::string & id) const{\f2 [inline]}}}
 {\b 
 {\b XmlElement} * IdDictionary::get (const std::string & id) const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAABU}
-{\bkmkend AAAAAAAABU}
+{\bkmkstart AAAAAAAATP}
+{\bkmkend AAAAAAAATP}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -316,7 +311,7 @@ bool IdDictionary::contains (const std::string & id) const{\f2 [inline]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -325,11 +320,11 @@ bool IdDictionary::contains (const std::string & id) const{\f2 [inline]}}}
 {\row }
 }
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Указател към намерения {\b XmlElement}, или {\f2 nullptr} , ако не бъде открит такъв. \par
 }}}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-Документация за клас генериран от следният файл:{\par
+The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-XMLParser/XMLParser/XmlCore/IdDictionary.h\par
+XMLParser/XMLParser/XmlCore/{\b IdDictionary.h}\par
 }}

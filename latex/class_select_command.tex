@@ -1,4 +1,4 @@
-\doxysection{Select\+Command Клас Препратка}
+\doxysection{Select\+Command Class Reference}
 \hypertarget{class_select_command}{}\label{class_select_command}\index{SelectCommand@{SelectCommand}}
 
 
@@ -9,29 +9,32 @@
 
 {\ttfamily \+\#include $<$Commands.\+h$>$}
 
-
-
-Диаграма на наследяване за Select\+Command:\+
-% FIG 0
-
-
-Граф на зависимости за класа Select\+Command:\+
-% FIG 1
-\doxysubsubsection*{Общодостъпни членове функции}
+Inheritance diagram for Select\+Command:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_select_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \doxymbox{\hyperlink{class_select_command_a6b40aa548276beed85cebebde80174df}{execute}} (\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&doc, const std::\+string \&args) override
 \begin{DoxyCompactList}\small\item\em Изпълнява съответната команда върху подадения XML документ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_command_a641c23ef533dd6f77d0a4ef0311598b2}{\texorpdfstring{$\sim$}{\string~}\+Command}} ()
+\end{DoxyCompactItemize}
 
 
-\doxysubsection{Подробно описание}
+\doxysubsection{Detailed Description}
 Команда за извличане на стойност на атрибут (команда:\+ select). 
 
 Очаква ID на елемент и ключ на атрибут. Извежда стойността му. 
 
 \label{class_select_command_doc-func-members}
 \Hypertarget{class_select_command_doc-func-members}
-\doxysubsection{Членове Функции(методи) Документация}
+\doxysubsection{Member Function Documentation}
 \Hypertarget{class_select_command_a6b40aa548276beed85cebebde80174df}\index{SelectCommand@{SelectCommand}!execute@{execute}}
 \index{execute@{execute}!SelectCommand@{SelectCommand}}
 \doxysubsubsection{\texorpdfstring{execute()}{execute()}}
@@ -43,7 +46,7 @@ void Select\+Command::\+execute (\begin{DoxyParamCaption}\item[{\doxymbox{\hyper
 Изпълнява съответната команда върху подадения XML документ. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em doc} & Референция към текущо заредения XML документ. \\
 \hline
 {\em args} & Аргументите на командата, подадени от потребителя (като стринг). \\
@@ -51,12 +54,10 @@ void Select\+Command::\+execute (\begin{DoxyParamCaption}\item[{\doxymbox{\hyper
 \end{DoxyParams}
 
 
-Заменя \doxymbox{\hyperlink{class_command_a693610de13df3a028abf715fdf5540a7}{Command}}.
-
-Граф с извикванията за тази функция:\+
-% FIG 2
+Implements \doxymbox{\hyperlink{class_command_a693610de13df3a028abf715fdf5540a7}{Command}}.
 
 
-Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-XMLParser/\+\+XMLParser/\+\+CLI/\+Commands.\+h\end{DoxyCompactItemize}
+XMLParser/\+\+XMLParser/\+\+CLI/\+\doxymbox{\hyperlink{_commands_8h}{Commands.\+h}}\end{DoxyCompactItemize}

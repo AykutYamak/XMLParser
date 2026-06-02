@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['deletecommand_0',['DeleteCommand',['../class_delete_command.html',1,'']]],
-  ['description_1',['description',['../struct_entry_command.html#a3bf7a89b34b1b464f6be121d1cd8f8da',1,'EntryCommand']]]
+  ['4_3a_20динамична_20редакция_20на_20дървото_20и_20персистенция_20tree_20mutation_20persistence_0',['Сценарий 4: Динамична редакция на дървото и Персистенция (Tree Mutation &amp;amp; Persistence)',['../md__r_e_a_d_m_e.html#autotoc_md8',1,'']]]
 ];

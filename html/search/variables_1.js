@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['description_0',['description',['../struct_entry_command.html#a3bf7a89b34b1b464f6be121d1cd8f8da',1,'EntryCommand']]]
+  ['binary_5fname_0',['binary_name',['../structdoctest_1_1_context_options.html#a0590006b4d10296c9a697e32ff886f74',1,'doctest::ContextOptions']]],
+  ['buf_1',['buf',['../classdoctest_1_1_string.html#a7e031ced488588936a540eba26facf67',1,'doctest::String']]]
 ];

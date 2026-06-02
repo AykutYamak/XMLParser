@@ -1,0 +1,88 @@
+\doxysection{Mock\+Node Class Reference}
+\hypertarget{class_mock_node}{}\label{class_mock_node}\index{MockNode@{MockNode}}
+Inheritance diagram for Mock\+Node:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mock_node}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_mock_node_ab0e9a3f349850e99530a297cc5aa8cdf}{print}} (\doxymbox{\hyperlink{namespacestd_a6d1736434ff6d516a3df38cbb7487ea5}{std::\+ostream}} \&os, int indent=0) const override
+\begin{DoxyCompactList}\small\item\em Извежда съдържанието на възела в подадения изходен поток. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_mock_node_ad62366ff80b1486f41f717a214c9291d}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Създава точно (дълбоко) копие на текущия възел. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{Xml\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по подразбиране. Инициализира възела без родител. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{class_xml_node_ae6efa9b40aa905dda85c7a93489cf50a}{\texorpdfstring{$\sim$}{\string~}\+Xml\+Node}} ()=default
+\begin{DoxyCompactList}\small\item\em Виртуален деструктор. Гарантира правилното изчистване на паметта при изтриване на обекти чрез указател към базовия клас. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_xml_node_a7944211ab1f50728883d5fd4b86200e8}{Xml\+Node}} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
+\item 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& \doxymbox{\hyperlink{class_xml_node_a4e7d52360602a8f26f61d901f283e20c}{operator=}} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
+\item 
+\doxymbox{\hyperlink{class_xml_node_af2d18234dc3d987ebe4f5fff87f3e4ec}{Xml\+Node}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
+\item 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& \doxymbox{\hyperlink{class_xml_node_adacbfe075ca11f4c1ff230ab572fcbfa}{operator=}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
+\item 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_node_a7d4aa65642386e9d0897651f190661c1}{get\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Връща родителския възел на текущия обект. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_xml_node_ac32e7763b1d39ba598cccf7639932fc5}{set\+Parent}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Задава нов родителски възел. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_node_a892ef0efed5d79ef553f92ab1580b770}{parent}}
+\begin{DoxyCompactList}\small\item\em Указател към родителския възел (nullptr, ако е корен). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{class_mock_node_doc-func-members}
+\Hypertarget{class_mock_node_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mock_node_ad62366ff80b1486f41f717a214c9291d}\index{MockNode@{MockNode}!clone@{clone}}
+\index{clone@{clone}!MockNode@{MockNode}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_mock_node_ad62366ff80b1486f41f717a214c9291d} 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} Mock\+Node::\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Създава точно (дълбоко) копие на текущия възел. 
+
+\begin{DoxyReturn}{Returns}
+Указател към новосъздаденото копие. Паметта трябва да се управлява от извикващия. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_xml_node_af646cb06fcbf8af8b0654030f25c681d}{Xml\+Node}}.
+
+\Hypertarget{class_mock_node_ab0e9a3f349850e99530a297cc5aa8cdf}\index{MockNode@{MockNode}!print@{print}}
+\index{print@{print}!MockNode@{MockNode}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_mock_node_ab0e9a3f349850e99530a297cc5aa8cdf} 
+void Mock\+Node::\+print (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacestd_a6d1736434ff6d516a3df38cbb7487ea5}{std::\+ostream}} \&}]{os}{, }\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Извежда съдържанието на възела в подадения изходен поток. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Изходният поток (напр. std::\+cout или std::\+ofstream), в който ще се пише. \\
+\hline
+{\em indent} & Броят интервали за отстъп, използвани за форматиран (pretty-\/print) изход. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \doxymbox{\hyperlink{class_xml_node_a24959aba794d80ab9dfcc88d0189ffcf}{Xml\+Node}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+XMLParser/\+\+XMLParser/\+\+Tests/\+\doxymbox{\hyperlink{_xml_node_tests_8cpp}{Xml\+Node\+Tests.\+cpp}}\end{DoxyCompactItemize}

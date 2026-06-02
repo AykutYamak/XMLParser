@@ -1,7 +1,7 @@
-{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
-{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
-{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
-{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
 {\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
 }
 {\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
@@ -148,29 +148,23 @@
 }
 {\comment begin body}
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
-XmlElement Клас Препратка\par \pard\plain 
+XmlElement Class Reference\par \pard\plain 
 {\tc\tcl2 \v XmlElement}
 {\xe \v XmlElement}
-{\bkmkstart AAAAAAAADK}
-{\bkmkend AAAAAAAADK}
+{\bkmkstart AAAAAAAAVN}
+{\bkmkend AAAAAAAAVN}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Клас, представящ XML елемент (таг) в дървото. }}\par
 {
 {\f2 #include <XmlElement.h>}}\par
-Диаграма на наследяване за XmlElement:{
+Inheritance diagram for XmlElement:{
 \pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
 }
-\par
-Граф на зависимости за класа XmlElement:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-\par
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Класове\par
+Classes\par
 \pard\plain 
 
 {
@@ -180,15 +174,12 @@ class {\b Iterator}{
 Вграден клас Итератор за безопасно и удобно обхождане на XML дървото. }}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Общодостъпни членове функции\par
+Public Member Functions\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b XmlElement} (){\bkmkstart AAAAAAAADL}
-{\bkmkend AAAAAAAADL}
-\par
+{\b XmlElement} ()\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Конструктор по подразбиране. Създава празен елемент. }{
@@ -202,15 +193,9 @@ class {\b Iterator}{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b XmlElement} (const {\b XmlElement} &other)=delete{\bkmkstart AAAAAAAADM}
-{\bkmkend AAAAAAAADM}
-\par
+{\b XmlElement} (const {\b XmlElement} &other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b XmlElement} & {\b operator=} (const {\b XmlElement} &other)=delete{\bkmkstart AAAAAAAADN}
-{\bkmkend AAAAAAAADN}
-\par
+{\b XmlElement} & {\b operator=} (const {\b XmlElement} &other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b ~XmlElement} () override\par
 {
@@ -219,7 +204,7 @@ class {\b Iterator}{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\b print} (std::ostream &os, int indent=0) const override\par
+void {\b print} ({\b std::ostream} &os, int indent=0) const override\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Извежда елемента (тага, атрибутите и децата му) в изходен поток. }{
@@ -289,20 +274,14 @@ template<typename T> std::vector< T * > {\b getChildrenOfType} () const\par
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b Iterator} {\b begin} (){\bkmkstart AAAAAAAADO}
-{\bkmkend AAAAAAAADO}
-\par
+{\b Iterator} {\b begin} ()\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Връща итератор, сочещ към първото дете на елемента. }{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b Iterator} {\b end} (){\bkmkstart AAAAAAAADP}
-{\bkmkend AAAAAAAADP}
-\par
+{\b Iterator} {\b end} ()\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Връща итератор, сочещ след последното дете на елемента. }{
@@ -310,12 +289,11 @@ template<typename T> std::vector< T * > {\b getChildrenOfType} () const\par
 }\par}
 }
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
-Общодостъпни членове функции наследен от {\b XmlNode}\par
+Public Member Functions inherited from {\b XmlNode}\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
 {\b XmlNode} ()\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -323,7 +301,6 @@ template<typename T> std::vector< T * > {\b getChildrenOfType} () const\par
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
 virtual {\b ~XmlNode} ()=default\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -331,16 +308,12 @@ virtual {\b ~XmlNode} ()=default\par
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
 {\b XmlNode} (const {\b XmlNode} &other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
 {\b XmlNode} & {\b operator=} (const {\b XmlNode} &other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
 {\b XmlNode} ({\b XmlNode} &&other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
 {\b XmlNode} & {\b operator=} ({\b XmlNode} &&other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b XmlNode} * {\b getParent} () const\par
@@ -358,15 +331,14 @@ void {\b setParent} ({\b XmlNode} *p)\par
 }\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Допълнителни наследени членове\par
+Additional Inherited Members\par
 \pard\plain 
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
-Защитени атрибути наследен от {\b XmlNode}\par
+Protected Attributes inherited from {\b XmlNode}\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
 {\b XmlNode} * {\b parent}\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -376,7 +348,7 @@ void {\b setParent} ({\b XmlNode} *p)\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Подробно описание\par
+Detailed Description\par
 \pard\plain 
 {
 \pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -390,19 +362,34 @@ void {\b setParent} ({\b XmlNode} *p)\par
 \par
 }}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAADQ}
-{\bkmkend AAAAAAAADQ}
+{\bkmkstart AAAAAAAAVO}
+{\bkmkend AAAAAAAAVO}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Конструктор & Деструктор Документация\par
+Constructor & Destructor Documentation\par
 \pard\plain 
+{\xe \v XmlElement\:XmlElement}
+{\xe \v XmlElement\:XmlElement}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+XmlElement::XmlElement (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAVP}
+{\bkmkend AAAAAAAAVP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Конструктор по подразбиране. Създава празен елемент. }}\par
+}
 {\xe \v XmlElement\:XmlElement}
 {\xe \v XmlElement\:XmlElement}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 XmlElement::XmlElement (const std::string & elementName){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAADR}
-{\bkmkend AAAAAAAADR}
+{\bkmkstart AAAAAAAAVQ}
+{\bkmkend AAAAAAAAVQ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -412,7 +399,7 @@ XmlElement::XmlElement (const std::string & elementName){\f2 [inline]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -420,10 +407,17 @@ XmlElement::XmlElement (const std::string & elementName){\f2 [inline]}}}
 {{\i elementName} \cell }{Името на XML тага, който се създава. \cell }
 {\row }
 }
-}Граф с извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_ab17c21eab01a90ef7922bfcbe018e088_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
+}}
+{\xe \v XmlElement\:XmlElement}
+{\xe \v XmlElement\:XmlElement}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+XmlElement::XmlElement (const {\b XmlElement} & other){\f2 [delete]}}}
+\par
+{\bkmkstart AAAAAAAAVR}
+{\bkmkend AAAAAAAAVR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
 {\xe \v ~XmlElement\:XmlElement}
 {\xe \v XmlElement\:~XmlElement}
@@ -431,8 +425,8 @@ XmlElement::XmlElement (const std::string & elementName){\f2 [inline]}}}
 {\b 
 XmlElement::~XmlElement (){\f2 [override]}}}
 \par
-{\bkmkstart AAAAAAAADS}
-{\bkmkend AAAAAAAADS}
+{\bkmkstart AAAAAAAAVS}
+{\bkmkend AAAAAAAAVS}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -449,16 +443,12 @@ XmlElement::~XmlElement (){\f2 [override]}}}
 \par
 \pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
 Когато се извика {\f2 delete}  върху коренния елемент (например от деструктора на {\f2 {\b XmlDocument}} ), този деструктор се активира и завърта цикъл през всички деца във вектора {\f2 children} . Извикването на {\f2 delete child}  вътре в цикъла автоматично извиква деструкторите на самите деца (които изтриват техните деца и т.н., чак до листата на дървото). Тъй като деструкторът в базовия клас {\f2 {\b XmlNode}}  е маркиран като {\f2 virtual} , C++ гарантира, че винаги ще се извика правилният деструктор ({\f2 {\b XmlElement}}  или {\f2 {\b XmlText}} ), дори когато трием през указател към базовия клас. \par}
-}Граф с извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_a1ee9fc2b9a0ab357eb20592de9e9c5ae_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-}
+}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAADT}
-{\bkmkend AAAAAAAADT}
+{\bkmkstart AAAAAAAAVT}
+{\bkmkend AAAAAAAAVT}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Членове Функции(методи) Документация\par
+Member Function Documentation\par
 \pard\plain 
 {\xe \v addAttribute\:XmlElement}
 {\xe \v XmlElement\:addAttribute}
@@ -466,8 +456,8 @@ XmlElement::~XmlElement (){\f2 [override]}}}
 {\b 
 void XmlElement::addAttribute (const std::string & key, const std::string & value)}}
 \par
-{\bkmkstart AAAAAAAADU}
-{\bkmkend AAAAAAAADU}
+{\bkmkstart AAAAAAAAVU}
+{\bkmkend AAAAAAAAVU}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -477,7 +467,7 @@ void XmlElement::addAttribute (const std::string & key, const std::string & valu
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Добавя нов атрибут към елемента (без проверка за дубликати).\par
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -496,7 +486,7 @@ void XmlElement::addAttribute (const std::string & key, const std::string & valu
 \pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -511,7 +501,7 @@ void XmlElement::addAttribute (const std::string & key, const std::string & valu
 {\row }
 }
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Изключения\par}
+Exceptions\par}
 \pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -527,8 +517,8 @@ void XmlElement::addAttribute (const std::string & key, const std::string & valu
 {\b 
 void XmlElement::addChild ({\b XmlNode} * child)}}
 \par
-{\bkmkstart AAAAAAAADV}
-{\bkmkend AAAAAAAADV}
+{\bkmkstart AAAAAAAAVV}
+{\bkmkend AAAAAAAAVV}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -538,7 +528,7 @@ void XmlElement::addChild ({\b XmlNode} * child)}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Добавя възел като дете на текущия елемент и обновява връзките.\par
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -555,7 +545,7 @@ void XmlElement::addChild ({\b XmlNode} * child)}}
 \pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -564,7 +554,7 @@ void XmlElement::addChild ({\b XmlNode} * child)}}
 {\row }
 }
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Изключения\par}
+Exceptions\par}
 \pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -573,14 +563,21 @@ void XmlElement::addChild ({\b XmlNode} * child)}}
 {\row }
 }
 }
-}Граф с извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_ac9b7e2eef08c7a04095e8bd63024308c_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-Граф на извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_ac9b7e2eef08c7a04095e8bd63024308c_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
+}}
+{\xe \v begin\:XmlElement}
+{\xe \v XmlElement\:begin}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Iterator} XmlElement::begin (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAVW}
+{\bkmkend AAAAAAAAVW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща итератор, сочещ към първото дете на елемента. }}\par
 }
 {\xe \v clone\:XmlElement}
 {\xe \v XmlElement\:clone}
@@ -588,8 +585,8 @@ void XmlElement::addChild ({\b XmlNode} * child)}}
 {\b 
 {\b XmlNode} * XmlElement::clone () const{\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAADW}
-{\bkmkend AAAAAAAADW}
+{\bkmkstart AAAAAAAAVX}
+{\bkmkend AAAAAAAAVX}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -599,7 +596,7 @@ void XmlElement::addChild ({\b XmlNode} * child)}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Създава динамично дълбоко копие (Deep Copy) на текущия XML елемент и цялото му поддърво.\par
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Указател към новия обект. Паметта се управлява от извикващия.\par
 }}{
 \par
@@ -622,15 +619,26 @@ void XmlElement::addChild ({\b XmlNode} * child)}}
 \pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
 \par
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Указател към новосъздадения корен на копираното поддърво. Паметта трябва да се управлява от извикващата функция. \par
 }}}
 }{
-Заменя {\b XmlNode} ({\i стр.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADX \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
-Граф с извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_ab9866dbc3f71cc74319dfe1ea13c3bc6_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+Implements {\b XmlNode} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAATX \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 }
+{\xe \v end\:XmlElement}
+{\xe \v XmlElement\:end}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Iterator} XmlElement::end (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAVY}
+{\bkmkend AAAAAAAAVY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Връща итератор, сочещ след последното дете на елемента. }}\par
 }
 {\xe \v getAttributes\:XmlElement}
 {\xe \v XmlElement\:getAttributes}
@@ -638,8 +646,8 @@ void XmlElement::addChild ({\b XmlNode} * child)}}
 {\b 
 const std::vector< {\b XmlAttribute} > & XmlElement::getAttributes () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAADY}
-{\bkmkend AAAAAAAADY}
+{\bkmkstart AAAAAAAAVZ}
+{\bkmkend AAAAAAAAVZ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -649,7 +657,7 @@ const std::vector< {\b XmlAttribute} > & XmlElement::getAttributes () const{\f2 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 \par
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Константна референция към вектора с атрибути. \par
 }}}}
 {\xe \v getAttributeValue\:XmlElement}
@@ -658,8 +666,8 @@ const std::vector< {\b XmlAttribute} > & XmlElement::getAttributes () const{\f2 
 {\b 
 std::string XmlElement::getAttributeValue (const std::string & key) const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAADZ}
-{\bkmkend AAAAAAAADZ}
+{\bkmkstart AAAAAAAAWA}
+{\bkmkend AAAAAAAAWA}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -669,7 +677,7 @@ std::string XmlElement::getAttributeValue (const std::string & key) const{\f2 [i
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -678,21 +686,17 @@ std::string XmlElement::getAttributeValue (const std::string & key) const{\f2 [i
 {\row }
 }
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Стойността на атрибута или празен низ (""), ако не е намерен. \par
-}}}Граф на извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_aafeb59e91c1f00954461b89ab420fe40_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-}
+}}}}
 {\xe \v getChildrenOfType\:XmlElement}
 {\xe \v XmlElement\:getChildrenOfType}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 template<typename T> std::vector< T * > XmlElement::getChildrenOfType () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAEA}
-{\bkmkend AAAAAAAAEA}
+{\bkmkstart AAAAAAAAWB}
+{\bkmkend AAAAAAAAWB}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -702,7 +706,7 @@ template<typename T> std::vector< T * > XmlElement::getChildrenOfType () const{\
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Шаблона Параметри\par}
+Template Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -711,25 +715,17 @@ template<typename T> std::vector< T * > XmlElement::getChildrenOfType () const{\
 {\row }
 }
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Вектор от указатели към филтрираните възли. \par
-}}}Граф с извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_adc5d91e0607a879a7ca4731aa6257877_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-Граф на извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_adc5d91e0607a879a7ca4731aa6257877_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-}
+}}}}
 {\xe \v getName\:XmlElement}
 {\xe \v XmlElement\:getName}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 const std::string & XmlElement::getName () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAEB}
-{\bkmkend AAAAAAAAEB}
+{\bkmkstart AAAAAAAAWC}
+{\bkmkend AAAAAAAAWC}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -739,17 +735,28 @@ const std::string & XmlElement::getName () const{\f2 [inline]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 \par
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Константна референция към низа, съдържащ името. \par
 }}}}
+{\xe \v operator=\:XmlElement}
+{\xe \v XmlElement\:operator=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b XmlElement} & XmlElement::operator= (const {\b XmlElement} & other){\f2 [delete]}}}
+\par
+{\bkmkstart AAAAAAAAWD}
+{\bkmkend AAAAAAAAWD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
 {\xe \v operator[]\:XmlElement}
 {\xe \v XmlElement\:operator[]}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 std::string & XmlElement::operator[] (const std::string & key){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAEC}
-{\bkmkend AAAAAAAAEC}
+{\bkmkstart AAAAAAAAWE}
+{\bkmkend AAAAAAAAWE}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -759,7 +766,7 @@ std::string & XmlElement::operator[] (const std::string & key){\f2 [inline]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -768,17 +775,17 @@ std::string & XmlElement::operator[] (const std::string & key){\f2 [inline]}}}
 {\row }
 }
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Референция към стойността на атрибута (позволява промяна). \par
 }}}}
 {\xe \v print\:XmlElement}
 {\xe \v XmlElement\:print}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-void XmlElement::print (std::ostream & os, int indent = {\f2 0}) const{\f2 [override]}, {\f2 [virtual]}}}
+void XmlElement::print ({\b std::ostream} & os, int indent = {\f2 0}) const{\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAED}
-{\bkmkend AAAAAAAAED}
+{\bkmkstart AAAAAAAAWF}
+{\bkmkend AAAAAAAAWF}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -788,7 +795,7 @@ void XmlElement::print (std::ostream & os, int indent = {\f2 0}) const{\f2 [over
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Извежда елемента, неговите атрибути и съдържание във форматиран вид.\par
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -811,7 +818,7 @@ void XmlElement::print (std::ostream & os, int indent = {\f2 0}) const{\f2 [over
 \pard\plain {\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\hich\af0\langfe2052\dbch\af0\afs24\lang1081\loch\f0\fs24\lang1033{\listtext\pard\plain \hich\af3\dbch\af3\loch\f8 \'01\u9702\tab}\ilvl1\ls1 \li0\ri0\lin0\rin0\fi-360\tx720\li720\ri0\lin720\rin0\fi-360\kerning1\hich\af4\dbch\af5\rtlch \ltrch\loch\fs20
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -826,7 +833,7 @@ void XmlElement::print (std::ostream & os, int indent = {\f2 0}) const{\f2 [over
 {\row }
 }
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Изключения\par}
+Exceptions\par}
 \pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -836,15 +843,7 @@ void XmlElement::print (std::ostream & os, int indent = {\f2 0}) const{\f2 [over
 }
 }
 }{
-Заменя {\b XmlNode} ({\i стр.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEE \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
-Граф с извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-Граф на извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
+Implements {\b XmlNode} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAATZ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 }
 {\xe \v removeAttribute\:XmlElement}
 {\xe \v XmlElement\:removeAttribute}
@@ -852,8 +851,8 @@ void XmlElement::print (std::ostream & os, int indent = {\f2 0}) const{\f2 [over
 {\b 
 void XmlElement::removeAttribute (const std::string & key){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAEF}
-{\bkmkend AAAAAAAAEF}
+{\bkmkstart AAAAAAAAWG}
+{\bkmkend AAAAAAAAWG}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -863,7 +862,7 @@ void XmlElement::removeAttribute (const std::string & key){\f2 [inline]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -871,15 +870,11 @@ void XmlElement::removeAttribute (const std::string & key){\f2 [inline]}}}
 {{\i key} \cell }{Името на атрибута, който трябва да бъде премахнат. \cell }
 {\row }
 }
-}Граф на извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_element_aaaa9635e353a5c07ed2f5664815400e2_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-}
+}}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-Документация за клас генериран от следните файлове:{\par
+The documentation for this class was generated from the following files:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-XMLParser/XMLParser/XmlCore/XmlElement.h\par
+XMLParser/XMLParser/XmlCore/{\b XmlElement.h}\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-XMLParser/XMLParser/XmlCore/XmlElement.cpp\par
+XMLParser/XMLParser/XmlCore/{\b XmlElement.cpp}\par
 }}

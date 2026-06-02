@@ -1,7 +1,7 @@
-{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
-{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
-{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
-{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
 {\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
 }
 {\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
@@ -148,74 +148,50 @@
 }
 {\comment begin body}
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
-XmlNode Клас Препратка\par \pard\plain 
+XmlNode Class Reference\par \pard\plain 
 {\tc\tcl2 \v XmlNode}
 {\xe \v XmlNode}
-{\bkmkstart AAAAAAAAEL}
-{\bkmkend AAAAAAAAEL}
+{\bkmkstart AAAAAAAAWO}
+{\bkmkend AAAAAAAAWO}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Абстрактен базов клас за всички възли в XML дървото. }}\par
 {
 {\f2 #include <XmlNode.h>}}\par
-Диаграма на наследяване за XmlNode:{
+Inheritance diagram for XmlNode:{
 \pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_node__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_node.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
 }
-\par
-Граф на зависимости за класа XmlNode:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_node__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-\par
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Общодостъпни членове функции\par
+Public Member Functions\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b XmlNode} (){\bkmkstart AAAAAAAAEM}
-{\bkmkend AAAAAAAAEM}
-\par
+{\b XmlNode} ()\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Конструктор по подразбиране. Инициализира възела без родител. }{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-virtual {\b ~XmlNode} ()=default{\bkmkstart AAAAAAAAEN}
-{\bkmkend AAAAAAAAEN}
-\par
+virtual {\b ~XmlNode} ()=default\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Виртуален деструктор. Гарантира правилното изчистване на паметта при изтриване на обекти чрез указател към базовия клас. }{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b XmlNode} (const {\b XmlNode} &other)=delete{\bkmkstart AAAAAAAAEO}
-{\bkmkend AAAAAAAAEO}
-\par
+{\b XmlNode} (const {\b XmlNode} &other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b XmlNode} & {\b operator=} (const {\b XmlNode} &other)=delete{\bkmkstart AAAAAAAAEP}
-{\bkmkend AAAAAAAAEP}
-\par
+{\b XmlNode} & {\b operator=} (const {\b XmlNode} &other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b XmlNode} ({\b XmlNode} &&other)=delete{\bkmkstart AAAAAAAAEQ}
-{\bkmkend AAAAAAAAEQ}
-\par
+{\b XmlNode} ({\b XmlNode} &&other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b XmlNode} & {\b operator=} ({\b XmlNode} &&other)=delete{\bkmkstart AAAAAAAAER}
-{\bkmkend AAAAAAAAER}
-\par
+{\b XmlNode} & {\b operator=} ({\b XmlNode} &&other)=delete\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-virtual void {\b print} (std::ostream &os, int indent=0) const =0\par
+virtual void {\b print} ({\b std::ostream} &os, int indent=0) const =0\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Извежда съдържанието на възела в подадения изходен поток. }{
@@ -244,15 +220,12 @@ void {\b setParent} ({\b XmlNode} *p)\par
 }\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Защитени атрибути\par
+Protected Attributes\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-
-{\b XmlNode} * {\b parent}{\bkmkstart AAAAAAAAES}
-{\bkmkend AAAAAAAAES}
-\par
+{\b XmlNode} * {\b parent}\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Указател към родителския възел (nullptr, ако е корен). }{
@@ -261,7 +234,7 @@ void {\b setParent} ({\b XmlNode} *p)\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Подробно описание\par
+Detailed Description\par
 \pard\plain 
 {
 \pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -276,10 +249,68 @@ void {\b setParent} ({\b XmlNode} *p)\par
 \par
 }}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-{\bkmkstart AAAAAAAAET}
-{\bkmkend AAAAAAAAET}
+{\bkmkstart AAAAAAAAWP}
+{\bkmkend AAAAAAAAWP}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Членове Функции(методи) Документация\par
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v XmlNode\:XmlNode}
+{\xe \v XmlNode\:XmlNode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+XmlNode::XmlNode (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAWQ}
+{\bkmkend AAAAAAAAWQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Конструктор по подразбиране. Инициализира възела без родител. }}\par
+}
+{\xe \v ~XmlNode\:XmlNode}
+{\xe \v XmlNode\:~XmlNode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual XmlNode::~XmlNode (){\f2 [virtual]}, {\f2 [default]}}}
+\par
+{\bkmkstart AAAAAAAAWR}
+{\bkmkend AAAAAAAAWR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Виртуален деструктор. Гарантира правилното изчистване на паметта при изтриване на обекти чрез указател към базовия клас. }}\par
+}
+{\xe \v XmlNode\:XmlNode}
+{\xe \v XmlNode\:XmlNode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+XmlNode::XmlNode (const {\b XmlNode} & other){\f2 [delete]}}}
+\par
+{\bkmkstart AAAAAAAAWS}
+{\bkmkend AAAAAAAAWS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v XmlNode\:XmlNode}
+{\xe \v XmlNode\:XmlNode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+XmlNode::XmlNode ({\b XmlNode} && other){\f2 [delete]}}}
+\par
+{\bkmkstart AAAAAAAAWT}
+{\bkmkend AAAAAAAAWT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAWU}
+{\bkmkend AAAAAAAAWU}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
 \pard\plain 
 {\xe \v clone\:XmlNode}
 {\xe \v XmlNode\:clone}
@@ -287,8 +318,8 @@ void {\b setParent} ({\b XmlNode} *p)\par
 {\b 
 virtual {\b XmlNode} * XmlNode::clone () const{\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAADX}
-{\bkmkend AAAAAAAADX}
+{\bkmkstart AAAAAAAATX}
+{\bkmkend AAAAAAAATX}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -298,14 +329,10 @@ virtual {\b XmlNode} * XmlNode::clone () const{\f2 [pure virtual]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 \par
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Указател към новосъздаденото копие. Паметта трябва да се управлява от извикващия. \par
 }}}{
-Заменя в {\b XmlElement} ({\i стр.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAADW \\*MERGEFORMAT}{\fldrslt pagenum}}}), и {\b XmlText} ({\i стр.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEU \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
-Граф с извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_node_af646cb06fcbf8af8b0654030f25c681d_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
+Implemented in {\b MockNode} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAATW \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b XmlElement} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAVX \\*MERGEFORMAT}{\fldrslt pagenum}}}), and {\b XmlText} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAWV \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 }
 {\xe \v getParent\:XmlNode}
 {\xe \v XmlNode\:getParent}
@@ -313,8 +340,8 @@ virtual {\b XmlNode} * XmlNode::clone () const{\f2 [pure virtual]}}}
 {\b 
 {\b XmlNode} * XmlNode::getParent () const{\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAEV}
-{\bkmkend AAAAAAAAEV}
+{\bkmkstart AAAAAAAAWW}
+{\bkmkend AAAAAAAAWW}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -324,21 +351,39 @@ virtual {\b XmlNode} * XmlNode::clone () const{\f2 [pure virtual]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 \par
 {{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Връща\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Указател към родителя или nullptr, ако възелът е корен. \par
-}}}Граф с извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_node_a7d4aa65642386e9d0897651f190661c1_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}}}}
+{\xe \v operator=\:XmlNode}
+{\xe \v XmlNode\:operator=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b XmlNode} & XmlNode::operator= (const {\b XmlNode} & other){\f2 [delete]}}}
+\par
+{\bkmkstart AAAAAAAAWX}
+{\bkmkend AAAAAAAAWX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
+{\xe \v operator=\:XmlNode}
+{\xe \v XmlNode\:operator=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b XmlNode} & XmlNode::operator= ({\b XmlNode} && other){\f2 [delete]}}}
+\par
+{\bkmkstart AAAAAAAAWY}
+{\bkmkend AAAAAAAAWY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
 {\xe \v print\:XmlNode}
 {\xe \v XmlNode\:print}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-virtual void XmlNode::print (std::ostream & os, int indent = {\f2 0}) const{\f2 [pure virtual]}}}
+virtual void XmlNode::print ({\b std::ostream} & os, int indent = {\f2 0}) const{\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAEE}
-{\bkmkend AAAAAAAAEE}
+{\bkmkstart AAAAAAAATZ}
+{\bkmkend AAAAAAAATZ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -348,7 +393,7 @@ virtual void XmlNode::print (std::ostream & os, int indent = {\f2 0}) const{\f2 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -363,7 +408,7 @@ virtual void XmlNode::print (std::ostream & os, int indent = {\f2 0}) const{\f2 
 {\row }
 }
 }{
-Заменя в {\b XmlElement} ({\i стр.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAED \\*MERGEFORMAT}{\fldrslt pagenum}}}), и {\b XmlText} ({\i стр.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEW \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b MockNode} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAATY \\*MERGEFORMAT}{\fldrslt pagenum}}}), {\b XmlElement} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAWF \\*MERGEFORMAT}{\fldrslt pagenum}}}), and {\b XmlText} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAWZ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 }
 {\xe \v setParent\:XmlNode}
 {\xe \v XmlNode\:setParent}
@@ -371,8 +416,8 @@ virtual void XmlNode::print (std::ostream & os, int indent = {\f2 0}) const{\f2 
 {\b 
 void XmlNode::setParent ({\b XmlNode} * p){\f2 [inline]}}}
 \par
-{\bkmkstart AAAAAAAAEX}
-{\bkmkend AAAAAAAAEX}
+{\bkmkstart AAAAAAAAXA}
+{\bkmkend AAAAAAAAXA}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -382,7 +427,7 @@ void XmlNode::setParent ({\b XmlNode} * p){\f2 [inline]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
-Аргументи\par}
+Parameters\par}
 \pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
 \clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
@@ -390,17 +435,30 @@ void XmlNode::setParent ({\b XmlNode} * p){\f2 [inline]}}}
 {{\i p} \cell }{Указател към новия родителски възел. \cell }
 {\row }
 }
-}Граф с извикванията за тази функция:{
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\bkmkstart AAAAAAAAXB}
+{\bkmkend AAAAAAAAXB}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
 \pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_node_ac32e7763b1d39ba598cccf7639932fc5_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-Граф на извикванията за тази функция:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_xml_node_ac32e7763b1d39ba598cccf7639932fc5_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
+{\xe \v parent\:XmlNode}
+{\xe \v XmlNode\:parent}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b XmlNode}* XmlNode::parent{\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAAXC}
+{\bkmkend AAAAAAAAXC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Указател към родителския възел (nullptr, ако е корен). }}\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-Документация за клас генериран от следният файл:{\par
+The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-XMLParser/XMLParser/XmlCore/XmlNode.h\par
+XMLParser/XMLParser/XmlCore/{\b XmlNode.h}\par
 }}

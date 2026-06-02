@@ -1,4 +1,4 @@
-\doxysection{Xml\+Element Клас Препратка}
+\doxysection{Xml\+Element Class Reference}
 \hypertarget{class_xml_element}{}\label{class_xml_element}\index{XmlElement@{XmlElement}}
 
 
@@ -9,36 +9,31 @@
 
 {\ttfamily \+\#include $<$Xml\+Element.\+h$>$}
 
-
-
-Диаграма на наследяване за Xml\+Element:\+
-% FIG 0
-
-
-Граф на зависимости за класа Xml\+Element:\+
-% FIG 1
-\doxysubsubsection*{Класове}
+Inheritance diagram for Xml\+Element:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_xml_element}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}}
 \begin{DoxyCompactList}\small\item\em Вграден клас Итератор за безопасно и удобно обхождане на XML дървото. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Общодостъпни членове функции}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_xml_element_a71707526acc8fe423c5088afd1abe8f1}\label{class_xml_element_a71707526acc8fe423c5088afd1abe8f1} 
-{\bfseries Xml\+Element} ()
+\doxymbox{\hyperlink{class_xml_element_a71707526acc8fe423c5088afd1abe8f1}{Xml\+Element}} ()
 \begin{DoxyCompactList}\small\item\em Конструктор по подразбиране. Създава празен елемент. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_xml_element_ab17c21eab01a90ef7922bfcbe018e088}{Xml\+Element}} (const std::\+string \&element\+Name)
 \begin{DoxyCompactList}\small\item\em Конструктор с параметър. \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_element_a21fc8732c4a205cf9840b4c60a325cdf}\label{class_xml_element_a21fc8732c4a205cf9840b4c60a325cdf} 
-{\bfseries Xml\+Element} (const \doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_element_a21fc8732c4a205cf9840b4c60a325cdf}{Xml\+Element}} (const \doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \&other)=delete
 \item 
-\Hypertarget{class_xml_element_a7d351e7a10cf2d1ae18246ff08fb57d7}\label{class_xml_element_a7d351e7a10cf2d1ae18246ff08fb57d7} 
-\doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \& \doxymbox{\hyperlink{class_xml_element_a7d351e7a10cf2d1ae18246ff08fb57d7}{operator=}} (const \doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \&other)=delete
 \item 
 \doxymbox{\hyperlink{class_xml_element_a1ee9fc2b9a0ab357eb20592de9e9c5ae}{\texorpdfstring{$\sim$}{\string~}\+Xml\+Element}} () override
 \begin{DoxyCompactList}\small\item\em Деструктор. Отговаря за рекурсивното изтриване (delete) на всички дещерни възли в children вектора, за да предотврати изтичане на памет. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863}{print}} (std::\+ostream \&os, int indent=0) const override
+void \doxymbox{\hyperlink{class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863}{print}} (\doxymbox{\hyperlink{namespacestd_a6d1736434ff6d516a3df38cbb7487ea5}{std::\+ostream}} \&os, int indent=0) const override
 \begin{DoxyCompactList}\small\item\em Извежда елемента (тага, атрибутите и децата му) в изходен поток. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_element_ab9866dbc3f71cc74319dfe1ea13c3bc6}{clone}} () const override
 \begin{DoxyCompactList}\small\item\em Създава динамично (дълбоко) копие на текущия елемент. Копира името, атрибутите и рекурсивно клонира всички дещерни възли. \end{DoxyCompactList}\item 
@@ -58,40 +53,38 @@ std::\+string \doxymbox{\hyperlink{class_xml_element_aafeb59e91c1f00954461b89ab4
 \begin{DoxyCompactList}\small\item\em Безопасно извлича стойността на атрибут (read-\/only). За разлика от operator\+[]\+, тази функция не създава нов атрибут, ако ключът липсва. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T$>$ }\\std::\+vector$<$ T \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_xml_element_adc5d91e0607a879a7ca4731aa6257877}{get\+Children\+Of\+Type}} () const
 \begin{DoxyCompactList}\small\item\em Шаблонна функция, която връща всички дещерни възли от специфичен тип. Използва dynamic\+\_\+cast за безопасно филтриране (напр. само \doxylink{class_xml_element}{Xml\+Element} или само \doxylink{class_xml_text}{Xml\+Text}). \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_element_a8e5b6bd76bf871f4cc7f97201cfe4f31}\label{class_xml_element_a8e5b6bd76bf871f4cc7f97201cfe4f31} 
-\doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}} {\bfseries begin} ()
+\doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}} \doxymbox{\hyperlink{class_xml_element_a8e5b6bd76bf871f4cc7f97201cfe4f31}{begin}} ()
 \begin{DoxyCompactList}\small\item\em Връща итератор, сочещ към първото дете на елемента. \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_element_a05042dd05d4b727946e16fc8cc9ca4e6}\label{class_xml_element_a05042dd05d4b727946e16fc8cc9ca4e6} 
-\doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}} {\bfseries end} ()
+\doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}} \doxymbox{\hyperlink{class_xml_element_a05042dd05d4b727946e16fc8cc9ca4e6}{end}} ()
 \begin{DoxyCompactList}\small\item\em Връща итератор, сочещ след последното дете на елемента. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Общодостъпни членове функции наследен от \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Xml\+Node} ()
+\doxymbox{\hyperlink{class_xml_node_a9ba652be4d38ecccaa3933b5dde6401e}{Xml\+Node}} ()
 \begin{DoxyCompactList}\small\item\em Конструктор по подразбиране. Инициализира възела без родител. \end{DoxyCompactList}\item 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Xml\+Node} ()=default
+virtual \doxymbox{\hyperlink{class_xml_node_ae6efa9b40aa905dda85c7a93489cf50a}{\texorpdfstring{$\sim$}{\string~}\+Xml\+Node}} ()=default
 \begin{DoxyCompactList}\small\item\em Виртуален деструктор. Гарантира правилното изчистване на паметта при изтриване на обекти чрез указател към базовия клас. \end{DoxyCompactList}\item 
-{\bfseries Xml\+Node} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_node_a7944211ab1f50728883d5fd4b86200e8}{Xml\+Node}} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
 \item 
-\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& \doxymbox{\hyperlink{class_xml_node_a4e7d52360602a8f26f61d901f283e20c}{operator=}} (const \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&other)=delete
 \item 
-{\bfseries Xml\+Node} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
+\doxymbox{\hyperlink{class_xml_node_af2d18234dc3d987ebe4f5fff87f3e4ec}{Xml\+Node}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
 \item 
-\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& {\bfseries operator=} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \& \doxymbox{\hyperlink{class_xml_node_adacbfe075ca11f4c1ff230ab572fcbfa}{operator=}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \&\&other)=delete
 \item 
 \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_node_a7d4aa65642386e9d0897651f190661c1}{get\+Parent}} () const
 \begin{DoxyCompactList}\small\item\em Връща родителския възел на текущия обект. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_xml_node_ac32e7763b1d39ba598cccf7639932fc5}{set\+Parent}} (\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*}p)
 \begin{DoxyCompactList}\small\item\em Задава нов родителски възел. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Допълнителни наследени членове}
-\doxysubsection*{Защитени атрибути наследен от \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}}}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} {\bfseries parent}
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_node_a892ef0efed5d79ef553f92ab1580b770}{parent}}
 \begin{DoxyCompactList}\small\item\em Указател към родителския възел (nullptr, ако е корен). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Подробно описание}
+\doxysubsection{Detailed Description}
 Клас, представящ XML елемент (таг) в дървото. 
 
 
@@ -101,10 +94,20 @@ void \doxymbox{\hyperlink{class_xml_node_ac32e7763b1d39ba598cccf7639932fc5}{set\
 
 \label{class_xml_element_doc-constructors}
 \Hypertarget{class_xml_element_doc-constructors}
-\doxysubsection{Конструктор \& Деструктор Документация}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_xml_element_a71707526acc8fe423c5088afd1abe8f1}\index{XmlElement@{XmlElement}!XmlElement@{XmlElement}}
+\index{XmlElement@{XmlElement}!XmlElement@{XmlElement}}
+\doxysubsubsection{\texorpdfstring{XmlElement()}{XmlElement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_xml_element_a71707526acc8fe423c5088afd1abe8f1} 
+Xml\+Element::\+\+Xml\+Element (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по подразбиране. Създава празен елемент. 
+
 \Hypertarget{class_xml_element_ab17c21eab01a90ef7922bfcbe018e088}\index{XmlElement@{XmlElement}!XmlElement@{XmlElement}}
 \index{XmlElement@{XmlElement}!XmlElement@{XmlElement}}
-\doxysubsubsection{\texorpdfstring{XmlElement()}{XmlElement()}}
+\doxysubsubsection{\texorpdfstring{XmlElement()}{XmlElement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily \label{class_xml_element_ab17c21eab01a90ef7922bfcbe018e088} 
 Xml\+Element::\+\+Xml\+Element (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{element\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -113,12 +116,16 @@ Xml\+Element::\+\+Xml\+Element (\begin{DoxyParamCaption}\item[{const std::\+stri
 Конструктор с параметър. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em element\+Name} & Името на XML тага, който се създава. \\
 \hline
 \end{DoxyParams}
-Граф с извикванията за тази функция:\+
-% FIG 2
+\Hypertarget{class_xml_element_a21fc8732c4a205cf9840b4c60a325cdf}\index{XmlElement@{XmlElement}!XmlElement@{XmlElement}}
+\index{XmlElement@{XmlElement}!XmlElement@{XmlElement}}
+\doxysubsubsection{\texorpdfstring{XmlElement()}{XmlElement()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_xml_element_a21fc8732c4a205cf9840b4c60a325cdf} 
+Xml\+Element::\+\+Xml\+Element (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
 \Hypertarget{class_xml_element_a1ee9fc2b9a0ab357eb20592de9e9c5ae}\index{XmlElement@{XmlElement}!````~XmlElement@{\texorpdfstring{$\sim$}{\string~}XmlElement}}
 \index{````~XmlElement@{\texorpdfstring{$\sim$}{\string~}XmlElement}!XmlElement@{XmlElement}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}XmlElement()}{\string~XmlElement()}}
@@ -139,13 +146,11 @@ Xml\+Element::\+\texorpdfstring{$\sim$}{\string~}\+Xml\+Element (\begin{DoxyPara
 Тъй като XML дървото е йерархична структура, изградена от динамично заделени обекти (чрез {\ttfamily new}), паметта трябва да се освобождава внимателно. Този деструктор реализира {\bfseries{каскадно (рекурсивно) изтриване}}.
 \begin{DoxyItemize}
 \item Когато се извика {\ttfamily delete} върху коренния елемент (например от деструктора на {\ttfamily \doxylink{class_xml_document}{Xml\+Document}}), този деструктор се активира и завърта цикъл през всички деца във вектора {\ttfamily children}. Извикването на {\ttfamily delete child} вътре в цикъла автоматично извиква деструкторите на самите деца (които изтриват техните деца и т.\+н., чак до листата на дървото). Тъй като деструкторът в базовия клас {\ttfamily \doxylink{class_xml_node}{Xml\+Node}} е маркиран като {\ttfamily virtual}, C++ гарантира, че винаги ще се извика правилният деструктор ({\ttfamily \doxylink{class_xml_element}{Xml\+Element}} или {\ttfamily \doxylink{class_xml_text}{Xml\+Text}}), дори когато трием през указател към базовия клас. 
-\end{DoxyItemize}Граф с извикванията за тази функция:\+
-% FIG 3
-
+\end{DoxyItemize}
 
 \label{class_xml_element_doc-func-members}
 \Hypertarget{class_xml_element_doc-func-members}
-\doxysubsection{Членове Функции(методи) Документация}
+\doxysubsection{Member Function Documentation}
 \Hypertarget{class_xml_element_a3ad06da534ce1891c55d37cc9106f619}\index{XmlElement@{XmlElement}!addAttribute@{addAttribute}}
 \index{addAttribute@{addAttribute}!XmlElement@{XmlElement}}
 \doxysubsubsection{\texorpdfstring{addAttribute()}{addAttribute()}}
@@ -159,7 +164,7 @@ void Xml\+Element::\+add\+Attribute (\begin{DoxyParamCaption}\item[{const std::\
 Добавя нов атрибут към елемента (без проверка за дубликати).
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em key} & Името на атрибута. \\
 \hline
 {\em value} & Стойността на атрибута.\\
@@ -168,14 +173,14 @@ void Xml\+Element::\+add\+Attribute (\begin{DoxyParamCaption}\item[{const std::\
 
 \begin{DoxyItemize}
 \item 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em key} & Името на атрибута. \\
 \hline
 {\em value} & Стойността на атрибута. \\
 \hline
 \end{DoxyParams}
 
-\begin{DoxyExceptions}{Изключения}
+\begin{DoxyExceptions}{Exceptions}
 {\em Exception} & Хвърля изключение, ако подаденият ключ е празен низ. \\
 \hline
 \end{DoxyExceptions}
@@ -193,7 +198,7 @@ void Xml\+Element::\+add\+Child (\begin{DoxyParamCaption}\item[{\doxymbox{\hyper
 Добавя възел като дете на текущия елемент и обновява връзките.
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em child} & Указател към възела (\doxylink{class_xml_element}{Xml\+Element} или \doxylink{class_xml_text}{Xml\+Text}), който ще бъде добавен.\\
 \hline
 \end{DoxyParams}
@@ -205,20 +210,26 @@ void Xml\+Element::\+add\+Child (\begin{DoxyParamCaption}\item[{\doxymbox{\hyper
 Освен че добавя възела във вътрешния вектор {\ttfamily children}, методът автоматично задава текущия обект ({\ttfamily this}) като родител на добавеното дете.
 \begin{DoxyItemize}
 \item 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em child} & Указател към възела, който трябва да бъде добавен. \\
 \hline
 \end{DoxyParams}
 
-\begin{DoxyExceptions}{Изключения}
+\begin{DoxyExceptions}{Exceptions}
 {\em Exception} & Хвърля изключение, ако се направи опит за добавяне на nullptr. \\
 \hline
 \end{DoxyExceptions}
 
-\end{DoxyItemize}Граф с извикванията за тази функция:\+
-% FIG 4
-Граф на извикванията за тази функция:\+
-% FIG 5
+\end{DoxyItemize}\Hypertarget{class_xml_element_a8e5b6bd76bf871f4cc7f97201cfe4f31}\index{XmlElement@{XmlElement}!begin@{begin}}
+\index{begin@{begin}!XmlElement@{XmlElement}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_xml_element_a8e5b6bd76bf871f4cc7f97201cfe4f31} 
+\doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}} Xml\+Element::\+begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Връща итератор, сочещ към първото дете на елемента. 
+
 \Hypertarget{class_xml_element_ab9866dbc3f71cc74319dfe1ea13c3bc6}\index{XmlElement@{XmlElement}!clone@{clone}}
 \index{clone@{clone}!XmlElement@{XmlElement}}
 \doxysubsubsection{\texorpdfstring{clone()}{clone()}}
@@ -231,7 +242,7 @@ void Xml\+Element::\+add\+Child (\begin{DoxyParamCaption}\item[{\doxymbox{\hyper
 
 Създава динамично дълбоко копие (Deep Copy) на текущия XML елемент и цялото му поддърво.
 
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Указател към новия обект. Паметта се управлява от извикващия.
 \end{DoxyReturn}
 
@@ -249,16 +260,24 @@ void Xml\+Element::\+add\+Child (\begin{DoxyParamCaption}\item[{\doxymbox{\hyper
 \item Обхожда рекурсивно всички дещерни възли ({\ttfamily children}) и извиква техния собствен метод {\ttfamily \doxylink{class_xml_element_ab9866dbc3f71cc74319dfe1ea13c3bc6}{clone()}}. По този начин се изгражда напълно независимо ново дърво в паметта, което не споделя никакви указатели с оригиналното.
 \end{DoxyEnumerate}
 \begin{DoxyItemize}
-\item \begin{DoxyReturn}{Връща}
+\item \begin{DoxyReturn}{Returns}
 Указател към новосъздадения корен на копираното поддърво. Паметта трябва да се управлява от извикващата функция. 
 \end{DoxyReturn}
 
 \end{DoxyItemize}
 
-Заменя \doxymbox{\hyperlink{class_xml_node_af646cb06fcbf8af8b0654030f25c681d}{Xml\+Node}}.
+Implements \doxymbox{\hyperlink{class_xml_node_af646cb06fcbf8af8b0654030f25c681d}{Xml\+Node}}.
 
-Граф с извикванията за тази функция:\+
-% FIG 6
+\Hypertarget{class_xml_element_a05042dd05d4b727946e16fc8cc9ca4e6}\index{XmlElement@{XmlElement}!end@{end}}
+\index{end@{end}!XmlElement@{XmlElement}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \label{class_xml_element_a05042dd05d4b727946e16fc8cc9ca4e6} 
+\doxymbox{\hyperlink{class_xml_element_1_1_iterator}{Iterator}} Xml\+Element::\+end (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Връща итератор, сочещ след последното дете на елемента. 
+
 \Hypertarget{class_xml_element_acf851c8b1ea784479fb7411bba7d84d1}\index{XmlElement@{XmlElement}!getAttributes@{getAttributes}}
 \index{getAttributes@{getAttributes}!XmlElement@{XmlElement}}
 \doxysubsubsection{\texorpdfstring{getAttributes()}{getAttributes()}}
@@ -269,7 +288,7 @@ const std::\+vector$<$ \doxymbox{\hyperlink{struct_xml_attribute}{Xml\+Attribute
 
 Връща списък с всички атрибути на елемента. 
 
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Константна референция към вектора с атрибути. 
 \end{DoxyReturn}
 \Hypertarget{class_xml_element_aafeb59e91c1f00954461b89ab420fe40}\index{XmlElement@{XmlElement}!getAttributeValue@{getAttributeValue}}
@@ -283,15 +302,13 @@ std::\+string Xml\+Element::\+get\+Attribute\+Value (\begin{DoxyParamCaption}\it
 Безопасно извлича стойността на атрибут (read-\/only). За разлика от operator\+[]\+, тази функция не създава нов атрибут, ако ключът липсва. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em key} & Името на атрибута. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Стойността на атрибута или празен низ ("{}"{}), ако не е намерен. 
 \end{DoxyReturn}
-Граф на извикванията за тази функция:\+
-% FIG 7
 \Hypertarget{class_xml_element_adc5d91e0607a879a7ca4731aa6257877}\index{XmlElement@{XmlElement}!getChildrenOfType@{getChildrenOfType}}
 \index{getChildrenOfType@{getChildrenOfType}!XmlElement@{XmlElement}}
 \doxysubsubsection{\texorpdfstring{getChildrenOfType()}{getChildrenOfType()}}
@@ -304,17 +321,13 @@ std::\+vector$<$ T \texorpdfstring{$\ast$}{*} $>$ Xml\+Element::\+get\+Children\
 Шаблонна функция, която връща всички дещерни възли от специфичен тип. Използва dynamic\+\_\+cast за безопасно филтриране (напр. само \doxylink{class_xml_element}{Xml\+Element} или само \doxylink{class_xml_text}{Xml\+Text}). 
 
 
-\begin{DoxyTemplParams}{Шаблона Параметри}
+\begin{DoxyTemplParams}{Template Parameters}
 {\em T} & Типът на възлите, които търсим. \\
 \hline
 \end{DoxyTemplParams}
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Вектор от указатели към филтрираните възли. 
 \end{DoxyReturn}
-Граф с извикванията за тази функция:\+
-% FIG 8
-Граф на извикванията за тази функция:\+
-% FIG 9
 \Hypertarget{class_xml_element_ad4d33dd365dda9233c33ea555d4c637f}\index{XmlElement@{XmlElement}!getName@{getName}}
 \index{getName@{getName}!XmlElement@{XmlElement}}
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
@@ -325,9 +338,15 @@ const std::\+string \& Xml\+Element::\+get\+Name (\begin{DoxyParamCaption}{}{}\e
 
 Връща името на XML тага. 
 
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Константна референция към низа, съдържащ името. 
 \end{DoxyReturn}
+\Hypertarget{class_xml_element_a7d351e7a10cf2d1ae18246ff08fb57d7}\index{XmlElement@{XmlElement}!operator=@{operator=}}
+\index{operator=@{operator=}!XmlElement@{XmlElement}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_xml_element_a7d351e7a10cf2d1ae18246ff08fb57d7} 
+\doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \& Xml\+Element::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
 \Hypertarget{class_xml_element_a48357ed9c0bc18812b6a9f563da6d732}\index{XmlElement@{XmlElement}!operator\+[]\+@{operator[]}}
 \index{operator\+[]\+@{operator[]}!XmlElement@{XmlElement}}
 \doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
@@ -339,18 +358,18 @@ std::\+string \& Xml\+Element::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\it
 Оператор за индексиране по ключ на атрибут. Позволява лесен достъп и промяна на стойности (напр. element\+["{}id"{}]\+ = "{}5"{}). Ако атрибут с такъв ключ не съществува, той автоматично се създава. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em key} & Името на атрибута. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Референция към стойността на атрибута (позволява промяна). 
 \end{DoxyReturn}
 \Hypertarget{class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863}\index{XmlElement@{XmlElement}!print@{print}}
 \index{print@{print}!XmlElement@{XmlElement}}
 \doxysubsubsection{\texorpdfstring{print()}{print()}}
 {\footnotesize\ttfamily \label{class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863} 
-void Xml\+Element::\+print (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{os}{, }\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Xml\+Element::\+print (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacestd_a6d1736434ff6d516a3df38cbb7487ea5}{std::\+ostream}} \&}]{os}{, }\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -359,7 +378,7 @@ void Xml\+Element::\+print (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{o
 Извежда елемента, неговите атрибути и съдържание във форматиран вид.
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em os} & Изходният поток (напр. std::\+cout или std::\+ofstream). \\
 \hline
 {\em indent} & Броят интервали за отстъп, спрямо дълбочината в дървото.\\
@@ -373,26 +392,22 @@ void Xml\+Element::\+print (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{o
 Логиката автоматично разпознава дали елементът е празен (няма деца) и в такъв случай го принтира като самозатварящ се (напр. {\ttfamily \texorpdfstring{$<$}{<}tag /\+\texorpdfstring{$>$}{>}}). Ако има деца, отваря тага, извиква рекурсивно {\ttfamily \doxylink{class_xml_element_a6df5f6cb4f2aec251c97673d05f3a863}{print}} за всяко дете с увеличен отстъп (4 интервала), и накрая принтира затварящия таг.
 \begin{DoxyItemize}
 \item 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em os} & Изходният поток, в който се записват данните. \\
 \hline
 {\em indent} & Броят интервали за отместване на текущия елемент. \\
 \hline
 \end{DoxyParams}
 
-\begin{DoxyExceptions}{Изключения}
+\begin{DoxyExceptions}{Exceptions}
 {\em Exception} & Хвърля изключение, ако отстъпът е отрицателно число. \\
 \hline
 \end{DoxyExceptions}
 
 \end{DoxyItemize}
 
-Заменя \doxymbox{\hyperlink{class_xml_node_a24959aba794d80ab9dfcc88d0189ffcf}{Xml\+Node}}.
+Implements \doxymbox{\hyperlink{class_xml_node_a24959aba794d80ab9dfcc88d0189ffcf}{Xml\+Node}}.
 
-Граф с извикванията за тази функция:\+
-% FIG 10
-Граф на извикванията за тази функция:\+
-% FIG 11
 \Hypertarget{class_xml_element_aaaa9635e353a5c07ed2f5664815400e2}\index{XmlElement@{XmlElement}!removeAttribute@{removeAttribute}}
 \index{removeAttribute@{removeAttribute}!XmlElement@{XmlElement}}
 \doxysubsubsection{\texorpdfstring{removeAttribute()}{removeAttribute()}}
@@ -404,15 +419,13 @@ void Xml\+Element::\+remove\+Attribute (\begin{DoxyParamCaption}\item[{const std
 Премахва атрибут по зададен ключ, ако съществува. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em key} & Името на атрибута, който трябва да бъде премахнат. \\
 \hline
 \end{DoxyParams}
-Граф на извикванията за тази функция:\+
-% FIG 12
 
 
-Документация за клас генериран от следните файлове:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
 \item 
-XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Xml\+Element.\+h\item 
-XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Xml\+Element.\+cpp\end{DoxyCompactItemize}
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+\doxymbox{\hyperlink{_xml_element_8h}{Xml\+Element.\+h}}\item 
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+\doxymbox{\hyperlink{_xml_element_8cpp}{Xml\+Element.\+cpp}}\end{DoxyCompactItemize}

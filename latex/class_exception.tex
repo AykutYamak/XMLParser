@@ -1,4 +1,4 @@
-\doxysection{Exception Клас Препратка}
+\doxysection{Exception Class Reference}
 \hypertarget{class_exception}{}\label{class_exception}\index{Exception@{Exception}}
 
 
@@ -9,30 +9,27 @@
 
 {\ttfamily \+\#include $<$Exception.\+h$>$}
 
-
-
-Диаграма на наследяване за Exception:\+
-% FIG 0
-
-
-Граф на зависимости за класа Exception:\+
-% FIG 1
-\doxysubsubsection*{Общодостъпни членове функции}
+Inheritance diagram for Exception:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \doxymbox{\hyperlink{class_exception_a35bf745d25961ebe8795f7f457aa8a05}{Exception}} (const std::\+string \&msg)
 \begin{DoxyCompactList}\small\item\em Конструктор за базовото XML изключение. \end{DoxyCompactList}\item 
 const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_exception_a91eace2bc486fa18d3f913a28f3921f8}{what}} () const noexcept override
 \begin{DoxyCompactList}\small\item\em Връща обяснителното съобщение за грешката. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Защитени атрибути}
+\doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_exception_a80bf622a8fc3c48fa6ab1a3fc024ff91}\label{class_exception_a80bf622a8fc3c48fa6ab1a3fc024ff91} 
-std::\+string {\bfseries message}
+std::\+string \doxymbox{\hyperlink{class_exception_a80bf622a8fc3c48fa6ab1a3fc024ff91}{message}}
 \begin{DoxyCompactList}\small\item\em Форматираното съобщение за грешка. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Подробно описание}
+\doxysubsection{Detailed Description}
 Базов клас за изключенията в XML парсъра. 
 
 
@@ -42,7 +39,7 @@ std::\+string {\bfseries message}
 
 \label{class_exception_doc-constructors}
 \Hypertarget{class_exception_doc-constructors}
-\doxysubsection{Конструктор \& Деструктор Документация}
+\doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_exception_a35bf745d25961ebe8795f7f457aa8a05}\index{Exception@{Exception}!Exception@{Exception}}
 \index{Exception@{Exception}!Exception@{Exception}}
 \doxysubsubsection{\texorpdfstring{Exception()}{Exception()}}
@@ -54,17 +51,15 @@ Exception::\+\+Exception (\begin{DoxyParamCaption}\item[{const std::\+string \&}
 Конструктор за базовото XML изключение. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em msg} & Конкретният текст на грешката. \\
 \hline
 \end{DoxyParams}
-Граф на извикванията за тази функция:\+
-% FIG 2
 
 
 \label{class_exception_doc-func-members}
 \Hypertarget{class_exception_doc-func-members}
-\doxysubsection{Членове Функции(методи) Документация}
+\doxysubsection{Member Function Documentation}
 \Hypertarget{class_exception_a91eace2bc486fa18d3f913a28f3921f8}\index{Exception@{Exception}!what@{what}}
 \index{what@{what}!Exception@{Exception}}
 \doxysubsubsection{\texorpdfstring{what()}{what()}}
@@ -75,13 +70,26 @@ const char \texorpdfstring{$\ast$}{*} Exception::\+what (\begin{DoxyParamCaption
 
 Връща обяснителното съобщение за грешката. 
 
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Указател към C-\/style низ (null-\/terminated), съдържащ съобщението. 
 \end{DoxyReturn}
-Граф на извикванията за тази функция:\+
-% FIG 3
 
 
-Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\label{class_exception_doc-variable-members}
+\Hypertarget{class_exception_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_exception_a80bf622a8fc3c48fa6ab1a3fc024ff91}\index{Exception@{Exception}!message@{message}}
+\index{message@{message}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily \label{class_exception_a80bf622a8fc3c48fa6ab1a3fc024ff91} 
+std::\+string Exception::\+message\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Форматираното съобщение за грешка. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-XMLParser/\+\+XMLParser/\+\+Exceptions/\+Exception.\+h\end{DoxyCompactItemize}
+XMLParser/\+\+XMLParser/\+\+Exceptions/\+\doxymbox{\hyperlink{_exception_8h}{Exception.\+h}}\end{DoxyCompactItemize}

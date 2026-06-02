@@ -1,4 +1,4 @@
-\doxysection{Xml\+Element::\+Iterator Клас Препратка}
+\doxysection{Xml\+Element::\+Iterator Class Reference}
 \hypertarget{class_xml_element_1_1_iterator}{}\label{class_xml_element_1_1_iterator}\index{XmlElement::Iterator@{XmlElement::Iterator}}
 
 
@@ -9,28 +9,20 @@
 
 {\ttfamily \+\#include $<$Xml\+Element.\+h$>$}
 
-
-
-Граф на зависимости за класа Xml\+Element::\+Iterator:\+
-% FIG 0
-\doxysubsubsection*{Общодостъпни членове функции}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}\label{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278} 
-{\bfseries Iterator} (std::\+vector$<$ \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}coll, size\+\_\+t index)
+\doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}} (std::\+vector$<$ \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}coll, size\+\_\+t index)
 \begin{DoxyCompactList}\small\item\em Конструктор за итератора. \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_element_1_1_iterator_acdddee0f58116e790dd1e4a4bdf28bf9}\label{class_xml_element_1_1_iterator_acdddee0f58116e790dd1e4a4bdf28bf9} 
-\doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}} \& {\bfseries operator++} ()
+\doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}} \& \doxymbox{\hyperlink{class_xml_element_1_1_iterator_acdddee0f58116e790dd1e4a4bdf28bf9}{operator++}} ()
 \begin{DoxyCompactList}\small\item\em Оператор за преминаване към следващия елемент. \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_element_1_1_iterator_a4a40dd4f6e34738a4d7b1dfa03bcefef}\label{class_xml_element_1_1_iterator_a4a40dd4f6e34738a4d7b1dfa03bcefef} 
-\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*}\& {\bfseries operator\texorpdfstring{$\ast$}{*}} ()
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*}\& \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a4a40dd4f6e34738a4d7b1dfa03bcefef}{operator\texorpdfstring{$\ast$}{*}}} ()
 \begin{DoxyCompactList}\small\item\em Оператор за дереференциране. Връща референция към указателя на възела. \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_element_1_1_iterator_a48b64f0ded9c2f483202215195abb348}\label{class_xml_element_1_1_iterator_a48b64f0ded9c2f483202215195abb348} 
-bool {\bfseries operator!=} (const \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}} \&other) const
+bool \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a48b64f0ded9c2f483202215195abb348}{operator!=}} (const \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}} \&other) const
 \begin{DoxyCompactList}\small\item\em Оператор за сравнение (проверка за край на колекцията). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Подробно описание}
+\doxysubsection{Detailed Description}
 Вграден клас Итератор за безопасно и удобно обхождане на XML дървото. 
 
 
@@ -40,6 +32,56 @@ bool {\bfseries operator!=} (const \doxymbox{\hyperlink{class_xml_element_1_1_it
 
 Имплементирането на собствен итератор енкапсулира (скрива) вътрешното представяне на децата ({\ttfamily std::\+vector\texorpdfstring{$<$}{<}Xml\+Node\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>}}). Най-\/голямото предимство на този клас е, че предоставяйки методите {\ttfamily \doxylink{class_xml_element_a8e5b6bd76bf871f4cc7f97201cfe4f31}{begin()}} и {\ttfamily \doxylink{class_xml_element_a05042dd05d4b727946e16fc8cc9ca4e6}{end()}}, той прави {\ttfamily \doxylink{class_xml_element}{Xml\+Element}} съвместим със стандартните C++ range-\/based for цикли (напр. {\ttfamily for(auto child :\+ \texorpdfstring{$\ast$}{*}element)}). Това прави кода в целия проект много по-\/четим и устойчив на грешки, в сравнение с ръчното индексиране. 
 
-Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+\label{class_xml_element_1_1_iterator_doc-constructors}
+\Hypertarget{class_xml_element_1_1_iterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}\index{XmlElement::Iterator@{XmlElement::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!XmlElement::Iterator@{XmlElement::Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}}
+{\footnotesize\ttfamily \label{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278} 
+Xml\+Element::\+\+Iterator::\+\+Iterator (\begin{DoxyParamCaption}\item[{std::\+vector$<$ \doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}}]{coll}{, }\item[{size\+\_\+t}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор за итератора. 
+
+
+
+\label{class_xml_element_1_1_iterator_doc-func-members}
+\Hypertarget{class_xml_element_1_1_iterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_xml_element_1_1_iterator_a48b64f0ded9c2f483202215195abb348}\index{XmlElement::Iterator@{XmlElement::Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!XmlElement::Iterator@{XmlElement::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_xml_element_1_1_iterator_a48b64f0ded9c2f483202215195abb348} 
+bool Xml\+Element::\+\+Iterator::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор за сравнение (проверка за край на колекцията). 
+
+\Hypertarget{class_xml_element_1_1_iterator_a4a40dd4f6e34738a4d7b1dfa03bcefef}\index{XmlElement::Iterator@{XmlElement::Iterator}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!XmlElement::Iterator@{XmlElement::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{class_xml_element_1_1_iterator_a4a40dd4f6e34738a4d7b1dfa03bcefef} 
+\doxymbox{\hyperlink{class_xml_node}{Xml\+Node}} \texorpdfstring{$\ast$}{*}\& Xml\+Element::\+\+Iterator::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор за дереференциране. Връща референция към указателя на възела. 
+
+\Hypertarget{class_xml_element_1_1_iterator_acdddee0f58116e790dd1e4a4bdf28bf9}\index{XmlElement::Iterator@{XmlElement::Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!XmlElement::Iterator@{XmlElement::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \label{class_xml_element_1_1_iterator_acdddee0f58116e790dd1e4a4bdf28bf9} 
+\doxymbox{\hyperlink{class_xml_element_1_1_iterator_a621673d3b388df254e752f3cc29ec278}{Iterator}} \& Xml\+Element::\+\+Iterator::\+operator++ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор за преминаване към следващия елемент. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Xml\+Element.\+h\end{DoxyCompactItemize}
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+\doxymbox{\hyperlink{_xml_element_8h}{Xml\+Element.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\chapter{XML Parser }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{XML Parser@{XML Parser}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+
+
+Конзолно приложение на C++ за парсване, редактиране и XPath търсене в XML документи. Проектът е разработен като курсова работа и демонстрира задълбочени познания по Обектно-\/ориентирано програмиране (ООП), управление на динамична памет и дизайн шаблони.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Архитектура}{Архитектура}}\label{md__r_e_a_d_m_e_autotoc_md1}
+Проектът е разделен на две основни части:\+
+\begin{DoxyItemize}
+\item {\bfseries{XML Core:\+}} Съдържа бизнес логиката ({\ttfamily \doxylink{class_xml_document}{Xml\+Document}}, {\ttfamily \doxylink{class_xml_element}{Xml\+Element}}, {\ttfamily \doxylink{class_xml_text}{Xml\+Text}}) и поддържа дървовидната структура. Включва собствено управление на паметта с каскадни деструктори и Move семантики.
+\item {\bfseries{CLI Commands:\+}} Използва {\itshape \doxylink{class_command}{Command} Pattern} за управление на потребителския вход, което прави добавянето на нови функционалности лесно и безопасно (спазвайки Open-\/\+Closed Principle).
+\item {\bfseries{Exceptions:\+}} Съдържа клас \doxylink{class_exception}{Exception}, който наследява std::\+exception и служи като основа за специфични видове изключения.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Поддържани команди}{Поддържани команди}}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item {\ttfamily open \texorpdfstring{$<$}{<}file\texorpdfstring{$>$}{>}} -\/ Зарежда XML файл в паметта.
+\item {\ttfamily close} -\/ Изчиства паметта и затваря документа.
+\item {\ttfamily save} /\+ {\ttfamily saveas \texorpdfstring{$<$}{<}file\texorpdfstring{$>$}{>}} -\/ Запазва промените.
+\item {\ttfamily print} -\/ Извежда форматирано (pretty-\/print) дървото.
+\item {\ttfamily select \texorpdfstring{$<$}{<}id\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}key\texorpdfstring{$>$}{>}} -\/ Извлича стойност на атрибут по дадено ID.
+\item {\ttfamily set \texorpdfstring{$<$}{<}id\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}key\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}value\texorpdfstring{$>$}{>}} -\/ Добавя или променя атрибут.
+\item {\ttfamily delete \texorpdfstring{$<$}{<}id\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}key\texorpdfstring{$>$}{>}} -\/ Изтрива атрибут.
+\item {\ttfamily children \texorpdfstring{$<$}{<}id\texorpdfstring{$>$}{>}} -\/ Списък с децата на елемент и техните атрибути.
+\item {\ttfamily child \texorpdfstring{$<$}{<}id\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}n\texorpdfstring{$>$}{>}} -\/ Достъп до N-\/тото дете.
+\item {\ttfamily text \texorpdfstring{$<$}{<}id\texorpdfstring{$>$}{>}} -\/ Извлича съединеното текстово съдържание на елемента.
+\item {\ttfamily newchild \texorpdfstring{$<$}{<}id\texorpdfstring{$>$}{>}} -\/ Създава нов празен елемент към избран родител.
+\item {\ttfamily xpath \texorpdfstring{$<$}{<}query\texorpdfstring{$>$}{>}} -\/ Търсене чрез XPath заявка.
+\item {\ttfamily help} /\+ {\ttfamily exit} -\/ Помощно меню и изход от програмата.
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{Тестови Сценарии (Use Cases \& Edge Cases)}{Тестови Сценарии (Use Cases \& Edge Cases)}}\label{md__r_e_a_d_m_e_autotoc_md4}
+Следните сценарии демонстрират устойчивостта на парсъра при нормална работа и при среща с невалидни или проблемни данни.\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Сценарий 1:\+ Стандартна работа и XPath (Happy Path)}{Сценарий 1:\+ Стандартна работа и XPath (Happy Path)}}\label{md__r_e_a_d_m_e_autotoc_md5}
+{\bfseries{Цел:\+}} Проверка дали парсърът коректно зарежда валиден XML, разчита атрибутите и изпълнява сложни XPath заявки.
+
+{\bfseries{Входен файл ({\ttfamily test1.\+xml}):\+}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<\textcolor{keywordtype}{university}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}su"{}}>}
+\DoxyCodeLine{\ \ \ \ <\textcolor{keywordtype}{faculty}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}fmi"{}}>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <\textcolor{keywordtype}{student}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}s1"{}}\ \textcolor{keyword}{year}=\textcolor{stringliteral}{"{}1"{}}>\textcolor{keyword}{John}</\textcolor{keywordtype}{student}>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <\textcolor{keywordtype}{student}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}s2"{}}\ \textcolor{keyword}{year}=\textcolor{stringliteral}{"{}2"{}}>\textcolor{keyword}{Alice}</\textcolor{keywordtype}{student}>}
+\DoxyCodeLine{\ \ \ \ </\textcolor{keywordtype}{faculty}>}
+\DoxyCodeLine{</\textcolor{keywordtype}{university}>}
+
+\end{DoxyCode}
+ Стъпки за изпълнение:\+ \begin{DoxyVerb}open test1.xml
+
+print
+
+select s1 year
+
+xpath faculty/student[@year]
+
+close
+\end{DoxyVerb}
+
+
+Очакван резултат:\+ Файлът се зарежда успешно. Командата select връща Value:\+ 1. Командата xpath намира и извежда списък с годините на студентите (\+[0]\+ 1, \+[1]\+ 2). Паметта се освобождава чисто при close.\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{\texorpdfstring{Сценарий 2:\+ Невалидна структура на документа (Множество корени)}{Сценарий 2:\+ Невалидна структура на документа (Множество корени)}}\label{md__r_e_a_d_m_e_autotoc_md6}
+{\bfseries{Цел:\+}}:\+ Проверка на защитния механизъм за файлове с повече от един корен (което е невалидно според XML стандарта).
+
+{\bfseries{Входен файл ({\ttfamily test2.\+xml}):\+}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<\textcolor{keywordtype}{item}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}i1"{}}>\textcolor{keyword}{Book}</\textcolor{keywordtype}{item}>}
+\DoxyCodeLine{<\textcolor{keywordtype}{item}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}i2"{}}>\textcolor{keyword}{Laptop}</\textcolor{keywordtype}{item}>}
+
+\end{DoxyCode}
+ Стъпки за изпълнение:\+ \begin{DoxyVerb}open test2.xml
+
+print
+
+saveas fixed.xml
+\end{DoxyVerb}
+
+
+Очакван резултат:\+ Парсърът не крашва. При извикване на print се вижда, че програмата автоматично е генерирала служебен родител $<$document\+\_\+wrapper$>$, който обединява двата елемента в паметта. При запазване чрез saveas, структурата се записва коректно в новия файл, изчистена от вътрешните wrapper тагове.\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{\texorpdfstring{Сценарий 3:\+ Синтактични грешки и Управление на изключения (Error Handling)}{Сценарий 3:\+ Синтактични грешки и Управление на изключения (Error Handling)}}\label{md__r_e_a_d_m_e_autotoc_md7}
+{\bfseries{Цел:\+}}:\+ Проверка дали програмата улавя незатворени тагове и хвърля правилното изключение (\doxylink{class_parse_exception}{Parse\+Exception}), без да предизвиква изтичане на памет (memory leak).
+
+{\bfseries{Входен файл ({\ttfamily test3.\+xml}):\+}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<\textcolor{keywordtype}{root}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}main"{}}>}
+\DoxyCodeLine{\ \ \ \ <\textcolor{keywordtype}{data}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}d1"{}}>}
+\DoxyCodeLine{</\textcolor{keywordtype}{root}>}
+
+\end{DoxyCode}
+
+
+(Забележка:\+ Тук тагът $<$data$>$ се отваря успешно, но липсва неговият затварящ таг $<$/\+data$>$)
+
+Стъпки за изпълнение:\+ \begin{DoxyVerb}open test3.xml
+
+print
+\end{DoxyVerb}
+
+
+Очакван резултат:\+ Програмата прекъсва зареждането и извежда грешка:\+ XML error:\+ Parsing error -\/ End of file reached, but there are unclosed XML tags. При последващ опит за print, програмата връща съобщение Error:\+ No file is currently loaded. Please use \textquotesingle{}open\textquotesingle{} first., доказвайки, че повреденото частично дърво е било изчистено от паметта напълно безопасно.\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsection{\texorpdfstring{Сценарий 4:\+ Динамична редакция на дървото и Персистенция (Tree Mutation \& Persistence)}{Сценарий 4:\+ Динамична редакция на дървото и Персистенция (Tree Mutation \& Persistence)}}\label{md__r_e_a_d_m_e_autotoc_md8}
+{\bfseries{Цел:\+}}:\+ Проверка дали парсърът може безопасно да модифицира съществуващо дърво в паметта (добавяне/\+триене на атрибути и създаване на нови възли) и да презапише промените директно в оригиналния файл.
+
+{\bfseries{Входен файл ({\ttfamily test4.\+xml}):\+}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<\textcolor{keywordtype}{configuration}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}config"{}}>}
+\DoxyCodeLine{\ \ \ \ <\textcolor{keywordtype}{window}\ \textcolor{keyword}{id}=\textcolor{stringliteral}{"{}main\_win"{}}\ \textcolor{keyword}{width}=\textcolor{stringliteral}{"{}800"{}}\ \textcolor{keyword}{height}=\textcolor{stringliteral}{"{}600"{}}\ \textcolor{keyword}{theme}=\textcolor{stringliteral}{"{}dark"{}}\ />}
+\DoxyCodeLine{</\textcolor{keywordtype}{configuration}>}
+
+\end{DoxyCode}
+ Стъпки за изпълнение:\+ \begin{DoxyVerb}open test4.xml
+
+set main_win width 1920 (Актуализира съществуващ атрибут)
+
+set main_win fullscreen true (Създава напълно нов атрибут)
+
+delete main_win theme (Изтрива атрибут)
+
+newChild config (Генерира нов празен елемент вътре в корена)
+
+save
+
+close
+\end{DoxyVerb}
+
+
+Очакван резултат:\+ Програмата изпълнява командите без грешка. При извикване на save, оригиналният файл test4.\+xml се презаписва. Ако го отворим, ще видим, че атрибутът theme липсва, width е променен, добавен е fullscreen="{}true"{}, а вътре в $<$configuration$>$ има добавен нов празен таг с автоматично генерирано ID.\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{\texorpdfstring{Инструкции за компилация}{Инструкции за компилация}}\label{md__r_e_a_d_m_e_autotoc_md9}
+Проектът не изисква външни зависимости. Може да бъде компилиран с всеки съвременен C++ компилатор, поддържащ стандарт C++11 или по-\/нов. 

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['key_0',['key',['../struct_xml_attribute.html#a2577932b4ae1ff649e5b67cf8096209f',1,'XmlAttribute']]]
+  ['element_0',['element',['../struct_id_entry.html#a940dc7f501667f9db8b7038849172be2',1,'IdEntry']]],
+  ['error_5fstring_1',['error_string',['../structdoctest_1_1_test_case_exception.html#a656c8971ccbedc7d3a0a38f7c6af927e',1,'doctest::TestCaseException']]],
+  ['exit_2',['exit',['../structdoctest_1_1_context_options.html#a85d785559ea88e0bd61890f77f00a82f',1,'doctest::ContextOptions']]]
 ];

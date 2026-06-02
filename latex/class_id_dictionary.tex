@@ -1,4 +1,4 @@
-\doxysection{Id\+Dictionary Клас Препратка}
+\doxysection{Id\+Dictionary Class Reference}
 \hypertarget{class_id_dictionary}{}\label{class_id_dictionary}\index{IdDictionary@{IdDictionary}}
 
 
@@ -9,11 +9,7 @@
 
 {\ttfamily \+\#include $<$Id\+Dictionary.\+h$>$}
 
-
-
-Граф на зависимости за класа Id\+Dictionary:\+
-% FIG 0
-\doxysubsubsection*{Общодостъпни членове функции}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 bool \doxymbox{\hyperlink{class_id_dictionary_a8c8205e48c697ebde991ca12afce98cc}{contains}} (const std::\+string \&id) const
@@ -26,7 +22,7 @@ void \doxymbox{\hyperlink{class_id_dictionary_aed37784bce79622c17ccde9b9587a25b}
 \begin{DoxyCompactList}\small\item\em Изчиства всички записи от речника. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Подробно описание}
+\doxysubsection{Detailed Description}
 Речник за регистриране и бързо търсене на XML елементи по тяхното ID. 
 
 
@@ -38,7 +34,7 @@ void \doxymbox{\hyperlink{class_id_dictionary_aed37784bce79622c17ccde9b9587a25b}
 
 \label{class_id_dictionary_doc-func-members}
 \Hypertarget{class_id_dictionary_doc-func-members}
-\doxysubsection{Членове Функции(методи) Документация}
+\doxysubsection{Member Function Documentation}
 \Hypertarget{class_id_dictionary_aa092cbb795803f11bbc65afa302415c4}\index{IdDictionary@{IdDictionary}!add@{add}}
 \index{add@{add}!IdDictionary@{IdDictionary}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}}
@@ -50,7 +46,7 @@ void Id\+Dictionary::\+add (\begin{DoxyParamCaption}\item[{const std::\+string \
 Регистрира нов елемент в речника със съответното му ID. 
 
 Методът не прави проверка за дубликати. Гарантирането на уникалност е отговорност на парсъра (напр. чрез метода ensure\+Unique\+Id). 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em id} & Уникалният идентификатор на елемента. \\
 \hline
 {\em element} & Указател към XML елемента, който регистрираме. \\
@@ -77,11 +73,11 @@ bool Id\+Dictionary::\+contains (\begin{DoxyParamCaption}\item[{const std::\+str
 Проверява дали даден идентификатор вече съществува в речника. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em id} & Идентификаторът, който търсим. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 {\ttfamily true}, ако ID-\/то е намерено, и {\ttfamily false}, ако такова ID не съществува. 
 \end{DoxyReturn}
 \Hypertarget{class_id_dictionary_ab7e277a89537f537bb0a1aa2814a734e}\index{IdDictionary@{IdDictionary}!get@{get}}
@@ -95,15 +91,15 @@ bool Id\+Dictionary::\+contains (\begin{DoxyParamCaption}\item[{const std::\+str
 Извлича указател към елемент по зададено ID. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em id} & Идентификаторът на търсения елемент. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Указател към намерения \doxylink{class_xml_element}{Xml\+Element}, или {\ttfamily nullptr}, ако не бъде открит такъв. 
 \end{DoxyReturn}
 
 
-Документация за клас генериран от следният файл:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Id\+Dictionary.\+h\end{DoxyCompactItemize}
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+\doxymbox{\hyperlink{_id_dictionary_8h}{Id\+Dictionary.\+h}}\end{DoxyCompactItemize}

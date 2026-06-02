@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['id_0',['id',['../struct_id_entry.html#a02f1d819050707a6861b63529f88eb38',1,'IdEntry']]]
+  ['data_0',['data',['../classdoctest_1_1_string.html#a5c77ed634a1b81aea739a73fb01d986a',1,'doctest::String::data'],['../structdoctest_1_1_query_data.html#a8085a29db9a1cd5c7eff22ef44e9a9e8',1,'doctest::QueryData::data']]],
+  ['description_1',['description',['../struct_entry_command.html#a3bf7a89b34b1b464f6be121d1cd8f8da',1,'EntryCommand']]],
+  ['duration_2',['duration',['../structdoctest_1_1_context_options.html#a0fc3e0c1cf669cffd1f826c005fc4223',1,'doctest::ContextOptions']]]
 ];

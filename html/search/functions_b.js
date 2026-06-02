@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['save_0',['save',['../class_xml_document.html#a8645fb13472af75e6772d61c6ebae567',1,'XmlDocument']]],
-  ['saveas_1',['saveAs',['../class_xml_document.html#ac01d57d4967d6fc57208e5ecf39caa78',1,'XmlDocument']]],
-  ['setparent_2',['setParent',['../class_xml_node.html#ac32e7763b1d39ba598cccf7639932fc5',1,'XmlNode']]]
+  ['parseexception_0',['ParseException',['../class_parse_exception.html#a013f9fef08198853282a501ab04ef54a',1,'ParseException']]],
+  ['print_1',['print',['../class_mock_node.html#ab0e9a3f349850e99530a297cc5aa8cdf',1,'MockNode::print()'],['../class_xml_element.html#a6df5f6cb4f2aec251c97673d05f3a863',1,'XmlElement::print()'],['../class_xml_node.html#a24959aba794d80ab9dfcc88d0189ffcf',1,'XmlNode::print()'],['../class_xml_text.html#ae4d3b9c75124751084b8913ad9dd00aa',1,'XmlText::print()']]]
 ];

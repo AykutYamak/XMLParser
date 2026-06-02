@@ -3,6 +3,7 @@ var class_xml_element =
     [ "Iterator", "class_xml_element_1_1_iterator.html", "class_xml_element_1_1_iterator" ],
     [ "XmlElement", "class_xml_element.html#a71707526acc8fe423c5088afd1abe8f1", null ],
     [ "XmlElement", "class_xml_element.html#ab17c21eab01a90ef7922bfcbe018e088", null ],
+    [ "XmlElement", "class_xml_element.html#a21fc8732c4a205cf9840b4c60a325cdf", null ],
     [ "~XmlElement", "class_xml_element.html#a1ee9fc2b9a0ab357eb20592de9e9c5ae", null ],
     [ "addAttribute", "class_xml_element.html#a3ad06da534ce1891c55d37cc9106f619", null ],
     [ "addChild", "class_xml_element.html#ac9b7e2eef08c7a04095e8bd63024308c", null ],
@@ -13,6 +14,7 @@ var class_xml_element =
     [ "getAttributeValue", "class_xml_element.html#aafeb59e91c1f00954461b89ab420fe40", null ],
     [ "getChildrenOfType", "class_xml_element.html#adc5d91e0607a879a7ca4731aa6257877", null ],
     [ "getName", "class_xml_element.html#ad4d33dd365dda9233c33ea555d4c637f", null ],
+    [ "operator=", "class_xml_element.html#a7d351e7a10cf2d1ae18246ff08fb57d7", null ],
     [ "operator[]", "class_xml_element.html#a48357ed9c0bc18812b6a9f563da6d732", null ],
     [ "print", "class_xml_element.html#a6df5f6cb4f2aec251c97673d05f3a863", null ],
     [ "removeAttribute", "class_xml_element.html#aaaa9635e353a5c07ed2f5664815400e2", null ]

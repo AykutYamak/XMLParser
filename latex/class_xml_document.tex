@@ -1,4 +1,4 @@
-\doxysection{Xml\+Document Клас Препратка}
+\doxysection{Xml\+Document Class Reference}
 \hypertarget{class_xml_document}{}\label{class_xml_document}\index{XmlDocument@{XmlDocument}}
 
 
@@ -9,21 +9,14 @@
 
 {\ttfamily \+\#include $<$Xml\+Document.\+h$>$}
 
-
-
-Граф на зависимости за класа Xml\+Document:\+
-% FIG 0
-\doxysubsubsection*{Общодостъпни членове функции}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_xml_document_a71daa95a33b7a692549974258893b36e}\label{class_xml_document_a71daa95a33b7a692549974258893b36e} 
-{\bfseries Xml\+Document} ()
+\doxymbox{\hyperlink{class_xml_document_a71daa95a33b7a692549974258893b36e}{Xml\+Document}} ()
 \begin{DoxyCompactList}\small\item\em Конструктор по подразбиране. Създава празен документ. \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_document_ac75a0b253455ae6cb409f574a204b763}\label{class_xml_document_ac75a0b253455ae6cb409f574a204b763} 
-{\bfseries Xml\+Document} (const \doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_document_ac75a0b253455ae6cb409f574a204b763}{Xml\+Document}} (const \doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&other)=delete
 \item 
-\Hypertarget{class_xml_document_af206e74ab423befdfad87840a663ac51}\label{class_xml_document_af206e74ab423befdfad87840a663ac51} 
-\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&other)=delete
+\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \& \doxymbox{\hyperlink{class_xml_document_af206e74ab423befdfad87840a663ac51}{operator=}} (const \doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&other)=delete
 \item 
 \doxymbox{\hyperlink{class_xml_document_ab18742228f580a5e4ec87e4b39c8a68c}{\texorpdfstring{$\sim$}{\string~}\+Xml\+Document}} ()
 \begin{DoxyCompactList}\small\item\em Деструктор. Изчиства паметта, като изтрива корена (което каскадно изтрива цялото дърво). \end{DoxyCompactList}\item 
@@ -41,19 +34,17 @@ void \doxymbox{\hyperlink{class_xml_document_a46fc7356ae5e844bae416f58a868d5a9}{
 \begin{DoxyCompactList}\small\item\em Изчиства текущия документ от паметта (унищожава дървото и речника). \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_xml_document_aed36928312f77e34cd6bfebf36bb402e}{register\+Element}} (const std::\+string \&id, \doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \texorpdfstring{$\ast$}{*}element)
 \begin{DoxyCompactList}\small\item\em Регистрира елемент в ID речника за бързо търсене. \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}\label{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470} 
-\doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Root} () const
+\doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}{get\+Root}} () const
 \begin{DoxyCompactList}\small\item\em Връща указател към корена на XML дървото. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}{get\+Element\+By\+Id}} (const std::\+string \&id) const
 \begin{DoxyCompactList}\small\item\em Търси елемент по неговото ID. \end{DoxyCompactList}\item 
-\Hypertarget{class_xml_document_a39b259f1b254f3e8bb2ea76e9fb9efad}\label{class_xml_document_a39b259f1b254f3e8bb2ea76e9fb9efad} 
-const std::\+string \& {\bfseries get\+File\+Path} () const
+const std::\+string \& \doxymbox{\hyperlink{class_xml_document_a39b259f1b254f3e8bb2ea76e9fb9efad}{get\+File\+Path}} () const
 \begin{DoxyCompactList}\small\item\em Връща пътя на текущо отворения файл. \end{DoxyCompactList}\item 
 std::\+vector$<$ std::\+string $>$ \doxymbox{\hyperlink{class_xml_document_a8e9205a318c3709366738b3dceab4b43}{xpath}} (const std::\+string \&query) const
 \begin{DoxyCompactList}\small\item\em Изпълнява XPath заявка върху документа. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Подробно описание}
+\doxysubsection{Detailed Description}
 Главен клас, представляващ целия XML документ. 
 
 
@@ -65,7 +56,23 @@ std::\+vector$<$ std::\+string $>$ \doxymbox{\hyperlink{class_xml_document_a8e92
 
 \label{class_xml_document_doc-constructors}
 \Hypertarget{class_xml_document_doc-constructors}
-\doxysubsection{Конструктор \& Деструктор Документация}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_xml_document_a71daa95a33b7a692549974258893b36e}\index{XmlDocument@{XmlDocument}!XmlDocument@{XmlDocument}}
+\index{XmlDocument@{XmlDocument}!XmlDocument@{XmlDocument}}
+\doxysubsubsection{\texorpdfstring{XmlDocument()}{XmlDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_xml_document_a71daa95a33b7a692549974258893b36e} 
+Xml\+Document::\+\+Xml\+Document (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по подразбиране. Създава празен документ. 
+
+\Hypertarget{class_xml_document_ac75a0b253455ae6cb409f574a204b763}\index{XmlDocument@{XmlDocument}!XmlDocument@{XmlDocument}}
+\index{XmlDocument@{XmlDocument}!XmlDocument@{XmlDocument}}
+\doxysubsubsection{\texorpdfstring{XmlDocument()}{XmlDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_xml_document_ac75a0b253455ae6cb409f574a204b763} 
+Xml\+Document::\+\+Xml\+Document (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
 \Hypertarget{class_xml_document_ab18742228f580a5e4ec87e4b39c8a68c}\index{XmlDocument@{XmlDocument}!````~XmlDocument@{\texorpdfstring{$\sim$}{\string~}XmlDocument}}
 \index{````~XmlDocument@{\texorpdfstring{$\sim$}{\string~}XmlDocument}!XmlDocument@{XmlDocument}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}XmlDocument()}{\string~XmlDocument()}}
@@ -76,11 +83,9 @@ Xml\+Document::\+\texorpdfstring{$\sim$}{\string~}\+Xml\+Document (\begin{DoxyPa
 
 Деструктор. Изчиства паметта, като изтрива корена (което каскадно изтрива цялото дърво). 
 
-Деструктор. Гарантира безопасното освобождаване на паметта, заделена за XML дървото. Граф с извикванията за тази функция:\+
-% FIG 1
-\Hypertarget{class_xml_document_a0d77b8e7b7ab3db31237945f8aee813b}\index{XmlDocument@{XmlDocument}!XmlDocument@{XmlDocument}}
+Деструктор. Гарантира безопасното освобождаване на паметта, заделена за XML дървото. \Hypertarget{class_xml_document_a0d77b8e7b7ab3db31237945f8aee813b}\index{XmlDocument@{XmlDocument}!XmlDocument@{XmlDocument}}
 \index{XmlDocument@{XmlDocument}!XmlDocument@{XmlDocument}}
-\doxysubsubsection{\texorpdfstring{XmlDocument()}{XmlDocument()}}
+\doxysubsubsection{\texorpdfstring{XmlDocument()}{XmlDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \label{class_xml_document_a0d77b8e7b7ab3db31237945f8aee813b} 
 Xml\+Document::\+\+Xml\+Document (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&\&}]{other}{}\end{DoxyParamCaption})}
 
@@ -88,13 +93,11 @@ Xml\+Document::\+\+Xml\+Document (\begin{DoxyParamCaption}\item[{\doxymbox{\hype
 
 Move конструктор. Позволява ефективно прехвърляне на дървото без копиране. 
 
-Move конструктор. Инициализира празен документ и веднага прехвърля ресурсите от подадения обект. Граф с извикванията за тази функция:\+
-% FIG 2
-
+Move конструктор. Инициализира празен документ и веднага прехвърля ресурсите от подадения обект. 
 
 \label{class_xml_document_doc-func-members}
 \Hypertarget{class_xml_document_doc-func-members}
-\doxysubsection{Членове Функции(методи) Документация}
+\doxysubsection{Member Function Documentation}
 \Hypertarget{class_xml_document_a46fc7356ae5e844bae416f58a868d5a9}\index{XmlDocument@{XmlDocument}!clear@{clear}}
 \index{clear@{clear}!XmlDocument@{XmlDocument}}
 \doxysubsubsection{\texorpdfstring{clear()}{clear()}}
@@ -107,9 +110,7 @@ void Xml\+Document::\+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})
 
 Изчиства цялата памет и нулира състоянието на документа.
 
-Извиква delete върху root, което каскадно изтрива всички деца. Изчиства ID речника и нулира брояча. Граф на извикванията за тази функция:\+
-% FIG 3
-\Hypertarget{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}\index{XmlDocument@{XmlDocument}!getElementById@{getElementById}}
+Извиква delete върху root, което каскадно изтрива всички деца. Изчиства ID речника и нулира брояча. \Hypertarget{class_xml_document_a4670452d5ae240c4749e4fdce2c42118}\index{XmlDocument@{XmlDocument}!getElementById@{getElementById}}
 \index{getElementById@{getElementById}!XmlDocument@{XmlDocument}}
 \doxysubsubsection{\texorpdfstring{getElementById()}{getElementById()}}
 {\footnotesize\ttfamily \label{class_xml_document_a4670452d5ae240c4749e4fdce2c42118} 
@@ -119,11 +120,29 @@ void Xml\+Document::\+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})
 
 Търси елемент по неговото ID. 
 
-\texorpdfstring{$\ast$}{*}\begin{DoxyReturn}{Връща}
+\texorpdfstring{$\ast$}{*}\begin{DoxyReturn}{Returns}
 Указател към елемента или nullptr, ако не е намерен. 
 \end{DoxyReturn}
-Граф на извикванията за тази функция:\+
-% FIG 4
+\Hypertarget{class_xml_document_a39b259f1b254f3e8bb2ea76e9fb9efad}\index{XmlDocument@{XmlDocument}!getFilePath@{getFilePath}}
+\index{getFilePath@{getFilePath}!XmlDocument@{XmlDocument}}
+\doxysubsubsection{\texorpdfstring{getFilePath()}{getFilePath()}}
+{\footnotesize\ttfamily \label{class_xml_document_a39b259f1b254f3e8bb2ea76e9fb9efad} 
+const std::\+string \& Xml\+Document::\+get\+File\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Връща пътя на текущо отворения файл. 
+
+\Hypertarget{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470}\index{XmlDocument@{XmlDocument}!getRoot@{getRoot}}
+\index{getRoot@{getRoot}!XmlDocument@{XmlDocument}}
+\doxysubsubsection{\texorpdfstring{getRoot()}{getRoot()}}
+{\footnotesize\ttfamily \label{class_xml_document_a9c3a6ac4ee312b41cb27997a62883470} 
+\doxymbox{\hyperlink{class_xml_element}{Xml\+Element}} \texorpdfstring{$\ast$}{*} Xml\+Document::\+get\+Root (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Връща указател към корена на XML дървото. 
+
 \Hypertarget{class_xml_document_a31230a8d6f168da8d3f7df395a05a304}\index{XmlDocument@{XmlDocument}!load@{load}}
 \index{load@{load}!XmlDocument@{XmlDocument}}
 \doxysubsubsection{\texorpdfstring{load()}{load()}}
@@ -137,12 +156,12 @@ void Xml\+Document::\+load (\begin{DoxyParamCaption}\item[{const std::\+string \
 Зарежда, валидира и построява йерархичното XML дърво от текстов файл.
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em filename} & Пътят към файла за четене (ако не съществува, създава празен). \\
 \hline
 \end{DoxyParams}
 
-\begin{DoxyExceptions}{Изключения}
+\begin{DoxyExceptions}{Exceptions}
 {\em Parse\+Exception} & При синтактична грешка в XML структурата. \\
 \hline
 {\em File\+Exception} & При проблем с достъпа до файла.\\
@@ -169,23 +188,27 @@ void Xml\+Document::\+load (\begin{DoxyParamCaption}\item[{const std::\+string \
 \item {\bfseries{Множество Root елементи:\+}} XML стандартът изисква само 1 корен. Ако парсърът открие множество елементи на нулево ниво, той автоматично генерира невидим {\ttfamily \texorpdfstring{$<$}{<}document\+\_\+wrapper\texorpdfstring{$>$}{>}}, който да ги обедини и да спаси структурата от презаписване.
 \item {\bfseries{Липсващ файл:\+}} Ако подаденият файл не съществува на диска, функцията не гърми, а създава нов празен файл, готов за работа.
 \item 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em filename} & Пътят към файла, който ще бъде прочетен и зареден в паметта. \\
 \hline
 \end{DoxyParams}
 
-\begin{DoxyExceptions}{Изключения}
+\begin{DoxyExceptions}{Exceptions}
 {\em File\+Exception} & Ако възникне критична грешка при I/\+O операциите. \\
 \hline
 {\em Parse\+Exception} & При невалиден XML (напр. затварящ таг без отварящ, или текст извън root-\/а). \\
 \hline
 \end{DoxyExceptions}
 
-\end{DoxyItemize}Граф с извикванията за тази функция:\+
-% FIG 5
+\end{DoxyItemize}\Hypertarget{class_xml_document_af206e74ab423befdfad87840a663ac51}\index{XmlDocument@{XmlDocument}!operator=@{operator=}}
+\index{operator=@{operator=}!XmlDocument@{XmlDocument}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_xml_document_af206e74ab423befdfad87840a663ac51} 
+\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \& Xml\+Document::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
 \Hypertarget{class_xml_document_af5a47a07085a4c815fbf28fbfc0c57d0}\index{XmlDocument@{XmlDocument}!operator=@{operator=}}
 \index{operator=@{operator=}!XmlDocument@{XmlDocument}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_xml_document_af5a47a07085a4c815fbf28fbfc0c57d0} 
 \doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \& Xml\+Document::\+operator= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_xml_document}{Xml\+Document}} \&\&}]{other}{}\end{DoxyParamCaption})}
 
@@ -193,9 +216,7 @@ void Xml\+Document::\+load (\begin{DoxyParamCaption}\item[{const std::\+string \
 
 Move оператор за присвояване. 
 
-Move оператор за присвояване. Първо изчиства текущите ресурси на обекта, след което присвоява новите чрез move\+From. Граф с извикванията за тази функция:\+
-% FIG 6
-\Hypertarget{class_xml_document_aed36928312f77e34cd6bfebf36bb402e}\index{XmlDocument@{XmlDocument}!registerElement@{registerElement}}
+Move оператор за присвояване. Първо изчиства текущите ресурси на обекта, след което присвоява новите чрез move\+From. \Hypertarget{class_xml_document_aed36928312f77e34cd6bfebf36bb402e}\index{XmlDocument@{XmlDocument}!registerElement@{registerElement}}
 \index{registerElement@{registerElement}!XmlDocument@{XmlDocument}}
 \doxysubsubsection{\texorpdfstring{registerElement()}{registerElement()}}
 {\footnotesize\ttfamily \label{class_xml_document_aed36928312f77e34cd6bfebf36bb402e} 
@@ -206,14 +227,12 @@ void Xml\+Document::\+register\+Element (\begin{DoxyParamCaption}\item[{const st
 Регистрира елемент в ID речника за бързо търсене. 
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em id} & Уникалният идентификатор. \\
 \hline
 {\em element} & Указател към елемента. \\
 \hline
 \end{DoxyParams}
-Граф на извикванията за тази функция:\+
-% FIG 7
 \Hypertarget{class_xml_document_a8645fb13472af75e6772d61c6ebae567}\index{XmlDocument@{XmlDocument}!save@{save}}
 \index{save@{save}!XmlDocument@{XmlDocument}}
 \doxysubsubsection{\texorpdfstring{save()}{save()}}
@@ -227,16 +246,12 @@ void Xml\+Document::\+save (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) 
 Запазва документа в текущо отворения файл.
 
 
-\begin{DoxyExceptions}{Изключения}
+\begin{DoxyExceptions}{Exceptions}
 {\em File\+Exception} & Ако няма отворен файл.\\
 \hline
 {\em File\+Exception} & Ако няма зареден файл (напр. потребителят не е извикал open). \\
 \hline
 \end{DoxyExceptions}
-Граф с извикванията за тази функция:\+
-% FIG 8
-Граф на извикванията за тази функция:\+
-% FIG 9
 \Hypertarget{class_xml_document_ac01d57d4967d6fc57208e5ecf39caa78}\index{XmlDocument@{XmlDocument}!saveAs@{saveAs}}
 \index{saveAs@{saveAs}!XmlDocument@{XmlDocument}}
 \doxysubsubsection{\texorpdfstring{saveAs()}{saveAs()}}
@@ -250,27 +265,25 @@ void Xml\+Document::\+save\+As (\begin{DoxyParamCaption}\item[{const std::\+stri
 Запазва текущия XML документ в специфичен файл.
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em filename} & Пътят, където да бъде записан новият файл. \\
 \hline
 \end{DoxyParams}
 
-\begin{DoxyExceptions}{Изключения}
+\begin{DoxyExceptions}{Exceptions}
 {\em File\+Exception} & Ако документът е празен или файлът не може да бъде създаден.\\
 \hline
 \end{DoxyExceptions}
 Извиква рекурсивната функция {\ttfamily print} на root елемента. Ако root-\/ът е скритият "{}document\+\_\+wrapper"{}, принтира само неговите деца, за да не замърсява ID-\/тата. 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em filename} & Пътят, където да се запази файлът. \\
 \hline
 \end{DoxyParams}
 
-\begin{DoxyExceptions}{Изключения}
+\begin{DoxyExceptions}{Exceptions}
 {\em File\+Exception} & Ако документът е празен или файлът не може да се отвори. \\
 \hline
 \end{DoxyExceptions}
-Граф на извикванията за тази функция:\+
-% FIG 10
 \Hypertarget{class_xml_document_a8e9205a318c3709366738b3dceab4b43}\index{XmlDocument@{XmlDocument}!xpath@{xpath}}
 \index{xpath@{xpath}!XmlDocument@{XmlDocument}}
 \doxysubsubsection{\texorpdfstring{xpath()}{xpath()}}
@@ -284,11 +297,11 @@ std::\+vector$<$ std::\+string $>$ Xml\+Document::\+xpath (\begin{DoxyParamCapti
 Главна функция за изпълнение на пълни XPath заявки върху XML документа.
 
 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em query} & Стринг, съдържащ XPath израза (поддържа /\+, \+[]\+, @ и =). \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Вектор от стрингове (текстовите резултати от намерените възли/\+атрибути).
 \end{DoxyReturn}
 
@@ -309,19 +322,17 @@ std::\+vector$<$ std::\+string $>$ Xml\+Document::\+xpath (\begin{DoxyParamCapti
 \item Ако заявката изисква атрибут, се извлича стойността на този атрибут за всеки възел.
 \item Ако заявката търси таг, се събира и обединява цялото му текстово съдържание (чрез {\ttfamily extract\+Element\+Text}).
 \item 
-\begin{DoxyParams}{Аргументи}
+\begin{DoxyParams}{Parameters}
 {\em query} & Пълният стринг на XPath заявката, подаден от потребителя през CLI. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Връща}
+\begin{DoxyReturn}{Returns}
 Вектор от стрингове, съдържащ намерените текстови стойности или стойности на атрибути. Ако търсенето не намери съвпадения или документът е празен, се връща празен вектор. 
 \end{DoxyReturn}
 
-\end{DoxyItemize}Граф на извикванията за тази функция:\+
-% FIG 11
+\end{DoxyItemize}
 
-
-Документация за клас генериран от следните файлове:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
 \item 
-XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Xml\+Document.\+h\item 
-XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+Xml\+Document.\+cpp\end{DoxyCompactItemize}
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+\doxymbox{\hyperlink{_xml_document_8h}{Xml\+Document.\+h}}\item 
+XMLParser/\+\+XMLParser/\+\+Xml\+Core/\+\doxymbox{\hyperlink{_xml_document_8cpp}{Xml\+Document.\+cpp}}\end{DoxyCompactItemize}

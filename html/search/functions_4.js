@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['fileexception_0',['FileException',['../class_file_exception.html#a45332a9dc21b2f6cacef7ea545fe4842',1,'FileException']]]
+  ['end_0',['end',['../class_xml_element.html#a05042dd05d4b727946e16fc8cc9ca4e6',1,'XmlElement']]],
+  ['epsilon_1',['epsilon',['../structdoctest_1_1_approx.html#a3a9093777280fcf5fd79e79b1c202ba8',1,'doctest::Approx']]],
+  ['exception_2',['Exception',['../class_exception.html#a35bf745d25961ebe8795f7f457aa8a05',1,'Exception']]],
+  ['exceptiontranslator_3',['ExceptionTranslator',['../classdoctest_1_1detail_1_1_exception_translator.html#aa1acef933ae700f12c2b5d14edb53aaf',1,'doctest::detail::ExceptionTranslator']]],
+  ['execute_4',['execute',['../class_command.html#a693610de13df3a028abf715fdf5540a7',1,'Command::execute()'],['../class_print_command.html#adf7b4ac737d241683f556973e127cb67',1,'PrintCommand::execute()'],['../class_x_path_command.html#a439178dec708de67b4152107468ca70e',1,'XPathCommand::execute()'],['../class_save_command.html#a27417dc4897ec461c4d3690aaea719c5',1,'SaveCommand::execute()'],['../class_save_as_command.html#a1445cad0df530bf8b3c206d9b799cc7a',1,'SaveAsCommand::execute()'],['../class_select_command.html#a6b40aa548276beed85cebebde80174df',1,'SelectCommand::execute()'],['../class_set_command.html#a6fc8fafae682e5cd738c4d9094e1f50f',1,'SetCommand::execute()'],['../class_delete_command.html#a67f6d9dffbd9e3c0f51f6c56ec0a92a5',1,'DeleteCommand::execute()'],['../class_children_command.html#ac9a7d1b0b08f44b1d845bb554a22820d',1,'ChildrenCommand::execute()'],['../class_child_command.html#a041dddcc91533d3f6a832fa68848ad72',1,'ChildCommand::execute()'],['../class_text_command.html#af5b1e488b171792a7a5546d3370107c5',1,'TextCommand::execute()'],['../class_new_child_command.html#a1e9d98a19fbfa5680f8ac1d50c20e795',1,'NewChildCommand::execute()']]],
+  ['expression_5flhs_5',['Expression_lhs',['../structdoctest_1_1detail_1_1_expression__lhs.html#ab5d05d371e81dd7724592174afbfeba1',1,'doctest::detail::Expression_lhs']]],
+  ['expressiondecomposer_6',['ExpressionDecomposer',['../structdoctest_1_1detail_1_1_expression_decomposer.html#a6bf2c46ebf0dc68106be801a90776e65',1,'doctest::detail::ExpressionDecomposer']]]
 ];
