@@ -1,5 +1,5 @@
-﻿#include "Tests/doctest.h"
-#include "XmlCore/XmlNode.h"
+﻿#include "doctest.h"
+#include "../XmlCore/XmlNode.h"
 
 class MockNode : public XmlNode {
 public:

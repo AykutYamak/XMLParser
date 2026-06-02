@@ -1,6 +1,6 @@
-﻿#include "Tests/doctest.h"
-#include "XmlCore/XmlText.h" 
-#include "Exceptions/Exception.h" 
+﻿#include "doctest.h"
+#include "../XmlCore/XmlText.h" 
+#include "../Exceptions/Exception.h" 
 #include <fstream>
 #include <string>
 

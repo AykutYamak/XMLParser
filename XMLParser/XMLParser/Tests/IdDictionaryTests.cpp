@@ -1,6 +1,6 @@
-﻿#include "Tests/doctest.h"
-#include "XmlCore/IdDictionary.h"
-#include "XmlCore/XmlElement.h"
+﻿#include "doctest.h"
+#include "../XmlCore/IdDictionary.h"
+#include "../XmlCore/XmlElement.h"
 
 TEST_CASE("IdDictionary: Basic Operations and Integrity") {
     IdDictionary registry;

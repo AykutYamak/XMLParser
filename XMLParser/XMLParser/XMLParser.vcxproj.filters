@@ -39,22 +39,22 @@
     <ClCompile Include="XmlCore\XmlText.cpp">
       <Filter>XmlCore</Filter>
     </ClCompile>
-    <ClCompile Include="test_main.cpp">
+    <ClCompile Include="Tests\IdDictionaryTests.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
-    <ClCompile Include="XmlNodeTests.cpp">
+    <ClCompile Include="Tests\test_main.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
-    <ClCompile Include="XmlTextTests.cpp">
+    <ClCompile Include="Tests\XmlDocumentTests.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
-    <ClCompile Include="XmlElementTests.cpp">
+    <ClCompile Include="Tests\XmlElementTests.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
-    <ClCompile Include="IdDictionaryTests.cpp">
+    <ClCompile Include="Tests\XmlNodeTests.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
-    <ClCompile Include="XmlDocumentTests.cpp">
+    <ClCompile Include="Tests\XmlTextTests.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
   </ItemGroup>

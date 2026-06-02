@@ -1,7 +1,7 @@
-﻿#include "Tests/doctest.h"
-#include "XmlCore/XmlElement.h"
-#include "XmlCore/XmlText.h"
-#include "Exceptions/Exception.h"
+﻿#include "doctest.h"
+#include "../XmlCore/XmlElement.h"
+#include "../XmlCore/XmlText.h"
+#include "../Exceptions/Exception.h"
 #include <vector>
 
 TEST_CASE("XmlElement: Basic Initialization and Name") {
