@@ -53,7 +53,7 @@ int main() {
     menu.push_back({ "children", new ChildrenCommand(), "Lists attributes of all children of an element. Usage: children <id>"});
     menu.push_back({ "child", new ChildCommand(), "Retrieves the child element at the specified index N. Usage child <id> <n>"});
     menu.push_back({ "newChild", new NewChildCommand() ,"Creates a new child element. Usage newChild <id>"});
-    menu.push_back({ "text", new TextCommand() ,"Sets the inner text of an element. Usage: text <id> <text>"});
+    menu.push_back({ "text", new TextCommand() ,"Retrieves and prints the inner text of an element. Usage: text <id> <text>"});
 
     std::string inputLine;
 

@@ -310,7 +310,14 @@ public:
 			std::cout << "Error: No file is currently loaded. Please use 'open' first." << std::endl;
 			return; 
 		}
-		std::string id = args;
+		size_t firstSpace = args.find_first_not_of(" \t\r\n");
+
+		std::string id = (firstSpace != std::string::npos) ? args.substr(0, firstSpace) : args;
+		if (id.empty())
+		{
+			std::cout << "Error: Invalid usage. Expected: text <id>" << std::endl;
+			return;
+		}
 		XmlElement* el = doc.getElementById(id);
 		if(!el) {std::cout << "Element with id '" << id << "' not found." << std::endl; return;}
 
@@ -321,7 +328,12 @@ public:
 		{
 			result += txtNodes[i]->getContent();
 		}
-		std::cout << "Text: " << result << std::endl;
+		if (result.empty()) {
+			std::cout << "Element '" << id << "' is empty (contains no text)." << std::endl;
+		}
+		else {
+			std::cout << "Text content of '" << id << "': " << result << std::endl;
+		}
 	}
 };
 
@@ -342,7 +354,7 @@ public:
 
 		XmlElement* newElement = new XmlElement("new_element");
 		static int newChildCounter = 1;
-		std::string tempId = "newChild_" + std::to_string(newChildCounter++);
+		std::string tempId = "gen_" + std::to_string(newChildCounter++);
 
 		(*newElement)["id"] = tempId;
 		doc.registerElement(tempId, newElement);

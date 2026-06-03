@@ -8,6 +8,7 @@
 * **XML Core:** Съдържа бизнес логиката (`XmlDocument`, `XmlElement`, `XmlText`) и поддържа дървовидната структура. Включва собствено управление на паметта с каскадни деструктори и Move семантики.
 * **CLI Commands:** Използва *Command Pattern* за управление на потребителския вход, което прави добавянето на нови функционалности лесно и безопасно (спазвайки Open-Closed Principle).
 * **Exceptions:** Съдържа клас Exception, който наследява std::exception и служи като основа за специфични видове изключения.
+
 ```mermaid
 classDiagram
     %% Core XML Hierarchy (Composite Pattern)
@@ -101,6 +102,7 @@ classDiagram
     Command <|-- XPathCommand : Realization
     Command <|-- OtherCommands : Realization
 ```
+
 
 ## Поддържани команди
 * `open <file>` - Зарежда XML файл в паметта.

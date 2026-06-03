@@ -210,13 +210,21 @@ void XmlDocument::load(const std::string& filename) {
 				std::string openTagContent = trimmed.substr(1, firstClose - 1);
 				std::string textContent = trimmed.substr(firstClose + 1, lastOpen - firstClose - 1);
 				XmlElement* newElement = parseOpeningTag(openTagContent);
-				std::string uniqueId = ensureUniqueId((*newElement)["id"]);
-				(*newElement)["id"] = uniqueId;
-				registry.add(uniqueId, newElement);
-				if (!textContent.empty())
+				try 
 				{
-					newElement->addChild(new XmlText(textContent));
+					std::string uniqueId = ensureUniqueId((*newElement)["id"]);
+					(*newElement)["id"] = uniqueId;
+					registry.add(uniqueId, newElement);
+					if (!textContent.empty())
+					{
+						newElement->addChild(new XmlText(textContent));
+					}
 				}
+				catch (...) {
+					delete newElement;
+					throw;
+				}
+				
 				if (parseStack.empty())
 				{
 					if (root == nullptr)
@@ -248,11 +256,17 @@ void XmlDocument::load(const std::string& filename) {
 				std::string content = trimmed.substr(1, trimmed.length() - charsToDrop);
 
 				XmlElement* newElement = parseOpeningTag(content);
-				std::string uniqueId = ensureUniqueId((*newElement)["id"]);
-				
-				(*newElement)["id"] = uniqueId;
-				registry.add(uniqueId, newElement);
+				try {
+					std::string uniqueId = ensureUniqueId((*newElement)["id"]);
 
+					(*newElement)["id"] = uniqueId;
+					registry.add(uniqueId, newElement);
+
+				}
+				catch (...) {
+					delete newElement;
+					throw;
+				}
 				if (parseStack.empty()){
 					if (root == nullptr)
 					{
