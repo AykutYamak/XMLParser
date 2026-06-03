@@ -8,6 +8,99 @@
 * **XML Core:** Съдържа бизнес логиката (`XmlDocument`, `XmlElement`, `XmlText`) и поддържа дървовидната структура. Включва собствено управление на паметта с каскадни деструктори и Move семантики.
 * **CLI Commands:** Използва *Command Pattern* за управление на потребителския вход, което прави добавянето на нови функционалности лесно и безопасно (спазвайки Open-Closed Principle).
 * **Exceptions:** Съдържа клас Exception, който наследява std::exception и служи като основа за специфични видове изключения.
+```mermaid
+classDiagram
+    %% Core XML Hierarchy (Composite Pattern)
+    class XmlNode {
+        <<abstract>>
+        # XmlNode* parent
+        + getParent() XmlNode*
+        + setParent(XmlNode*)
+        + clone()* XmlNode*
+        + print(ostream&, int)* void
+        + ~XmlNode()
+    }
+
+    class XmlElement {
+        - string name
+        - vector~XmlNode*~ children
+        - vector~Attribute~ attributes
+        + getName() string
+        + addAttribute(string, string)
+        + getAttributeValue(string) string
+        + addChild(XmlNode*)
+        + getChildrenOfType() vector~T*~
+        + clone() XmlNode*
+        + print(ostream&, int) void
+        + ~XmlElement()
+    }
+
+    class XmlText {
+        - string content
+        + getContent() string
+        + clone() XmlNode*
+        + print(ostream&, int) void
+    }
+
+    %% Document and Storage
+    class XmlDocument {
+        - XmlElement* root
+        - string filePath
+        - IdDictionary registry
+        + load(string)
+        + save()
+        + saveAs(string)
+        + getRoot() XmlElement*
+        + getElementById(string) XmlElement*
+        + xpath(string) vector~string~
+        + registerElement(string, XmlElement*)
+    }
+
+    class IdDictionary {
+        - vector~IdEntry~ elements
+        + add(string, XmlElement*)
+        + get(string) XmlElement*
+        + contains(string) bool
+        + clear()
+    }
+
+    %% Command Pattern Interface & Concretions
+    class Command {
+        <<interface>>
+        + execute(XmlDocument&, string)* void
+    }
+
+    class TextCommand {
+        + execute(XmlDocument&, string) void
+    }
+    
+    class NewChildCommand {
+        + execute(XmlDocument&, string) void
+    }
+    
+    class XPathCommand {
+        + execute(XmlDocument&, string) void
+    }
+    
+    class OtherCommands {
+        <<Open, Save, Print, Set, etc.>>
+    }
+
+    %% Relationships
+    XmlNode <|-- XmlElement : Inheritance
+    XmlNode <|-- XmlText : Inheritance
+    XmlElement "1" *-- "many" XmlNode : Composite (owns)
+    
+    XmlDocument "1" *-- "1" XmlElement : manages root (owns)
+    XmlDocument "1" *-- "1" IdDictionary : composition
+    
+    IdDictionary "1" o-- "many" XmlElement : observes (non-owning)
+    
+    Command <|-- TextCommand : Realization
+    Command <|-- NewChildCommand : Realization
+    Command <|-- XPathCommand : Realization
+    Command <|-- OtherCommands : Realization
+```
 
 ## Поддържани команди
 * `open <file>` - Зарежда XML файл в паметта.
