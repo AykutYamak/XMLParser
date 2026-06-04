@@ -73,14 +73,15 @@ XmlNode* XmlElement::clone() const
  * @throw Exception Хвърля изключение, ако се направи опит за добавяне на nullptr.
  */
 void XmlElement::addChild(XmlNode* child) {
-    if (child)
-    {
+    if (!child) throw Exception("...");
+    try {
         children.push_back(child);
         child->setParent(this);
+
     }
-    else
-    {
-        throw Exception("Can't add a null child to XML Element: " + name);
+    catch (...) {
+        delete child;
+        throw;
     }
 }
 
